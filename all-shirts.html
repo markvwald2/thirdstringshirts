@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Shirts | Third String Shirts</title>
+  <meta name="description" content="Browse all Third String Shirts designs with theme filters.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Graduate&family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/site.css">
+</head>
+<body data-page="shop" class="compact-main">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="./index.html" aria-label="Third String Shirts home">
+        <img class="brand-mark" src="./assets/logo.png" alt="Third String Shirts logo">
+        <span>
+          <p class="brand-title">Third String Shirts</p>
+          <p class="brand-tagline">Shirts for 3rd Stringers</p>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a data-page="home" href="./index.html">Home</a>
+        <a data-page="shop" href="./all-shirts.html">Shop</a>
+        <a data-page="about" href="./about.html">About</a>
+        <a data-page="faq" href="./faq.html">FAQ</a>
+        <a data-page="contact" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>All Shirts</h2>
+          <p id="shop-count">Loading...</p>
+        </div>
+      </div>
+
+      <div id="shop-filters" class="filters" aria-label="Shirt themes"></div>
+
+      <div class="search-row">
+        <input id="shop-search" type="search" placeholder="Search by shirt name or sub-theme..." aria-label="Search shirts">
+      </div>
+
+      <section id="shop-grid" class="grid" aria-live="polite"></section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p><strong>Third String Shirts</strong> | Entire inventory, no starters benched.</p>
+      <p>
+        Follow on <a href="https://x.com/3rdstringshirts" target="_blank" rel="noopener noreferrer">X</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/site.js?v=20260307b"></script>
+  <script src="./js/shop.js?v=20260307b"></script>
+</body>
+</html>

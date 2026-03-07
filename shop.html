@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Third String Shirts</title>
+  <meta name="description" content="Browse all Third String Shirts by theme.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Graduate&family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/site.css">
+</head>
+<body data-page="shop">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="./index.html" aria-label="Third String Shirts home">
+        <img class="brand-mark" src="./assets/logo.png" alt="Third String Shirts logo">
+        <span>
+          <p class="brand-title">Third String Shirts</p>
+          <p class="brand-tagline">Shirts for 3rd Stringers</p>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a data-page="home" href="./index.html">Home</a>
+        <a data-page="shop" href="./all-shirts.html">Shop</a>
+        <a data-page="about" href="./about.html">About</a>
+        <a data-page="faq" href="./faq.html">FAQ</a>
+        <a data-page="contact" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="panel spreadshop-shell">
+        <div id="sprd-shop">
+          <a href="https://shop.spreadshirt.com/thirdstringshirts">thirdstringshirts</a>
+        </div>
+        <noscript>
+          <p>JavaScript is required to load the embedded shop.</p>
+        </noscript>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p><strong>Third String Shirts</strong> | Bench energy, premium fabric.</p>
+      <p>
+        Follow on <a href="https://x.com/3rdstringshirts" target="_blank" rel="noopener noreferrer">X</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/site.js"></script>
+  <script>
+    var spread_shop_config = {
+      shopName: "thirdstringshirts",
+      locale: "us_US",
+      prefix: "//shop.spreadshirt.com",
+      baseId: "sprd-shop",
+      usePushState: false,
+      updateMetadata: false
+    };
+  </script>
+  <script src="https://shop.spreadshirt.com/shopfiles/shopclient/shopclient.nocache.js"></script>
+  <script>
+    (function alignCartWithListTitle() {
+      var root = document.getElementById("sprd-shop");
+      if (!root) return;
+
+      function sync() {
+        var titleRow = root.querySelector(".sprd-listpage__header");
+        var cartActions = root.querySelector(".sprd-header__actions");
+        if (!titleRow || !cartActions) return;
+        if (cartActions.parentElement !== titleRow) {
+          titleRow.appendChild(cartActions);
+        }
+      }
+
+      sync();
+      var observer = new MutationObserver(sync);
+      observer.observe(root, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>
