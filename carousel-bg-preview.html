@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel Background Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/site.css">
+  <style>
+    .preview-wrap {
+      width: min(1160px, 92vw);
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+    }
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+    }
+    .preview-card .carousel-slide {
+      min-height: 180px;
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+    .preview-label {
+      margin: 0 0 0.45rem;
+      font-weight: 800;
+      color: #edf4ff;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="preview-wrap">
+      <h1 style="color:#edf4ff;">Carousel Background Preview</h1>
+      <p style="color:#c8d9ef;">Each tile shows one sports pattern without shirt content.</p>
+      <div class="preview-grid">
+        <article class="preview-card">
+          <p class="preview-label">Basketball</p>
+          <div class="carousel-slide bg-basketball"></div>
+        </article>
+        <article class="preview-card">
+          <p class="preview-label">Football</p>
+          <div class="carousel-slide bg-football"></div>
+        </article>
+        <article class="preview-card">
+          <p class="preview-label">Baseball</p>
+          <div class="carousel-slide bg-baseball"></div>
+        </article>
+        <article class="preview-card">
+          <p class="preview-label">Soccer</p>
+          <div class="carousel-slide bg-soccer"></div>
+        </article>
+        <article class="preview-card">
+          <p class="preview-label">Hockey</p>
+          <div class="carousel-slide bg-hockey"></div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

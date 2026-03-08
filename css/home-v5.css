@@ -1,0 +1,64 @@
+body.mock-v5 {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(13, 111, 184, 0.16), transparent 33%),
+    radial-gradient(circle at 92% 85%, rgba(241, 143, 28, 0.18), transparent 36%),
+    #eef3f9;
+}
+
+.mock-v5 .site-header {
+  background: rgba(244, 248, 253, 0.9);
+  border-bottom: 1px solid rgba(13, 111, 184, 0.1);
+  box-shadow: none;
+}
+
+.mock-v5 .brand-title {
+  font-family: "Saira Stencil One", "Alfa Slab One", serif;
+  font-size: clamp(1.45rem, 2.8vw, 2.2rem);
+  color: #0d4f84;
+  text-shadow: none;
+}
+
+.mock-v5 .site-nav {
+  background: rgba(255, 255, 255, 0.68);
+  border-color: rgba(13, 111, 184, 0.16);
+}
+
+.mock-v5 .hero {
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  box-shadow: 0 14px 40px rgba(11, 28, 52, 0.12);
+  color: #163552;
+}
+
+.mock-v5 .hero h1 {
+  color: #0a4f84;
+  font-family: "Saira Stencil One", "Bungee", sans-serif;
+  font-size: clamp(1.6rem, 3.4vw, 2.8rem);
+  line-height: 1.14;
+}
+
+.mock-v5 .hero p {
+  color: #406180;
+}
+
+.mock-v5 .hero-card {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(13, 111, 184, 0.2);
+}
+
+.mock-v5 .section-head h2 {
+  color: #0d4f84;
+}
+
+.mock-v5 .carousel,
+.mock-v5 .card {
+  border: 1px solid rgba(13, 111, 184, 0.16);
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(6px);
+}
+
+.mock-v5 .button {
+  box-shadow: 0 10px 28px rgba(13, 111, 184, 0.25);
+}

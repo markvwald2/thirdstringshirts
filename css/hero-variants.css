@@ -1,0 +1,102 @@
+.hero.hero-variant-1 {
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  background:
+    linear-gradient(140deg, rgba(7, 31, 57, 0.95), rgba(13, 111, 184, 0.88)),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.06) 0 10px, transparent 10px 20px);
+}
+
+.hero.hero-variant-1 h1 {
+  font-family: "Staatliches", "Bungee", sans-serif;
+  letter-spacing: 0.06em;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+}
+
+.hero.hero-variant-1 .hero-card {
+  background: rgba(241, 143, 28, 0.14);
+}
+
+.hero.hero-variant-2 {
+  border-radius: 2px;
+  border: 2px solid #d4b06b;
+  color: #132131;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(249, 242, 227, 0.95)),
+    repeating-linear-gradient(-10deg, rgba(13, 111, 184, 0.08) 0 12px, transparent 12px 24px);
+  box-shadow: 10px 10px 0 rgba(21, 34, 56, 0.23);
+}
+
+.hero.hero-variant-2 p {
+  color: #324e69;
+}
+
+.hero.hero-variant-2 .hero-card {
+  border-radius: 2px;
+  background: rgba(13, 111, 184, 0.1);
+}
+
+.hero.hero-variant-3 {
+  border: 1px solid rgba(255, 176, 72, 0.3);
+  background:
+    linear-gradient(180deg, rgba(16, 24, 32, 0.96), rgba(23, 33, 47, 0.96)),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0 2px, transparent 2px 4px);
+}
+
+.hero.hero-variant-3 h1 {
+  font-family: "Rubik Mono One", "Bungee", sans-serif;
+  font-size: clamp(1.15rem, 2.3vw, 1.9rem);
+  line-height: 1.25;
+  color: #f2f6ff;
+}
+
+.hero.hero-variant-3 .hero-card {
+  border: 1px solid rgba(255, 176, 72, 0.35);
+  background: rgba(255, 176, 72, 0.09);
+}
+
+.hero.hero-variant-4 {
+  border: 1px solid rgba(255, 122, 0, 0.28);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(237, 248, 255, 0.95)),
+    radial-gradient(circle at 10% 110%, rgba(255, 122, 0, 0.2), transparent 35%);
+  color: #17365c;
+}
+
+.hero.hero-variant-4 h1 {
+  color: #0c4e87;
+  font-family: "Changa One", "Bungee", sans-serif;
+  font-size: clamp(1.9rem, 4vw, 3.1rem);
+}
+
+.hero.hero-variant-4 p {
+  color: #355678;
+}
+
+.hero.hero-variant-4 .hero-card {
+  background: linear-gradient(155deg, rgba(255, 122, 0, 0.15), rgba(31, 124, 255, 0.14));
+  border: 1px solid rgba(31, 124, 255, 0.22);
+}
+
+.hero.hero-variant-5 {
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(7px);
+  box-shadow: 0 14px 40px rgba(11, 28, 52, 0.12);
+  color: #163552;
+}
+
+.hero.hero-variant-5 h1 {
+  color: #0a4f84;
+  font-family: "Saira Stencil One", "Bungee", sans-serif;
+  font-size: clamp(1.6rem, 3.4vw, 2.8rem);
+  line-height: 1.14;
+}
+
+.hero.hero-variant-5 p {
+  color: #406180;
+}
+
+.hero.hero-variant-5 .hero-card {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(13, 111, 184, 0.2);
+}

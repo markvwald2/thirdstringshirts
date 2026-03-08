@@ -1,5 +1,6 @@
 :root {
   --bg: #f7f8fb;
+  --top-dark-height: 750px;
   --surface: #ffffff;
   --text: #152238;
   --muted: #596b86;
@@ -21,18 +22,40 @@ html, body {
   padding: 0;
   font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
   color: var(--text);
+}
+
+html {
   background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 body::before {
   content: "";
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--top-dark-height);
   background:
-    radial-gradient(circle at 8% 10%, rgba(241, 143, 28, 0.25), transparent 35%),
-    radial-gradient(circle at 85% 12%, rgba(13, 111, 184, 0.2), transparent 32%),
-    radial-gradient(circle at 50% 85%, rgba(13, 111, 184, 0.08), transparent 42%);
-  z-index: -1;
+    radial-gradient(circle at 20% 15%, rgba(241, 143, 28, 0.38), transparent 32%),
+    radial-gradient(circle at 88% 8%, rgba(13, 111, 184, 0.35), transparent 34%),
+    linear-gradient(180deg, #081a2e, #0d223a);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.site-header,
+main,
+.site-footer {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -138,10 +161,10 @@ a {
 }
 
 .site-nav a[aria-current="page"] {
-  background: linear-gradient(120deg, rgba(13, 111, 184, 0.2), rgba(13, 111, 184, 0.06));
+  background: rgba(255, 255, 255, 0.9);
   color: #143152;
-  border-color: rgba(13, 111, 184, 0.25);
-  box-shadow: inset 0 -2px 0 rgba(241, 143, 28, 0.75);
+  border-color: rgba(13, 111, 184, 0.28);
+  box-shadow: inset 0 -2px 0 rgba(241, 143, 28, 0.8);
 }
 
 .site-nav a:hover {
@@ -175,6 +198,7 @@ a {
 
 main {
   display: block;
+  flex: 1 0 auto;
   padding: 2rem 0 4rem;
 }
 
@@ -257,6 +281,11 @@ body.compact-main .section-head:first-of-type {
   font-size: clamp(1.05rem, 2.2vw, 1.6rem);
 }
 
+body[data-page="home"] .section-head:first-of-type h2 {
+  color: #edf4ff;
+  text-shadow: 0 1px 0 rgba(6, 20, 36, 0.45);
+}
+
 .section-head p {
   margin: 0;
   color: var(--muted);
@@ -279,9 +308,10 @@ body.compact-main .section-head:first-of-type {
 }
 
 .filter-chip[aria-pressed="true"] {
-  background: linear-gradient(130deg, rgba(241, 143, 28, 0.16), rgba(13, 111, 184, 0.15));
-  border-color: rgba(13, 111, 184, 0.35);
-  color: var(--text);
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(13, 111, 184, 0.3);
+  color: #143152;
+  box-shadow: inset 0 -2px 0 rgba(241, 143, 28, 0.75);
 }
 
 .grid {
@@ -374,12 +404,16 @@ body.compact-main .section-head:first-of-type {
   align-items: center;
   gap: 0.8rem;
   padding: 1.1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .carousel-slide img {
   width: 100%;
   max-height: 320px;
   object-fit: contain;
+  position: relative;
+  z-index: 1;
 }
 
 .carousel-info h3 {
@@ -390,6 +424,60 @@ body.compact-main .section-head:first-of-type {
 .carousel-info p {
   color: var(--muted);
   margin: 0.65rem 0 1rem;
+}
+
+.carousel-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.34;
+}
+
+.carousel-slide.bg-basketball::before {
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 80px, rgba(75, 36, 12, 0.48) 80px 84px, transparent 84px),
+    repeating-linear-gradient(90deg, #d79a5a 0 42px, #c98a4c 42px 45px);
+}
+
+.carousel-slide.bg-football::before {
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0 4px, transparent 4px 120px),
+    repeating-linear-gradient(0deg, #3f9254 0 48px, #36854a 48px 96px);
+}
+
+.carousel-slide.bg-baseball::before {
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 58px, rgba(110, 74, 31, 0.5) 58px 64px, transparent 64px),
+    conic-gradient(from 45deg at 50% 50%, #bc8b53 0 25%, #4e9555 25% 50%, #bc8b53 50% 75%, #4e9555 75% 100%);
+}
+
+.carousel-slide.bg-soccer::before {
+  background:
+    radial-gradient(circle at 50% 50%, transparent 0 66px, rgba(255, 255, 255, 0.72) 66px 70px, transparent 70px),
+    linear-gradient(90deg, transparent 49.2%, rgba(255, 255, 255, 0.75) 49.2% 50.8%, transparent 50.8%),
+    repeating-linear-gradient(0deg, #4aa966 0 44px, #43975d 44px 88px);
+}
+
+.carousel-slide.bg-hockey::before {
+  background:
+    linear-gradient(90deg, transparent 49.4%, rgba(196, 26, 26, 0.6) 49.4% 50.6%, transparent 50.6%),
+    linear-gradient(0deg, transparent 16%, rgba(31, 87, 172, 0.45) 16% 17.2%, transparent 17.2% 82.8%, rgba(31, 87, 172, 0.45) 82.8% 84%, transparent 84%),
+    #eef5ff;
+}
+
+.carousel-slide.bg-basketball .carousel-info,
+.carousel-slide.bg-football .carousel-info,
+.carousel-slide.bg-baseball .carousel-info,
+.carousel-slide.bg-soccer .carousel-info,
+.carousel-slide.bg-hockey .carousel-info {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.83);
+  border: 1px solid rgba(215, 223, 234, 0.9);
+  border-radius: 14px;
+  padding: 0.9rem;
+  backdrop-filter: blur(2px);
 }
 
 .carousel-nav {
@@ -408,6 +496,69 @@ body.compact-main .section-head:first-of-type {
   border-radius: 999px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.carousel-slide--etsy {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(241, 143, 28, 0.2), transparent 42%),
+    radial-gradient(circle at 76% 78%, rgba(13, 111, 184, 0.2), transparent 38%),
+    linear-gradient(135deg, #fbfdff, #eef5ff);
+}
+
+.etsy-promo-art {
+  min-height: 320px;
+  border-radius: 18px;
+  border: 1px solid #d7dfea;
+  background: linear-gradient(135deg, #0a4f84, #0d6fb8);
+  color: #fff;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.etsy-promo-art__badge {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.etsy-promo-art__copy {
+  font-family: "Bungee", "Impact", sans-serif;
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+
+.etsy-promo-art__grid {
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.42rem;
+}
+
+.etsy-promo-art__tile {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.etsy-promo-art__tile img {
+  width: 100%;
+  height: 148px;
+  object-fit: cover;
+  object-position: center 18%;
+  transform: scale(1.12);
+  display: block;
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .split {

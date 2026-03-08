@@ -730,7 +730,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X79Y45D10345643W12658H19545/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/blt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X92Y45D10345643W16191H25000/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/blt-mens-premium-t-shirt.jpg"
   },
   {
     "name": "Boise",
@@ -937,7 +937,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X48Y105D1025593468W25000H6505/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/capitals-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X48Y105D1025593468W25000H6505/views/1,width=650,height=650,appearanceId=1252,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Carson City",
@@ -1166,7 +1166,7 @@
       "beer"
     ],
     "platform": "Etsy",
-    "product_url": "",
+    "product_url": "https://www.etsy.com/listing/875847034/coloradans-against-craft-beer-t-shirt",
     "idea_id": "",
     "source_of_truth": "local",
     "source_match": "platform_non_spreadshirt",
@@ -1175,7 +1175,17 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://i.etsystatic.com/25644243/r/il/e50749/2649334247/il_1588xN.2649334247_h6te.jpg"
+    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad809cb544d.png",
+    "image_urls": [
+      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad809cb544d.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad809680f9a.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad808fd6a66.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad80996c543.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad80922421f.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad809430698.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad808f68968.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad8090b6b20.png"
+    ]
   },
   {
     "name": "Coloradans Against Fourteeners",
@@ -1190,7 +1200,7 @@
       "mountains"
     ],
     "platform": "Etsy",
-    "product_url": "",
+    "product_url": "https://www.etsy.com/listing/878823536/coloradans-against-fourteeners-t-shirt",
     "idea_id": "",
     "source_of_truth": "local",
     "source_match": "platform_non_spreadshirt",
@@ -1199,7 +1209,17 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://i.etsystatic.com/25644243/r/il/eef724/2613432644/il_1588xN.2613432644_fwyq.jpg"
+    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad81f697b4f.png",
+    "image_urls": [
+      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad81f697b4f.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad81f697c57.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad81f697ce2.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad81f697d69.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad81f697deb.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad81f697e6b.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad81f697f02.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad81f697f85.png"
+    ]
   },
   {
     "name": "Coloradans Against Hiking",
@@ -1214,7 +1234,7 @@
       "outdoors"
     ],
     "platform": "Etsy",
-    "product_url": "",
+    "product_url": "https://www.etsy.com/listing/874967110/coloradans-against-hiking-t-shirt",
     "idea_id": "",
     "source_of_truth": "local",
     "source_match": "platform_non_spreadshirt",
@@ -1223,7 +1243,17 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://i.etsystatic.com/25644243/r/il/91f3a3/2598077934/il_1588xN.2598077934_em31.jpg"
+    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad82e91ba25.png",
+    "image_urls": [
+      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad82e91ba25.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad82e91bbcb.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad82e91bc75.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad82e91bd10.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad82e91bd99.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad82e91be1f.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad82e91bea4.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad82e91bf2b.png"
+    ]
   },
   {
     "name": "Coloradans Against Triathlons",
@@ -1238,7 +1268,7 @@
       "endurance-sports"
     ],
     "platform": "Etsy",
-    "product_url": "",
+    "product_url": "https://www.etsy.com/listing/916873133/coloradans-against-triathlons-t-shirt",
     "idea_id": "",
     "source_of_truth": "local",
     "source_match": "platform_non_spreadshirt",
@@ -1247,7 +1277,17 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://i.etsystatic.com/25644243/r/il/59c33b/2755902323/il_1588xN.2755902323_t9ws.jpg"
+    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad833a66dfe.png",
+    "image_urls": [
+      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad833a66dfe.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad833a66ffd.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad833a670a2.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad833a671a2.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad833a672a4.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad833a67384.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad833a67419.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad833a674a4.png"
+    ]
   },
   {
     "name": "Colorado",
@@ -2475,7 +2515,7 @@
   },
   {
     "name": "Humor in Uniform",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A231PA4927PT17X72Y40D10122391W14358H12980/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/humor-in-uniform-grunge.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X92Y78D3250893W16255H14718/views/1,width=650,height=650,appearanceId=1256,backgroundColor=ffffff/humor-in-uniform.jpg",
     "sub_theme": "",
     "tags": [
       "design"
@@ -2491,7 +2531,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A231PA4927PT17X72Y40D10122391W14358H12980/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/humor-in-uniform-grunge.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X92Y78D3250893W16255H14718/views/1,width=650,height=650,appearanceId=1256,backgroundColor=ffffff/humor-in-uniform.jpg"
   },
   {
     "name": "I Call Shotgun",
@@ -3295,7 +3335,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X22Y51D10566204W24345H5901/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/late-bloomer-early-wilter.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X48Y140D10566204W25000H6060/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/late-bloomer-early-wilter-mens-premium-t-shirt.jpg"
   },
   {
     "name": "Latter Formers",
@@ -3495,7 +3535,7 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://thirdstringshirts.myspreadshop.com/maine–the+other+tennessee?idea=5d89cc1f6bbdbb2e6a46c33c",
+    "product_url": "https://thirdstringshirts.myspreadshop.com/maine\u2013the+other+tennessee?idea=5d89cc1f6bbdbb2e6a46c33c",
     "idea_id": "5d89cc1f6bbdbb2e6a46c33c",
     "source_of_truth": "local",
     "source_match": "product_url",
@@ -3566,7 +3606,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X22Y73D11922243W24203H4033/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/massachusetts.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T654A22PA4215PT17X47Y67D11922243W15411H2568/views/1,width=500,height=500,appearanceId=22,backgroundColor=ffffff/massachusetts-kids-premium-hoodie.jpg"
   },
   {
     "name": "Math Formula",
@@ -3992,7 +4032,7 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://thirdstringshirts.myspreadshop.com/nepal–go+for+it?idea=5d89cc2120517626420dd58a",
+    "product_url": "https://thirdstringshirts.myspreadshop.com/nepal\u2013go+for+it?idea=5d89cc2120517626420dd58a",
     "idea_id": "5d89cc2120517626420dd58a",
     "source_of_truth": "local",
     "source_match": "product_url",
@@ -4972,7 +5012,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X36Y33D3730433W21367H12051/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/rocks-the-potty.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X38Y61D3730433W26948H15198/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/rocks-the-potty-mens-premium-t-shirt.jpg"
   },
   {
     "name": "Roger is My Copilot",
@@ -5182,7 +5222,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X70Y35D3727905W14419H11526/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/shit-list.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X48Y44D3727905W25000H19983/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/shit-list-mens-premium-t-shirt.jpg"
   },
   {
     "name": "Short Porch",

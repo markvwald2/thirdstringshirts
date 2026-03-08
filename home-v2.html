@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Mock 2 | Third String Shirts</title>
+  <meta name="description" content="Third String Shirts homepage mockup 2.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bungee&family=Graduate&family=Space+Grotesk:wght@400;500;700;800&family=Racing+Sans+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/site.css">
+  <link rel="stylesheet" href="./css/home-v2.css">
+</head>
+<body data-page="home" class="mock-v2">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="./index.html" aria-label="Third String Shirts home">
+        <img class="brand-mark" src="./assets/logo.png" alt="Third String Shirts logo">
+        <span>
+          <p class="brand-title">Third String Shirts</p>
+          <p class="brand-tagline">Shirts for Third Stringers</p>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a data-page="home" href="./index.html">Home</a>
+        <a data-page="shop" href="./all-shirts.html">Shop</a>
+        <a data-page="about" href="./about.html">About</a>
+        <a data-page="faq" href="./faq.html">FAQ</a>
+        <a data-page="contact" href="./contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero" aria-label="Hero">
+        <div class="hero-grid">
+          <div>
+            <h1>The anti-polished t-shirt showroom.</h1>
+            <p>Feels like a zine. Reads like a roast. Still sells shirts somehow.</p>
+            <div class="mock-actions">
+              <a class="button" href="./all-shirts.html">Browse All Shirts</a>
+            </div>
+          </div>
+          <aside class="hero-card">
+            <p><strong>Mock 2:</strong> Editorial/cardboard print vibe with paper texture and hard shadows.</p>
+          </aside>
+        </div>
+      </section>
+
+      <div class="section-head">
+        <div><h2>Featured Shirts</h2></div>
+      </div>
+
+      <section class="carousel" aria-label="Random featured shirts carousel">
+        <div id="featured-track" class="carousel-track"></div>
+        <div class="carousel-nav">
+          <button id="carousel-prev" type="button" aria-label="Previous slide">&#8592;</button>
+          <button id="carousel-next" type="button" aria-label="Next slide">&#8594;</button>
+        </div>
+      </section>
+
+      <div class="section-head">
+        <div>
+          <h2>Fresh Picks</h2>
+          <p>Assorted bad decisions in cotton form.</p>
+        </div>
+        <a class="button alt" href="./all-shirts.html">See Full Shop</a>
+      </div>
+      <section id="home-grid" class="grid" aria-live="polite"></section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p><strong>Third String Shirts</strong> | Mockup 2</p>
+      <p>Follow on <a href="https://x.com/3rdstringshirts" target="_blank" rel="noopener noreferrer">X</a></p>
+    </div>
+  </footer>
+
+  <script src="./js/site.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+</html>

@@ -32,13 +32,23 @@ function determineBucket(item) {
 }
 
 function cleanProduct(item, tagline = "") {
-  const imageUrl = item.image_url || item.URL || "";
+  const imageCandidates = Array.isArray(item.image_urls)
+    ? item.image_urls.filter((url) => String(url || "").trim())
+    : [];
+  const imageUrl =
+    (imageCandidates.length
+      ? imageCandidates[Math.floor(Math.random() * imageCandidates.length)]
+      : "") || item.image_url || item.URL || "";
+  const platform = normalize(item.platform);
   return {
     id: item.shirt_id || item.idea_id || item.product_url,
     ideaId: item.idea_id || item.shirt_id || "",
     name: item.shirt_name || item.name || "Untitled shirt",
     imageUrl,
+    imageUrls: imageCandidates,
     productUrl: item.product_url || "https://thirdstringshirts.myspreadshop.com/",
+    platform,
+    isEtsy: platform === "etsy",
     bucket: determineBucket(item),
     subTheme: item.sub_theme || "",
     tagline: String(tagline || "")
@@ -63,6 +73,20 @@ function routeFromProductUrl(productUrl, fallbackName) {
 function embeddedShopHref(product) {
   const route = routeFromProductUrl(product.productUrl, product.name);
   return `./shop.html#!/${route}`;
+}
+
+function productHref(product) {
+  if (product.isEtsy && product.productUrl) return product.productUrl;
+  return embeddedShopHref(product);
+}
+
+function productLinkLabel(product) {
+  return product.isEtsy ? "Shop On Etsy" : "Shop This";
+}
+
+function productLinkTargetAttrs(product) {
+  if (!product.isEtsy) return "";
+  return ' target="_blank" rel="noopener noreferrer"';
 }
 
 async function loadProducts() {
@@ -93,17 +117,19 @@ async function loadProducts() {
 function cardMarkup(product) {
   const escapedName = product.name.replace(/</g, "&lt;");
   const badgeLabel = product.bucket.toUpperCase();
-  const localHref = embeddedShopHref(product);
+  const localHref = productHref(product);
+  const targetAttrs = productLinkTargetAttrs(product);
+  const linkLabel = productLinkLabel(product);
   return `
     <article class="card">
-      <a class="card-image" href="${localHref}" aria-label="Open ${escapedName} in Third String Shirts shop">
+      <a class="card-image" href="${localHref}"${targetAttrs} aria-label="Open ${escapedName}">
         <img loading="lazy" src="${product.imageUrl}" alt="${escapedName}">
       </a>
       <div class="card-body">
         <h3>${escapedName}</h3>
         <div class="meta">
           <span class="badge">${badgeLabel}</span>
-          <a class="product-link" href="${localHref}">Shop This</a>
+          <a class="product-link" href="${localHref}"${targetAttrs}>${linkLabel}</a>
         </div>
       </div>
     </article>`;

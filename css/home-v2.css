@@ -1,0 +1,56 @@
+body.mock-v2 {
+  background:
+    linear-gradient(180deg, #f8f1df, #f5ecda 48%, #f3f4f8),
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.03) 0 1px, transparent 1px 32px);
+}
+
+.mock-v2 .site-header {
+  background: rgba(245, 232, 203, 0.96);
+  box-shadow: 0 6px 0 #dcb56a;
+}
+
+.mock-v2 .brand-title {
+  color: #2b4f7c;
+  font-family: "Racing Sans One", "Alfa Slab One", serif;
+  letter-spacing: 0.03em;
+}
+
+.mock-v2 .site-nav {
+  border-radius: 2px;
+  border: 2px solid #d4b06b;
+  box-shadow: 6px 6px 0 rgba(17, 40, 65, 0.2);
+}
+
+.mock-v2 .site-nav a {
+  border-radius: 2px;
+}
+
+.mock-v2 .hero {
+  border-radius: 2px;
+  border: 2px solid #d4b06b;
+  color: #132131;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(249, 242, 227, 0.95)),
+    repeating-linear-gradient(-10deg, rgba(13, 111, 184, 0.08) 0 12px, transparent 12px 24px);
+  box-shadow: 10px 10px 0 rgba(21, 34, 56, 0.23);
+}
+
+.mock-v2 .hero p {
+  color: #324e69;
+}
+
+.mock-v2 .hero-card {
+  border-radius: 2px;
+  background: rgba(13, 111, 184, 0.1);
+}
+
+.mock-v2 .section-head h2 {
+  color: #2f527e;
+  font-family: "Racing Sans One", "Bungee", sans-serif;
+}
+
+.mock-v2 .carousel,
+.mock-v2 .card {
+  border-radius: 2px;
+  border: 2px solid #d4b06b;
+}

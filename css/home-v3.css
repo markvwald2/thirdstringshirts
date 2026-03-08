@@ -1,0 +1,56 @@
+body.mock-v3 {
+  background:
+    radial-gradient(circle at 50% -20%, rgba(241, 143, 28, 0.26), transparent 44%),
+    linear-gradient(180deg, #14130f, #101820 42%, #f7f8fb 42%);
+}
+
+.mock-v3 .site-header {
+  background: rgba(16, 24, 32, 0.94);
+}
+
+.mock-v3 .site-nav {
+  background: rgba(26, 34, 46, 0.9);
+  border-color: rgba(241, 143, 28, 0.24);
+}
+
+.mock-v3 .site-nav a {
+  color: #d4dde9;
+}
+
+.mock-v3 .brand-title {
+  font-family: "Rubik Mono One", "Alfa Slab One", serif;
+  font-size: clamp(1.2rem, 2.3vw, 1.9rem);
+  color: #ffb048;
+}
+
+.mock-v3 .hero {
+  border: 1px solid rgba(255, 176, 72, 0.3);
+  background:
+    linear-gradient(180deg, rgba(16, 24, 32, 0.96), rgba(23, 33, 47, 0.96)),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0 2px, transparent 2px 4px);
+}
+
+.mock-v3 .hero h1 {
+  font-family: "Rubik Mono One", "Bungee", sans-serif;
+  font-size: clamp(1.15rem, 2.3vw, 1.9rem);
+  line-height: 1.25;
+  color: #f2f6ff;
+}
+
+.mock-v3 .hero-card {
+  border: 1px solid rgba(255, 176, 72, 0.35);
+  background: rgba(255, 176, 72, 0.09);
+}
+
+.mock-v3 .section-head h2 {
+  color: #ff9a2f;
+}
+
+.mock-v3 .carousel,
+.mock-v3 .card {
+  border-color: rgba(255, 176, 72, 0.35);
+}
+
+.mock-v3 .button {
+  background: linear-gradient(135deg, #ff9a2f, #e06d00);
+}
