@@ -436,33 +436,140 @@ body[data-page="home"] .section-head:first-of-type h2 {
 
 .carousel-slide.bg-basketball::before {
   background:
-    radial-gradient(circle at 50% 50%, transparent 0 80px, rgba(75, 36, 12, 0.48) 80px 84px, transparent 84px),
-    repeating-linear-gradient(90deg, #d79a5a 0 42px, #c98a4c 42px 45px);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(132, 74, 31, 0.15)),
+    repeating-linear-gradient(180deg, transparent 0 44px, rgba(55, 31, 14, 0.52) 44px 46px),
+    linear-gradient(90deg, rgba(176, 116, 48, 0.3) 0%, rgba(176, 116, 48, 0.1) 100%),
+    linear-gradient(90deg, rgba(176, 116, 48, 0.3) 0%, rgba(176, 116, 48, 0.1) 100%),
+    linear-gradient(90deg, rgba(176, 116, 48, 0.3) 0%, rgba(176, 116, 48, 0.1) 100%),
+    linear-gradient(90deg, rgba(176, 116, 48, 0.3) 0%, rgba(176, 116, 48, 0.1) 100%),
+    linear-gradient(90deg, rgba(176, 116, 48, 0.3) 0%, rgba(176, 116, 48, 0.1) 100%),
+    linear-gradient(90deg, rgba(176, 116, 48, 0.3) 0%, rgba(176, 116, 48, 0.1) 100%),
+    linear-gradient(90deg, rgba(176, 116, 48, 0.3) 0%, rgba(176, 116, 48, 0.1) 100%),
+    linear-gradient(90deg, rgba(176, 116, 48, 0.3) 0%, rgba(176, 116, 48, 0.1) 100%),
+    linear-gradient(90deg, transparent 0 362px, rgba(55, 31, 14, 0.51) 362px 364px, transparent 364px),
+    linear-gradient(90deg, transparent 0 418px, rgba(55, 31, 14, 0.51) 418px 420px, transparent 420px),
+    linear-gradient(90deg, transparent 0 487px, rgba(55, 31, 14, 0.51) 487px 489px, transparent 489px),
+    linear-gradient(90deg, transparent 0 351px, rgba(55, 31, 14, 0.51) 351px 353px, transparent 353px),
+    linear-gradient(90deg, transparent 0 439px, rgba(55, 31, 14, 0.51) 439px 441px, transparent 441px),
+    linear-gradient(90deg, transparent 0 376px, rgba(55, 31, 14, 0.51) 376px 378px, transparent 378px),
+    linear-gradient(90deg, transparent 0 498px, rgba(55, 31, 14, 0.51) 498px 500px, transparent 500px),
+    linear-gradient(90deg, transparent 0 405px, rgba(55, 31, 14, 0.51) 405px 407px, transparent 407px),
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 6px),
+    linear-gradient(180deg, #e6b97a 0%, #dca764 52%, #cf8f4f 100%);
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    no-repeat,
+    no-repeat;
+  background-size:
+    100% 100%,
+    100% 100%,
+    364px 46px,
+    420px 46px,
+    489px 46px,
+    353px 46px,
+    441px 46px,
+    378px 46px,
+    500px 46px,
+    407px 46px,
+    364px 46px,
+    420px 46px,
+    489px 46px,
+    353px 46px,
+    441px 46px,
+    378px 46px,
+    500px 46px,
+    407px 46px,
+    100% 100%,
+    100% 100%;
+  background-position:
+    center,
+    center,
+    0 0,
+    90px 46px,
+    -200px 92px,
+    250px 138px,
+    0 184px,
+    345px 230px,
+    0 276px,
+    230px 322px,
+    0 0,
+    90px 46px,
+    -200px 92px,
+    250px 138px,
+    0 184px,
+    345px 230px,
+    0 276px,
+    230px 322px,
+    center,
+    center;
 }
 
 .carousel-slide.bg-football::before {
   background:
     repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0 4px, transparent 4px 120px),
-    repeating-linear-gradient(0deg, #3f9254 0 48px, #36854a 48px 96px);
+    repeating-linear-gradient(90deg, #3f9254 0 120px, #36854a 120px 240px);
 }
 
 .carousel-slide.bg-baseball::before {
   background:
-    radial-gradient(circle at 50% 50%, transparent 0 58px, rgba(110, 74, 31, 0.5) 58px 64px, transparent 64px),
-    conic-gradient(from 45deg at 50% 50%, #bc8b53 0 25%, #4e9555 25% 50%, #bc8b53 50% 75%, #4e9555 75% 100%);
+    linear-gradient(135deg, transparent 49.2%, rgba(255, 255, 255, 0.78) 49.2% 50.8%, transparent 50.8%),
+    linear-gradient(45deg, transparent 49.2%, rgba(255, 255, 255, 0.78) 49.2% 50.8%, transparent 50.8%),
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+    radial-gradient(circle at 50% 58%, rgba(255, 255, 255, 0.2) 0 126px, transparent 126px),
+    radial-gradient(circle at 50% 58%, rgba(172, 105, 56, 0.9) 0 112px, transparent 112px),
+    conic-gradient(from 45deg, #529a5d 0 25%, #478d53 25% 50%, #529a5d 50% 75%, #478d53 75% 100%);
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    repeat;
+  background-size:
+    50% 100%,
+    50% 100%,
+    28px 8px,
+    100% 100%,
+    100% 100%,
+    200px 200px;
+  background-position:
+    calc(0% - 260px) top,
+    calc(100% + 260px) top,
+    50% 58%,
+    center,
+    center,
+    center;
 }
 
 .carousel-slide.bg-soccer::before {
   background:
-    radial-gradient(circle at 50% 50%, transparent 0 66px, rgba(255, 255, 255, 0.72) 66px 70px, transparent 70px),
-    linear-gradient(90deg, transparent 49.2%, rgba(255, 255, 255, 0.75) 49.2% 50.8%, transparent 50.8%),
-    repeating-linear-gradient(0deg, #4aa966 0 44px, #43975d 44px 88px);
+    radial-gradient(circle at 50% 50%, transparent 0 92px, rgba(255, 255, 255, 0.72) 92px 96px, transparent 96px),
+    linear-gradient(90deg, transparent calc(50% - 2px), rgba(255, 255, 255, 0.75) calc(50% - 2px) calc(50% + 2px), transparent calc(50% + 2px)),
+    repeating-linear-gradient(90deg, #4aa966 0 96px, #43975d 96px 192px);
 }
 
 .carousel-slide.bg-hockey::before {
   background:
+    radial-gradient(circle at 50% 50%, transparent 0 92px, rgba(196, 26, 26, 0.6) 92px 96px, transparent 96px),
     linear-gradient(90deg, transparent 49.4%, rgba(196, 26, 26, 0.6) 49.4% 50.6%, transparent 50.6%),
-    linear-gradient(0deg, transparent 16%, rgba(31, 87, 172, 0.45) 16% 17.2%, transparent 17.2% 82.8%, rgba(31, 87, 172, 0.45) 82.8% 84%, transparent 84%),
+    linear-gradient(90deg, transparent 16%, rgba(31, 87, 172, 0.45) 16% 17.2%, transparent 17.2% 82.8%, rgba(31, 87, 172, 0.45) 82.8% 84%, transparent 84%),
     #eef5ff;
 }
 

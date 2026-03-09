@@ -1,0 +1,122 @@
+.editor-toolbar {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) auto auto;
+  gap: 0.65rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.editor-toolbar input[type="search"] {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 0.7rem 0.85rem;
+  font: inherit;
+  background: #fff;
+}
+
+.editor-table-wrap {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: auto;
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(7, 31, 57, 0.06);
+}
+
+.editor-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1280px;
+}
+
+.editor-table th:nth-child(1),
+.editor-table td:nth-child(1) {
+  width: 240px;
+}
+
+.editor-table th:nth-child(2),
+.editor-table td:nth-child(2) {
+  width: 260px;
+}
+
+.editor-table th:nth-child(3),
+.editor-table td:nth-child(3) {
+  width: auto;
+  min-width: 760px;
+}
+
+.editor-table th,
+.editor-table td {
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  padding: 0.85rem;
+  vertical-align: top;
+}
+
+.editor-table th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #edf3fb;
+  color: #17365c;
+  font-size: 0.82rem;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+}
+
+.editor-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.editor-table .shirt-name {
+  font-weight: 700;
+}
+
+.editor-table .shirt-meta {
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.editor-table code {
+  font-size: 0.78rem;
+  background: #f3f6fb;
+  border: 1px solid #dce5f2;
+  border-radius: 6px;
+  padding: 0.15rem 0.35rem;
+}
+
+.tagline-input {
+  width: 100%;
+  min-height: 72px;
+  border: 1px solid #c8d5e8;
+  border-radius: 10px;
+  resize: vertical;
+  padding: 0.6rem 0.7rem;
+  font: inherit;
+  line-height: 1.4;
+}
+
+.tagline-input:focus {
+  outline: 2px solid rgba(13, 111, 184, 0.24);
+  border-color: var(--blue);
+}
+
+.editor-table tr.dirty {
+  background: #fff8ee;
+}
+
+.editor-table tr.hidden {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .editor-toolbar {
+    grid-template-columns: 1fr;
+  }
+
+  .editor-toolbar .button,
+  .editor-toolbar .button.alt {
+    width: 100%;
+  }
+}

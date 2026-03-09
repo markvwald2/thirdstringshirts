@@ -16,13 +16,19 @@
     }
     .preview-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1rem;
+      grid-template-columns: 1fr;
+      gap: 1.4rem;
+    }
+    .preview-card .carousel {
+      min-height: 370px;
+    }
+    .preview-card .carousel-track {
+      height: 100%;
     }
     .preview-card .carousel-slide {
-      min-height: 180px;
-      grid-template-columns: 1fr;
-      padding: 0;
+      min-height: 370px;
+      grid-template-columns: 1fr 1fr;
+      padding: 1.1rem;
     }
     .preview-label {
       margin: 0 0 0.45rem;
@@ -39,23 +45,43 @@
       <div class="preview-grid">
         <article class="preview-card">
           <p class="preview-label">Basketball</p>
-          <div class="carousel-slide bg-basketball"></div>
+          <div class="carousel">
+            <div class="carousel-track">
+              <article class="carousel-slide bg-basketball"></article>
+            </div>
+          </div>
         </article>
         <article class="preview-card">
           <p class="preview-label">Football</p>
-          <div class="carousel-slide bg-football"></div>
+          <div class="carousel">
+            <div class="carousel-track">
+              <article class="carousel-slide bg-football"></article>
+            </div>
+          </div>
         </article>
         <article class="preview-card">
           <p class="preview-label">Baseball</p>
-          <div class="carousel-slide bg-baseball"></div>
+          <div class="carousel">
+            <div class="carousel-track">
+              <article class="carousel-slide bg-baseball"></article>
+            </div>
+          </div>
         </article>
         <article class="preview-card">
           <p class="preview-label">Soccer</p>
-          <div class="carousel-slide bg-soccer"></div>
+          <div class="carousel">
+            <div class="carousel-track">
+              <article class="carousel-slide bg-soccer"></article>
+            </div>
+          </div>
         </article>
         <article class="preview-card">
           <p class="preview-label">Hockey</p>
-          <div class="carousel-slide bg-hockey"></div>
+          <div class="carousel">
+            <div class="carousel-track">
+              <article class="carousel-slide bg-hockey"></article>
+            </div>
+          </div>
         </article>
       </div>
     </section>
