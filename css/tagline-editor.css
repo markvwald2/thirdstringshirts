@@ -26,23 +26,18 @@
 .editor-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 1280px;
+  min-width: 980px;
 }
 
 .editor-table th:nth-child(1),
 .editor-table td:nth-child(1) {
-  width: 240px;
+  width: 320px;
 }
 
 .editor-table th:nth-child(2),
 .editor-table td:nth-child(2) {
-  width: 260px;
-}
-
-.editor-table th:nth-child(3),
-.editor-table td:nth-child(3) {
   width: auto;
-  min-width: 760px;
+  min-width: 640px;
 }
 
 .editor-table th,
