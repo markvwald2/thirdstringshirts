@@ -106,7 +106,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X40Y117D3590160W26670H5334/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/addison-cta-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Aesop s Fables",
+    "name": "Aesop's Fables",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X78Y78D3584385W19050H14706/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/aesop-s-fables-mens-premium-t-shirt.jpg",
     "sub_theme": "",
     "tags": [
@@ -119,7 +119,7 @@
     "source_of_truth": "local",
     "source_match": "api_main_design_id+generated_link",
     "shirt_id": "5d89cc3020517626420ddb2e",
-    "shirt_name": "Aesop s Fables",
+    "shirt_name": "Aesop's Fables",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -591,7 +591,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X27Y64D10226780W22860H3710/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/best-dip-recipe.jpg"
   },
   {
-    "name": "Better than or Equal to your Girlfriend",
+    "name": "Better Than Your Boyfriend",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A4PA4927PT17X31Y54D10179964W22115H2233/views/1,width=500,height=500,appearanceId=4,backgroundColor=ffffff/better-than-or-equal-to-your-girlfriend.jpg",
     "sub_theme": "",
     "tags": [
@@ -604,14 +604,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc031cbf3a25d594dbb1",
-    "shirt_name": "Better than or Equal to your Girlfriend",
+    "shirt_name": "Better Than Your Boyfriend",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A4PA4927PT17X31Y54D10179964W22115H2233/views/1,width=500,height=500,appearanceId=4,backgroundColor=ffffff/better-than-or-equal-to-your-girlfriend.jpg"
   },
   {
-    "name": "Better than your Girlfriend",
+    "name": "Better Than Your Girlfriend",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X48Y129D10179991W25000H2791/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/better-than-your-girlfriend-mens-premium-t-shirt.jpg",
     "sub_theme": "",
     "tags": [
@@ -624,7 +624,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc121cbf3a25d594e702",
-    "shirt_name": "Better than your Girlfriend",
+    "shirt_name": "Better Than Your Girlfriend",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -775,7 +775,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X65Y38D10276658W15378H14579/views/1,width=500,height=500,appearanceId=36,backgroundColor=ffffff/bonds-well-with-alchohol.jpg"
   },
   {
-    "name": "Boob s Sporting Goods",
+    "name": "Boob's Sporting Goods",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A648PA4267PT17X48Y80D1017443665W24795H11888/views/1,width=500,height=500,appearanceId=648,backgroundColor=ffffff/boob-s-sporting-goods-mens-premium-t-shirt.jpg",
     "sub_theme": "",
     "tags": [
@@ -788,7 +788,7 @@
     "source_of_truth": "local",
     "source_match": "api_main_design_id+generated_link",
     "shirt_id": "5d89cc131cbf3a25d594e7b0",
-    "shirt_name": "Boob s Sporting Goods",
+    "shirt_name": "Boob's Sporting Goods",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -859,11 +859,11 @@
   {
     "name": "Buffalo",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T1130A743PA4328PT17X49Y58D3719337W18796H14525/views/1,width=500,height=500,appearanceId=743,backgroundColor=ffffff/buffalo-mens-fitted-polycotton-t-shirt.jpg",
-    "sub_theme": "",
+    "sub_theme": "animals",
     "tags": [
       "animals"
     ],
-    "theme": "animals",
+    "theme": "design",
     "platform": "Spreadshirt",
     "product_url": "https://thirdstringshirts.myspreadshop.com/buffalo?idea=5d89cc116bbdbb2e6a46b67f",
     "idea_id": "5d89cc116bbdbb2e6a46b67f",
@@ -1875,11 +1875,11 @@
   {
     "name": "Elk",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X81Y47D3430360W18353H24758/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/elk-mens-premium-t-shirt.jpg",
-    "sub_theme": "",
+    "sub_theme": "animals",
     "tags": [
       "animals"
     ],
-    "theme": "animals",
+    "theme": "design",
     "platform": "Spreadshirt",
     "product_url": "https://thirdstringshirts.myspreadshop.com/elk?idea=68a60ecc6fbe8b1fbcc40352",
     "idea_id": "68a60ecc6fbe8b1fbcc40352",
@@ -2472,7 +2472,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X74Y75D3608529W19685H15212/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/helena-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Heli+cool",
+    "name": "Heli+Cool",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X37Y125D3251087W27261H4525/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/heli-cool-mens-premium-t-shirt.jpg",
     "sub_theme": "",
     "tags": [
@@ -2485,7 +2485,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc05f937647d81ffadda",
-    "shirt_name": "Heli+cool",
+    "shirt_name": "Heli+Cool",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -3358,7 +3358,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X66Y47D3634355W21595H16688/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/latter-formers-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Lincoln, NE",
+    "name": "Lincoln",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X70Y70D3600976W20637H15948/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/lincoln-ne-mens-premium-t-shirt.jpg",
     "sub_theme": "State capitals",
     "tags": [
@@ -3372,7 +3372,7 @@
     "source_of_truth": "local",
     "source_match": "api_main_design_id+generated_link",
     "shirt_id": "5d89cbdf1cbf3a25d594c3a9",
-    "shirt_name": "Lincoln, NE",
+    "shirt_name": "Lincoln",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4149,7 +4149,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A39PA4267PT17X23Y121D11922254W29977H4996/views/1,width=500,height=500,appearanceId=39,backgroundColor=ffffff/new-york-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "No Dana, Only Zoul",
+    "name": "No Dana, Only Zuul",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X119Y79D3720902W10699H7125/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/no-dana-only-zoul-mens-premium-t-shirt.jpg",
     "sub_theme": "Ghostbusters",
     "tags": [
@@ -4162,7 +4162,7 @@
     "source_of_truth": "local",
     "source_match": "manual_storefront_token",
     "shirt_id": "5d89cc2e20517626420dd8b0",
-    "shirt_name": "No Dana, Only Zoul",
+    "shirt_name": "No Dana, Only Zuul",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4440,7 +4440,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X46Y47D3612064W25400H19621/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/opening-band-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Operation: Grandslam",
+    "name": "Operation: Grand Slam",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X45Y52D3625568W25527H11853/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/operation-grandslam-mens-premium-t-shirt.jpg",
     "sub_theme": "James Bond",
     "tags": [
@@ -4453,7 +4453,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc0213615160bf6ebcf9",
-    "shirt_name": "Operation: Grandslam",
+    "shirt_name": "Operation: Grand Slam",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4728,11 +4728,11 @@
   {
     "name": "Physics",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A386PA4267PT17X32Y87D10566209W28194H8326/views/1,width=500,height=500,appearanceId=386,backgroundColor=ffffff/physics-mens-premium-t-shirt.jpg",
-    "sub_theme": "Vietnam",
+    "sub_theme": "",
     "tags": [
-      "geography"
+      "science"
     ],
-    "theme": "geography",
+    "theme": "science",
     "platform": "Spreadshirt",
     "product_url": "https://thirdstringshirts.myspreadshop.com/physics?idea=68a60ecc6b1fca39c3c34805",
     "idea_id": "68a60ecc6b1fca39c3c34805",
@@ -5028,7 +5028,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d8e158b1361511e3eb8ed92",
-    "shirt_name": "Roger-is-My-Copilot",
+    "shirt_name": "Roger is My Copilot",
     "tone": "",
     "priority": "",
     "evergreen": null,

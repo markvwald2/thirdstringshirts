@@ -115,7 +115,7 @@ a {
   line-height: 1;
   font-size: clamp(1.7rem, 3.3vw, 2.55rem);
   font-weight: 900;
-  color: #0b64a9;
+  color: #0d6fb8;
   text-shadow:
     1px 0 0 #ffffff,
     -1px 0 0 #ffffff,
@@ -297,6 +297,13 @@ body[data-page="home"] .section-head:first-of-type h2 {
   flex-wrap: wrap;
 }
 
+.filters-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
 .filter-chip {
   border: 1px solid var(--line);
   background: #fff;
@@ -312,6 +319,15 @@ body[data-page="home"] .section-head:first-of-type h2 {
   border-color: rgba(13, 111, 184, 0.3);
   color: #143152;
   box-shadow: inset 0 -2px 0 rgba(241, 143, 28, 0.75);
+}
+
+.filter-count {
+  margin: 0;
+  color: #8d9cb0;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0;
+  line-height: 1;
 }
 
 .grid {
@@ -534,25 +550,25 @@ body[data-page="home"] .section-head:first-of-type h2 {
     linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
     radial-gradient(circle at 50% 58%, rgba(255, 255, 255, 0.2) 0 126px, transparent 126px),
     radial-gradient(circle at 50% 58%, rgba(172, 105, 56, 0.9) 0 112px, transparent 112px),
-    conic-gradient(from 45deg, #529a5d 0 25%, #478d53 25% 50%, #529a5d 50% 75%, #478d53 75% 100%);
+    repeating-linear-gradient(45deg, #529a5d 0 100px, #478d53 100px 200px);
   background-repeat:
     no-repeat,
     no-repeat,
     no-repeat,
     no-repeat,
     no-repeat,
-    repeat;
+    no-repeat;
   background-size:
     50% 100%,
     50% 100%,
     28px 8px,
     100% 100%,
     100% 100%,
-    200px 200px;
+    100% 100%;
   background-position:
     calc(0% - 260px) top,
     calc(100% + 260px) top,
-    50% 58%,
+    calc(50% - 10px) 58%,
     center,
     center,
     center;
@@ -585,6 +601,9 @@ body[data-page="home"] .section-head:first-of-type h2 {
   border-radius: 14px;
   padding: 0.9rem;
   backdrop-filter: blur(2px);
+  justify-self: start;
+  width: min(560px, 100%);
+  margin-left: -52px;
 }
 
 .carousel-nav {
@@ -767,6 +786,94 @@ body[data-page="home"] .section-head:first-of-type h2 {
   padding: 0.8rem;
 }
 
+.shop-shell-actions {
+  padding: 0.2rem 0.45rem 0.65rem;
+}
+
+.shop-back-button {
+  font-weight: 900;
+  font-size: 1.1rem;
+  line-height: 1;
+  min-width: 52px;
+  min-height: 42px;
+  padding-left: 0.85rem;
+  padding-right: 0.85rem;
+  border-color: rgba(13, 111, 184, 0.4);
+  box-shadow: 0 6px 16px rgba(13, 111, 184, 0.16);
+}
+
+.testimonials-wrap {
+  margin-top: 1.2rem;
+}
+
+.testimonials {
+  overflow: hidden;
+}
+
+.testimonials-head {
+  margin-bottom: 0.6rem;
+}
+
+.testimonials-carousel {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(13, 111, 184, 0.12), transparent 38%),
+    radial-gradient(circle at 84% 86%, rgba(241, 143, 28, 0.12), transparent 34%),
+    linear-gradient(135deg, #fbfdff, #f2f7ff);
+}
+
+.testimonials-track {
+  display: flex;
+  transition: transform 450ms ease;
+}
+
+.testimonial-slide {
+  flex: 0 0 100%;
+  padding: 1.15rem 1.2rem 2.55rem;
+}
+
+.testimonial-stars {
+  margin: 0;
+  color: #d87600;
+  letter-spacing: 0.2em;
+  font-size: 1rem;
+}
+
+.testimonial-quote {
+  margin: 0.48rem 0 0.42rem;
+  font-size: clamp(1.03rem, 1.9vw, 1.24rem);
+  line-height: 1.35;
+  font-weight: 600;
+  color: #18355b;
+}
+
+.testimonial-attribution {
+  margin: 0;
+  color: #4c6485;
+  font-size: 0.92rem;
+}
+
+.testimonials-nav {
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.7rem;
+  display: flex;
+  gap: 0.42rem;
+}
+
+.testimonials-nav button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 #sprd-shop {
   min-height: 900px;
 }
@@ -832,6 +939,20 @@ body[data-page="home"] .section-head:first-of-type h2 {
   .split,
   .carousel-slide {
     grid-template-columns: 1fr;
+  }
+
+  .carousel-slide.bg-basketball .carousel-info,
+  .carousel-slide.bg-football .carousel-info,
+  .carousel-slide.bg-baseball .carousel-info,
+  .carousel-slide.bg-soccer .carousel-info,
+  .carousel-slide.bg-hockey .carousel-info {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .testimonials-nav {
+    right: 0.5rem;
+    bottom: 0.5rem;
   }
 
   .grid {

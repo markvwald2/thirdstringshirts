@@ -19,12 +19,7 @@ function determineBucket(item) {
   const tags = (item.tags || []).map(normalize);
 
   if (theme === "geography" || tags.includes("geography")) return "geography";
-  if (
-    theme === "transportation" ||
-    tags.includes("cta") ||
-    tags.includes("chicago") ||
-    subTheme.includes("cta")
-  ) {
+  if (subTheme.includes("cta")) {
     return "cta";
   }
   if (theme === "design" || tags.includes("design")) return "design";

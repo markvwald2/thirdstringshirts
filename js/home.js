@@ -49,6 +49,15 @@
       return;
     }
 
+    const sportClasses = [
+      "bg-basketball",
+      "bg-football",
+      "bg-baseball",
+      "bg-soccer",
+      "bg-hockey"
+    ];
+    const shuffledSportClasses = pickRandom(sportClasses, sportClasses.length);
+
     featuredTrack.innerHTML = slides
       .map(
         (shirt, index) => {
@@ -81,14 +90,7 @@
           const href = productHref(shirt);
           const targetAttrs = productLinkTargetAttrs(shirt);
           const ctaLabel = shirt.isEtsy ? "Shop On Etsy" : "Shop This Shirt";
-          const sportClasses = [
-            "bg-basketball",
-            "bg-football",
-            "bg-baseball",
-            "bg-soccer",
-            "bg-hockey"
-          ];
-          const sportClass = sportClasses[index % sportClasses.length];
+          const sportClass = shuffledSportClasses[index % shuffledSportClasses.length];
           return `
       <article class="carousel-slide ${sportClass}">
         <img src="${shirt.imageUrl}" alt="${shirt.name.replace(/</g, "&lt;")}" loading="lazy">
