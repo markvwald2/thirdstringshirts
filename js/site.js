@@ -53,6 +53,10 @@ function cleanProduct(item, tagline = "") {
 function routeFromProductUrl(productUrl, fallbackName) {
   try {
     const parsed = new URL(productUrl);
+    const hash = parsed.hash || "";
+    if (hash.startsWith("#!/")) {
+      return hash.slice(3);
+    }
     const pathname = parsed.pathname.replace(/^\/+/, "");
     const search = parsed.search || "";
     if (pathname) return `${pathname}${search}`;
