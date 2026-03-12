@@ -142,7 +142,7 @@ function buildHtml(product) {
       gap: 2rem;
       align-items: center;
       grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
-      padding: 3rem 0 4rem;
+      padding: calc(3rem - 50px) 0 4rem;
     }
 
     .share-art {
@@ -210,11 +210,6 @@ function buildHtml(product) {
       margin-top: 0.5rem;
     }
 
-    .share-note {
-      font-size: 0.95rem;
-      color: #53473b;
-    }
-
     @media (max-width: 860px) {
       .share-wrap {
         grid-template-columns: 1fr;
@@ -260,7 +255,6 @@ function buildHtml(product) {
           <a class="button" href="../../${escapedShopUrl.replace(/^\//, "")}">Shop This Shirt</a>
           <a class="button alt" href="../../all-shirts.html">Browse More Shirts</a>
         </div>
-        <p class="share-note">This page exists so text messages and social apps can preview the actual shirt artwork before someone clicks through.</p>
       </section>
     </div>
   </main>
