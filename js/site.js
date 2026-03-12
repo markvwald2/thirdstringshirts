@@ -69,6 +69,21 @@ function routeFromProductUrl(productUrl, fallbackName) {
     .replace(/^\+|\+$/g, "");
 }
 
+function slugSegment(value, fallback = "shirt") {
+  const slug = String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+  return slug || fallback;
+}
+
+function sharePagePath(product) {
+  const base = routeFromProductUrl(product.productUrl, product.name).split("?")[0];
+  const routeSlug = slugSegment(base.replace(/\+/g, "-"), slugSegment(product.name, "shirt"));
+  const ideaSlug = slugSegment(product.ideaId || product.id, "product");
+  return `./shirt/${routeSlug}-${ideaSlug}/`;
+}
+
 function embeddedShopHref(product) {
   const route = routeFromProductUrl(product.productUrl, product.name);
   return `./shop.html#!/${route}`;
@@ -76,7 +91,7 @@ function embeddedShopHref(product) {
 
 function productHref(product) {
   if (product.isEtsy && product.productUrl) return product.productUrl;
-  return embeddedShopHref(product);
+  return sharePagePath(product);
 }
 
 function productLinkLabel(product) {

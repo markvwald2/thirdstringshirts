@@ -31,6 +31,16 @@ python3 -m http.server 8000
 
 Then open [http://localhost:8000](http://localhost:8000).
 
+## Rich preview product pages
+
+Shirt share links now live under `/shirt/.../` so text messages and social apps can render the actual shirt art from `og:image` metadata.
+
+When inventory or taglines change, regenerate those static product pages with:
+
+```bash
+node tools/generate-product-pages.js
+```
+
 ## Notes
 
 - Checkout is fulfilled through Spreadshirt.
