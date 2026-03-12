@@ -179,6 +179,7 @@ function buildHtml(product) {
 
     .share-copy h1 {
       margin: 0;
+      color: #111;
     }
 
     .share-copy p {

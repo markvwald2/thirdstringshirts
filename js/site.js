@@ -91,7 +91,7 @@ function embeddedShopHref(product) {
 
 function productHref(product) {
   if (product.isEtsy && product.productUrl) return product.productUrl;
-  return sharePagePath(product);
+  return embeddedShopHref(product);
 }
 
 function productLinkLabel(product) {
