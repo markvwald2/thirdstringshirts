@@ -84,6 +84,32 @@ function sharePagePath(product) {
   return `./shirt/${routeSlug}-${ideaSlug}/`;
 }
 
+function productFromShopHash(hash) {
+  const value = String(hash || "").trim();
+  if (!value.startsWith("#!/")) return null;
+
+  const route = value.slice(3);
+  const [pathname, search = ""] = route.split("?");
+  if (!pathname) return null;
+
+  const params = new URLSearchParams(search);
+  const ideaId = params.get("idea") || "";
+
+  return {
+    id: ideaId || pathname,
+    ideaId,
+    name: pathname.replace(/\+/g, " "),
+    productUrl: `https://www.thirdstringshirts.com/shop.html#!/${route}`
+  };
+}
+
+function sharePageUrlFromHash(hash, origin) {
+  const product = productFromShopHash(hash);
+  if (!product || !product.ideaId) return "";
+  const relativePath = sharePagePath(product).replace(/^\.\//, "/");
+  return new URL(relativePath, origin || window.location.origin).toString();
+}
+
 function embeddedShopHref(product) {
   const route = routeFromProductUrl(product.productUrl, product.name);
   return `./shop.html#!/${route}`;

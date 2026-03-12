@@ -787,6 +787,9 @@ body[data-page="home"] .section-head:first-of-type h2 {
 }
 
 .shop-shell-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0.2rem 0.45rem 0.65rem;
 }
 
@@ -800,6 +803,17 @@ body[data-page="home"] .section-head:first-of-type h2 {
   padding-right: 0.85rem;
   border-color: rgba(13, 111, 184, 0.4);
   box-shadow: 0 6px 16px rgba(13, 111, 184, 0.16);
+}
+
+.shop-share-button {
+  min-height: 42px;
+  min-width: 84px;
+  border-color: rgba(13, 111, 184, 0.4);
+  box-shadow: 0 6px 16px rgba(13, 111, 184, 0.16);
+}
+
+.shop-share-button[hidden] {
+  display: none !important;
 }
 
 .testimonials-wrap {

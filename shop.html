@@ -35,6 +35,7 @@
       <div class="panel spreadshop-shell">
         <div class="shop-shell-actions">
           <a id="shop-back-arrow" class="button alt shop-back-button" href="./all-shirts.html" aria-label="Go back">←</a>
+          <button id="shop-share-button" class="button alt shop-share-button" type="button" aria-label="Share this shirt" hidden>Share</button>
         </div>
         <div id="sprd-shop">
           <a href="https://shop.spreadshirt.com/thirdstringshirts">thirdstringshirts</a>
@@ -77,6 +78,60 @@
           window.history.back();
         }
       });
+    })();
+
+    (function wireShareButton() {
+      var shareButton = document.getElementById("shop-share-button");
+      if (!shareButton) return;
+
+      var defaultLabel = "Share";
+      var resetTimer = null;
+
+      function setTemporaryLabel(label) {
+        shareButton.textContent = label;
+        window.clearTimeout(resetTimer);
+        resetTimer = window.setTimeout(function () {
+          shareButton.textContent = defaultLabel;
+        }, 1800);
+      }
+
+      function currentShareUrl() {
+        return sharePageUrlFromHash(window.location.hash, window.location.origin);
+      }
+
+      function syncVisibility() {
+        var shareUrl = currentShareUrl();
+        shareButton.hidden = !shareUrl;
+        if (!shareUrl) {
+          shareButton.textContent = defaultLabel;
+        }
+      }
+
+      shareButton.addEventListener("click", async function () {
+        var shareUrl = currentShareUrl();
+        if (!shareUrl) return;
+
+        try {
+          if (navigator.share) {
+            await navigator.share({ url: shareUrl });
+            return;
+          }
+
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(shareUrl);
+            setTemporaryLabel("Copied");
+            return;
+          }
+
+          window.prompt("Copy this shirt link:", shareUrl);
+        } catch (error) {
+          if (error && error.name === "AbortError") return;
+          window.prompt("Copy this shirt link:", shareUrl);
+        }
+      });
+
+      syncVisibility();
+      window.addEventListener("hashchange", syncVisibility);
     })();
 
     (function keepShopAtTopOnLoad() {
