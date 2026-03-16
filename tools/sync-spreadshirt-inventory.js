@@ -128,6 +128,12 @@ function toProductUrl(shopUrl, shirtName, ideaId) {
   return `${base}/${slugify(shirtName)}?idea=${ideaId}`;
 }
 
+function toStorefrontUrl(shopUrl, shirtName, ideaId) {
+  const base = String(shopUrl || '').replace(/\/+$/, '');
+  if (!ideaId) return '';
+  return `${base}/${slugify(shirtName)}?idea=${encodeURIComponent(ideaId)}`;
+}
+
 function reconcileInventory(inventory, maps, shopUrl) {
   let applied = 0;
   const unresolvedLocal = [];
@@ -214,6 +220,94 @@ function reconcileInventory(inventory, maps, shopUrl) {
   };
 }
 
+async function verifyIdeaOnStorefront(shopUrl, shirtName, ideaId) {
+  const url = toStorefrontUrl(shopUrl, shirtName, ideaId);
+  if (!url) return { verified: false, storefrontUrl: '' };
+
+  try {
+    const res = await fetch(url, {
+      headers: {
+        Accept: 'text/html,application/xhtml+xml',
+        'User-Agent': 'shirtclawd-api-sync/1.0',
+      },
+      redirect: 'follow',
+    });
+
+    if (!res.ok) {
+      return { verified: false, storefrontUrl: url, status: res.status };
+    }
+
+    const html = await res.text();
+    const normalized = html.replace(/\s+/g, ' ');
+    const finalUrl = res.url || url;
+    const ideaMatch = normalized.includes(`"ideaId":"${ideaId}"`);
+    const titleValue = (normalized.match(/<title>([^<]+)<\/title>/i) || [])[1] || '';
+    const designNameValue = (normalized.match(/"designName":"([^"]+)"/) || [])[1] || '';
+    const headlineValue = (normalized.match(/"headline":"([^"]+)"/) || [])[1] || '';
+    const productTypeValue = (normalized.match(/productType=(\d+)/) || normalized.match(/"productTypeId":"?(\d+)"?/) || [])[1] || '';
+    const appearanceValue = (normalized.match(/appearance=(\d+)/) || [])[1] || '';
+    const sellableValue = (normalized.match(/sellable=([A-Za-z0-9-]+)/) || [])[1] || '';
+    const decodeEscapes = (value) =>
+      String(value || '')
+        .replace(/\\u0027/g, "'")
+        .replace(/\\u0026/g, '&');
+    const expectedName = normalize(shirtName);
+    const titleMatch = normalize(decodeEscapes(titleValue).replace(/\s+\|.*$/, '')) === expectedName;
+    const designNameMatch = normalize(decodeEscapes(designNameValue)) === expectedName;
+    const headlineMatch = normalize(decodeEscapes(headlineValue)) === expectedName;
+    const headlineAllProducts = normalize(decodeEscapes(headlineValue)) === normalize('All Products');
+    const ogImageMatch = normalized.match(/"imageURLs":\["([^"]+)"/);
+
+    const verified = ideaMatch && (titleMatch || designNameMatch || headlineMatch) && !headlineAllProducts;
+    let storefrontProductUrl = finalUrl;
+    if (verified && sellableValue && productTypeValue) {
+      storefrontProductUrl = `${finalUrl.split('?')[0]}?productType=${productTypeValue}&sellable=${sellableValue}${appearanceValue ? `&appearance=${appearanceValue}` : ''}`;
+    }
+    return {
+      verified,
+      storefrontUrl: finalUrl,
+      storefrontProductUrl,
+      sellableId: sellableValue,
+      productTypeId: productTypeValue,
+      appearanceId: appearanceValue,
+      previewImageUrl: ogImageMatch ? ogImageMatch[1] : '',
+    };
+  } catch (error) {
+    return {
+      verified: false,
+      storefrontUrl: url,
+      error: error.message || String(error),
+    };
+  }
+}
+
+async function verifyUnresolvedOnStorefront(unresolvedLocal, shopUrl) {
+  const storefrontVerified = [];
+  const stillUnresolved = [];
+
+  for (const row of unresolvedLocal) {
+    const check = await verifyIdeaOnStorefront(shopUrl, row.shirt_name, row.current_shirt_id);
+    if (check.verified) {
+      storefrontVerified.push({
+        ...row,
+        storefront_url: check.storefrontUrl,
+        storefront_product_url: check.storefrontProductUrl || check.storefrontUrl,
+        storefront_sellable_id: check.sellableId || '',
+        storefront_product_type_id: check.productTypeId || '',
+        storefront_appearance_id: check.appearanceId || '',
+        storefront_preview_image_url: check.previewImageUrl || '',
+      });
+    } else {
+      stillUnresolved.push(row);
+    }
+  }
+
+  return {
+    storefrontVerified,
+    unresolvedLocal: stillUnresolved,
+  };
+}
+
 async function main() {
   const args = parseArgs(process.argv);
   if (args.help) {
@@ -238,6 +332,7 @@ async function main() {
   const sellables = await fetchAllSellables(shopId, apiKey, apiSecret);
   const maps = buildApiMaps(sellables);
   const result = reconcileInventory(inventory, maps, shopUrl);
+  const storefrontCheck = await verifyUnresolvedOnStorefront(result.unresolvedLocal, shopUrl);
 
   const summary = {
     generatedAt: new Date().toISOString(),
@@ -249,14 +344,16 @@ async function main() {
     apiSellables: sellables.length,
     apiUniqueIdeas: maps.byIdea.size,
     rowsUpdatedIfApply: result.applied,
-    unresolvedLocalCount: result.unresolvedLocal.length,
+    unresolvedLocalCount: storefrontCheck.unresolvedLocal.length,
+    storefrontVerifiedCount: storefrontCheck.storefrontVerified.length,
     apiOnlyCount: result.apiOnly.length,
     applyMode: args.apply,
   };
 
   const report = {
     summary,
-    unresolvedLocal: result.unresolvedLocal,
+    unresolvedLocal: storefrontCheck.unresolvedLocal,
+    storefrontVerified: storefrontCheck.storefrontVerified,
     apiOnly: result.apiOnly,
   };
 
