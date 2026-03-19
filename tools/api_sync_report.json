@@ -1,103 +1,76 @@
 {
   "summary": {
-    "generatedAt": "2026-03-16T14:12:50.693Z",
+    "generatedAt": "2026-03-19T00:41:39.820Z",
     "inventoryPath": "/Users/markvahrenwald/Repositories/thirdstringshirts/data/shirt_inventory.json",
     "reportPath": "/Users/markvahrenwald/Repositories/thirdstringshirts/tools/api_sync_report.json",
-    "inventoryRows": 302,
-    "spreadshirtRows": 298,
+    "inventoryRows": 304,
+    "spreadshirtRows": 300,
     "etsyRows": 4,
-    "apiSellables": 2328,
-    "apiUniqueIdeas": 295,
-    "rowsUpdatedIfApply": 1,
-    "unresolvedLocalCount": 1,
-    "storefrontVerifiedCount": 5,
-    "apiOnlyCount": 4,
+    "apiSellables": 2873,
+    "apiUniqueIdeas": 288,
+    "rowsUpdatedIfApply": 35,
+    "unresolvedLocalCount": 11,
+    "storefrontVerifiedCount": 0,
+    "apiOnlyCount": 0,
     "applyMode": false
   },
   "unresolvedLocal": [
     {
-      "shirt_name": "Natural",
-      "current_shirt_id": "5d89cbe21cbf3a25d594c491",
-      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/natural?idea=5d89cbe21cbf3a25d594c491"
+      "shirt_name": "Nashville",
+      "current_shirt_id": "5d89cc14b4b8c76e3917036c",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/nashville?idea=5d89cc14b4b8c76e3917036c"
+    },
+    {
+      "shirt_name": "Oklahoma City",
+      "current_shirt_id": "5d89cc216bbdbb2e6a46c3b5",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/oklahoma+city?idea=5d89cc216bbdbb2e6a46c3b5"
+    },
+    {
+      "shirt_name": "Pierre",
+      "current_shirt_id": "5d89cc21f937647d81ffbdc1",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/pierre?idea=5d89cc21f937647d81ffbdc1"
+    },
+    {
+      "shirt_name": "Richmond",
+      "current_shirt_id": "5d89cc0220517626420dbed4",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/richmond?idea=5d89cc0220517626420dbed4"
+    },
+    {
+      "shirt_name": "Sacramento",
+      "current_shirt_id": "5d89cc1420517626420dcecd",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/sacramento?idea=5d89cc1420517626420dcecd"
+    },
+    {
+      "shirt_name": "Salem",
+      "current_shirt_id": "5d89cc306bbdbb2e6a46cb18",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/salem?idea=5d89cc306bbdbb2e6a46cb18"
+    },
+    {
+      "shirt_name": "Santa Fe",
+      "current_shirt_id": "5d89cc301cbf3a25d594f950",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/santa+fe?idea=5d89cc301cbf3a25d594f950"
+    },
+    {
+      "shirt_name": "Springfield",
+      "current_shirt_id": "5d89cbdf13615160bf6ea493",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/springfield?idea=5d89cbdf13615160bf6ea493"
+    },
+    {
+      "shirt_name": "St Paul",
+      "current_shirt_id": "5d89cc02b4b8c76e3916f2d5",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/st+paul?idea=5d89cc02b4b8c76e3916f2d5"
+    },
+    {
+      "shirt_name": "Topeka",
+      "current_shirt_id": "5d89cc141cbf3a25d594ebb5",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/topeka?idea=5d89cc141cbf3a25d594ebb5"
+    },
+    {
+      "shirt_name": "Trenton",
+      "current_shirt_id": "5d89cc211cbf3a25d594f1c0",
+      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/trenton?idea=5d89cc211cbf3a25d594f1c0"
     }
   ],
-  "storefrontVerified": [
-    {
-      "shirt_name": "Beer Is Proof",
-      "current_shirt_id": "5d89cc1420517626420dceae",
-      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/beer+is+proof?idea=5d89cc1420517626420dceae",
-      "storefront_url": "https://thirdstringshirts.myspreadshop.com/beer+is+proof?idea=5d89cc1420517626420dceae",
-      "storefront_product_url": "https://thirdstringshirts.myspreadshop.com/beer+is+proof?productType=812&sellable=zrd88OqnMZIzmd2lvBgx-812-7&appearance=804",
-      "storefront_sellable_id": "zrd88OqnMZIzmd2lvBgx-812-7",
-      "storefront_product_type_id": "812",
-      "storefront_appearance_id": "804",
-      "storefront_preview_image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X124Y34D1005587706W9700H16781/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/beer-is-proof-mens-premium-t-shirt.jpg"
-    },
-    {
-      "shirt_name": "Biblical Sense",
-      "current_shirt_id": "5d8e1581b4b8c76220050334",
-      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/biblical+sense?idea=5d8e1581b4b8c76220050334",
-      "storefront_url": "https://thirdstringshirts.myspreadshop.com/biblical+sense?idea=5d8e1581b4b8c76220050334",
-      "storefront_product_url": "https://thirdstringshirts.myspreadshop.com/biblical+sense?productType=812&sellable=wQdy50p3ejI5ZMLOa50E-812-7&appearance=804",
-      "storefront_sellable_id": "wQdy50p3ejI5ZMLOa50E-812-7",
-      "storefront_product_type_id": "812",
-      "storefront_appearance_id": "804",
-      "storefront_preview_image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X42Y77D1024547311W26200H8295/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/biblical-sense-mens-premium-t-shirt.jpg"
-    },
-    {
-      "shirt_name": "Guns Don't Kill People",
-      "current_shirt_id": "5d89cbe020517626420dadda",
-      "current_product_url": "https://www.thirdstringshirts.com/shop.html#!/guns+don't+kill+people?idea=5d89cbe020517626420dadda",
-      "storefront_url": "https://thirdstringshirts.myspreadshop.com/guns+don%27t+kill+people?idea=5d89cbe020517626420dadda",
-      "storefront_product_url": "https://thirdstringshirts.myspreadshop.com/guns+don%27t+kill+people?productType=812&sellable=gnLYY4o9b1tYnNzVEr87-812-7&appearance=648",
-      "storefront_sellable_id": "gnLYY4o9b1tYnNzVEr87-812-7",
-      "storefront_product_type_id": "812",
-      "storefront_appearance_id": "648",
-      "storefront_preview_image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A648PA4267PT17X69Y67D3667185W20595H10050/views/1,width=500,height=500,appearanceId=648,backgroundColor=ffffff/guns-dont-kill-people-mens-premium-t-shirt.jpg"
-    },
-    {
-      "shirt_name": "Mississippi",
-      "current_shirt_id": "69b6a75ab8f8a539b59ea935",
-      "current_product_url": "https://thirdstringshirts.myspreadshop.com/mississippi?idea=69b6a75ab8f8a539b59ea935",
-      "storefront_url": "https://thirdstringshirts.myspreadshop.com/mississippi?idea=69b6a75ab8f8a539b59ea935",
-      "storefront_product_url": "https://thirdstringshirts.myspreadshop.com/mississippi?productType=812&sellable=do1o3r9D4jf2bDwN1ex0-812-7&appearance=339",
-      "storefront_sellable_id": "do1o3r9D4jf2bDwN1ex0-812-7",
-      "storefront_product_type_id": "812",
-      "storefront_appearance_id": "339",
-      "storefront_preview_image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X43Y134D1058499734W26000H4333/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/mississippi-mens-premium-t-shirt.jpg"
-    },
-    {
-      "shirt_name": "The G.O.P.--More Relevant than Max Headroom",
-      "current_shirt_id": "69ad73f9b8f8a539b56a4dfd",
-      "current_product_url": "https://thirdstringshirts.myspreadshop.com/the-g-o-p-more-relevant-than-max-headroom?idea=69ad73f9b8f8a539b56a4dfd",
-      "storefront_url": "https://thirdstringshirts.myspreadshop.com/the+g.o.p.--more+relevant+than+max+headroom?idea=69ad73f9b8f8a539b56a4dfd",
-      "storefront_product_url": "https://thirdstringshirts.myspreadshop.com/the+g.o.p.--more+relevant+than+max+headroom?productType=812&sellable=ybAkLoA4zVf5bgQmAzBw-812-7&appearance=339",
-      "storefront_sellable_id": "ybAkLoA4zVf5bgQmAzBw-812-7",
-      "storefront_product_type_id": "812",
-      "storefront_appearance_id": "339",
-      "storefront_preview_image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X29Y74D1058477057W28789H8887/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/the-gop-more-relevant-than-max-headroom-mens-premium-t-shirt.jpg"
-    }
-  ],
-  "apiOnly": [
-    {
-      "idea_id": "5d89cc051cbf3a25d594dd39",
-      "api_name": "Blow Me, Math",
-      "api_design_id": "3514835"
-    },
-    {
-      "idea_id": "5d89cc02b4b8c76e3916f309",
-      "api_name": "Kafka Is For Closers",
-      "api_design_id": "3699537"
-    },
-    {
-      "idea_id": "5d89cc21162c5f464e73913d",
-      "api_name": "Fuck You, Math",
-      "api_design_id": "3514404"
-    },
-    {
-      "idea_id": "5d89cc2113615160bf6ed3b4",
-      "api_name": "Arkansas",
-      "api_design_id": "11921438"
-    }
-  ]
+  "storefrontVerified": [],
+  "apiOnly": []
 }
