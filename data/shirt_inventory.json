@@ -126,7 +126,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X78Y78D3584385W19050H14706/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/aesop-s-fables-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Alabama",
+    "name": "Alabama state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X40Y126D11921437W26680H4446/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/alabama-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -140,14 +140,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc20b4b8c76e39170877",
-    "shirt_name": "Alabama",
+    "shirt_name": "Alabama state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X40Y126D11921437W26680H4446/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/alabama-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Alaska",
+    "name": "Alaska state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X30Y123D12201834W28613H4730/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/alaska-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -161,7 +161,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc1420517626420dceb5",
-    "shirt_name": "Alaska",
+    "shirt_name": "Alaska state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -200,7 +200,7 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/annapolis?idea=5d89cc30f937647d81ffc564",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/annapolis? 69b88ebe8c78661dd8521cf6",
     "idea_id": "5d89cc30f937647d81ffc564",
     "source_of_truth": "local",
     "source_match": "product_url",
@@ -212,7 +212,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X74Y75D3608521W19685H15212/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/annapolis-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Arizona",
+    "name": "Arizona state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1252PA4267PT17X27Y123D12201849W29181H4758/views/1,width=500,height=500,appearanceId=1252,backgroundColor=ffffff/arizona-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -226,15 +226,15 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc20b4b8c76e39170892",
-    "shirt_name": "Arizona",
+    "shirt_name": "Arizona state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1252PA4267PT17X27Y123D12201849W29181H4758/views/1,width=500,height=500,appearanceId=1252,backgroundColor=ffffff/arizona-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Arkansas",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X39Y107D11921438W26700H4449/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/arkansas-mens-premium-t-shirt.jpg",
+    "name": "Arkansas flag",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y107D11921438W26700H4449/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State flags",
     "tags": [
       "geography",
@@ -247,11 +247,11 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc2113615160bf6ed3b4",
-    "shirt_name": "Arkansas",
+    "shirt_name": "Arkansas flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X39Y107D11921438W26700H4449/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/arkansas-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y107D11921438W26700H4449/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Armitage CTA Brown Line",
@@ -328,7 +328,7 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/augusta?idea=5d89cc30b4b8c76e39170fb5",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/augusta?idea= 69b88ebeb8f8a539b57834fc",
     "idea_id": "5d89cc30b4b8c76e39170fb5",
     "source_of_truth": "local",
     "source_match": "product_url",
@@ -412,7 +412,7 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/baton+rouge?idea=5d89cc021cbf3a25d594da70",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/baton+rouge?idea= 69b88ebe8c78661dd8521cf3",
     "idea_id": "5d89cc021cbf3a25d594da70",
     "source_of_truth": "local",
     "source_match": "product_url",
@@ -424,7 +424,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X82Y82D3606609W18097H13985/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/baton-rouge-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Beehive",
+    "name": "Beehive State",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X110Y83D3575732W12614H13903/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/beehive-mens-premium-t-shirt.jpg",
     "sub_theme": "State nicknames",
     "tags": [
@@ -438,7 +438,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbde20517626420dada1",
-    "shirt_name": "Beehive",
+    "shirt_name": "Beehive State",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -505,28 +505,6 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X66Y65D10478822W21460H10535/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/bells-beach-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Belmont CTA Red Line",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X38Y116D3590152W27051H5410/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/belmont-mens-premium-t-shirt.jpg",
-    "sub_theme": "CTA stops",
-    "tags": [
-      "transportation",
-      "CTA",
-      "Chicago"
-    ],
-    "theme": "transportation",
-    "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/belmont?idea=5d89cc3020517626420ddb5b",
-    "idea_id": "5d89cc3020517626420ddb5b",
-    "source_of_truth": "local",
-    "source_match": "product_url",
-    "shirt_id": "5d89cc3020517626420ddb5b",
-    "shirt_name": "Belmont CTA Red Line",
-    "tone": "",
-    "priority": "",
-    "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X38Y116D3590152W27051H5410/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/belmont-mens-premium-t-shirt.jpg"
-  },
-  {
     "name": "Belmont CTA Blue Line",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X21Y110D3576797W30480H6096/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/belmont-blue-line-mens-premium-t-shirt.jpg",
     "sub_theme": "CTA stops",
@@ -569,6 +547,28 @@
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X21Y110D3601023W30480H6096/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/belmont-brown-line-mens-premium-t-shirt.jpg"
+  },
+  {
+    "name": "Belmont CTA Red Line",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X38Y116D3590152W27051H5410/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/belmont-mens-premium-t-shirt.jpg",
+    "sub_theme": "CTA stops",
+    "tags": [
+      "transportation",
+      "CTA",
+      "Chicago"
+    ],
+    "theme": "transportation",
+    "platform": "Spreadshirt",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/belmont?idea=5d89cc3020517626420ddb5b",
+    "idea_id": "5d89cc3020517626420ddb5b",
+    "source_of_truth": "local",
+    "source_match": "product_url",
+    "shirt_id": "5d89cc3020517626420ddb5b",
+    "shirt_name": "Belmont CTA Red Line",
+    "tone": "",
+    "priority": "",
+    "evergreen": null,
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X38Y116D3590152W27051H5410/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/belmont-mens-premium-t-shirt.jpg"
   },
   {
     "name": "Best Dip Recipe",
@@ -713,8 +713,28 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A4PA4927PT17X65Y37D3725624W16025H15721/views/1,width=500,height=500,appearanceId=4,backgroundColor=ffffff/bloody-mary-steak-sandwich-steak-sandwich.jpg"
   },
   {
+    "name": "Blow Me, Math",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X43Y100D3514835W26000H7587/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/blow-me-math-mens-premium-t-shirt.jpg",
+    "sub_theme": "",
+    "tags": [
+      "funny"
+    ],
+    "theme": "funny",
+    "platform": "Spreadshirt",
+    "product_url": "https://thirdstringshirts.myspreadshop.com/blow+me%2C+math?idea=5d89cc051cbf3a25d594dd39",
+    "idea_id": "5d89cc051cbf3a25d594dd39",
+    "source_of_truth": "local",
+    "source_match": "product_url",
+    "shirt_id": "5d89cc051cbf3a25d594dd39",
+    "shirt_name": "Blow Me, Math",
+    "tone": "",
+    "priority": "",
+    "evergreen": null,
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X43Y100D3514835W26000H7587/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/blow-me-math-mens-premium-t-shirt.jpg"
+  },
+  {
     "name": "BLT",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X79Y45D10345643W12658H19545/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/blt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X92Y45D10345643W16191H25000/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/blt-mens-premium-t-shirt.jpg",
     "sub_theme": "",
     "tags": [
       "funny"
@@ -877,7 +897,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T1130A743PA4328PT17X49Y58D3719337W18796H14525/views/1,width=500,height=500,appearanceId=743,backgroundColor=ffffff/buffalo-mens-fitted-polycotton-t-shirt.jpg"
   },
   {
-    "name": "California",
+    "name": "California state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X32Y64D11921436W22173H5543/views/1,width=500,height=500,appearanceId=36,backgroundColor=ffffff/california.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -891,7 +911,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbe220517626420dae56",
-    "shirt_name": "California",
+    "shirt_name": "California state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -921,7 +941,7 @@
   },
   {
     "name": "Capitals",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X48Y105D1025593468W25000H6505/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/capitals-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X48Y105D1025593468W25000H6505/views/1,width=650,height=650,appearanceId=1252,backgroundColor=ffffff.jpg",
     "sub_theme": "",
     "tags": [
       "geography"
@@ -1155,7 +1175,7 @@
   },
   {
     "name": "Coloradans Against Craft Beer",
-    "URL": "https://i.etsystatic.com/25644243/r/il/e50749/2649334247/il_1588xN.2649334247_h6te.jpg",
+    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad809cb544d.png",
     "theme": "Coloradans Against",
     "sub_theme": "",
     "tags": [
@@ -1189,7 +1209,7 @@
   },
   {
     "name": "Coloradans Against Fourteeners",
-    "URL": "https://i.etsystatic.com/25644243/r/il/eef724/2613432644/il_1588xN.2613432644_fwyq.jpg",
+    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad81f697b4f.png",
     "theme": "Coloradans Against",
     "sub_theme": "",
     "tags": [
@@ -1223,7 +1243,7 @@
   },
   {
     "name": "Coloradans Against Hiking",
-    "URL": "https://i.etsystatic.com/25644243/r/il/91f3a3/2598077934/il_1588xN.2598077934_em31.jpg",
+    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad82e91ba25.png",
     "theme": "Coloradans Against",
     "sub_theme": "",
     "tags": [
@@ -1257,7 +1277,7 @@
   },
   {
     "name": "Coloradans Against Triathlons",
-    "URL": "https://i.etsystatic.com/25644243/r/il/59c33b/2755902323/il_1588xN.2755902323_t9ws.jpg",
+    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad833a66dfe.png",
     "theme": "Coloradans Against",
     "sub_theme": "",
     "tags": [
@@ -1290,7 +1310,7 @@
     ]
   },
   {
-    "name": "Colorado",
+    "name": "Colorado state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A39PA4267PT17X30Y123D11921430W28676H4754/views/1,width=500,height=500,appearanceId=39,backgroundColor=ffffff/colorado-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -1304,7 +1324,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc14162c5f464e738747",
-    "shirt_name": "Colorado",
+    "shirt_name": "Colorado state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -1354,7 +1374,7 @@
   },
   {
     "name": "Columbus",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X85Y61D1058504526W17606H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/columbus-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X85Y61D1058504526W17606H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -1372,7 +1392,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X85Y61D1058504526W17606H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/columbus-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X85Y61D1058504526W17606H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Community Chest",
@@ -1396,7 +1416,7 @@
   },
   {
     "name": "Concord",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X123Y61D1058504574W9945H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/concord-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X123Y61D1058504574W9945H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -1414,10 +1434,10 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X123Y61D1058504574W9945H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/concord-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X123Y61D1058504574W9945H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
-    "name": "Connecticut",
+    "name": "Connecticut state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X30Y72D11921439W22480H3746/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/connecticut.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -1431,7 +1451,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc0313615160bf6ebe36",
-    "shirt_name": "Connecticut",
+    "shirt_name": "Connecticut state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -1564,7 +1584,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X73Y66D10059562W20002H10458/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/del-sol-searchin-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Delaware",
+    "name": "Delaware state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X39Y126D11921449W26691H4448/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/delaware-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -1578,7 +1598,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc146bbdbb2e6a46b84b",
-    "shirt_name": "Delaware",
+    "shirt_name": "Delaware state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -1772,7 +1792,7 @@
   },
   {
     "name": "Dover",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X133Y61D1058504640W7924H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/dover-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X133Y61D1058504640W7924H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -1790,7 +1810,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X133Y61D1058504640W7924H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/dover-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X133Y61D1058504640W7924H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Dyslexic?",
@@ -1893,7 +1913,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X81Y47D3430360W18353H24758/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/elk-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Empire",
+    "name": "Empire State",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X90Y87D3575729W16615H13194/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/empire-mens-premium-t-shirt.jpg",
     "sub_theme": "State nicknames",
     "tags": [
@@ -1907,7 +1927,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc2120517626420dd585",
-    "shirt_name": "Empire",
+    "shirt_name": "Empire State",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -1934,7 +1954,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X56Y53D3257937W23333H18585/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/fencing-is-pointless-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "First",
+    "name": "First State",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X130Y45D3575720W8559H12572/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/first-mens-premium-t-shirt.jpg",
     "sub_theme": "State nicknames",
     "tags": [
@@ -1947,7 +1967,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc216bbdbb2e6a46c3b3",
-    "shirt_name": "First",
+    "shirt_name": "First State",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -2014,7 +2034,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X46Y47D3665534W25400H19629/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/flores-para-los-muertos-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Florida",
+    "name": "Florida state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1272PA4267PT17X38Y126D11921450W26958H4493/views/1,width=500,height=500,appearanceId=1272,backgroundColor=ffffff/florida-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -2028,7 +2048,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc20162c5f464e73912e",
-    "shirt_name": "Florida",
+    "shirt_name": "Florida state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -2117,26 +2137,24 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X21Y95D3669997W30480H7569/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/free-the-heel-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Fullerton CTA Red Line",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X40Y117D3590155W26670H5334/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/fullerton-cta-mens-premium-t-shirt.jpg",
-    "sub_theme": "CTA stops",
+    "name": "Fuck You, Math",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X43Y50D3514404W26000H17423/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/fuck-you-math-mens-premium-t-shirt.jpg",
+    "sub_theme": "",
     "tags": [
-      "transportation",
-      "CTA",
-      "Chicago"
+      "funny"
     ],
-    "theme": "transportation",
+    "theme": "funny",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/fullerton+cta?idea=5d89cc0120517626420dbec9",
-    "idea_id": "5d89cc0120517626420dbec9",
+    "product_url": "https://thirdstringshirts.myspreadshop.com/fuck+you%2C+math?idea=5d89cc21162c5f464e73913d",
+    "idea_id": "5d89cc21162c5f464e73913d",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc0120517626420dbec9",
-    "shirt_name": "Fullerton CTA Red Line",
+    "shirt_id": "5d89cc21162c5f464e73913d",
+    "shirt_name": "Fuck You, Math",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X40Y117D3590155W26670H5334/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/fullerton-cta-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X43Y50D3514404W26000H17423/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/fuck-you-math-mens-premium-t-shirt.jpg"
   },
   {
     "name": "Fullerton CTA Brown Line",
@@ -2161,6 +2179,28 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X32Y114D3678242W28194H5638/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/fullerton-cta-brown-line-mens-premium-t-shirt.jpg"
   },
   {
+    "name": "Fullerton CTA Red Line",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X40Y117D3590155W26670H5334/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/fullerton-cta-mens-premium-t-shirt.jpg",
+    "sub_theme": "CTA stops",
+    "tags": [
+      "transportation",
+      "CTA",
+      "Chicago"
+    ],
+    "theme": "transportation",
+    "platform": "Spreadshirt",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/fullerton+cta?idea=5d89cc0120517626420dbec9",
+    "idea_id": "5d89cc0120517626420dbec9",
+    "source_of_truth": "local",
+    "source_match": "product_url",
+    "shirt_id": "5d89cc0120517626420dbec9",
+    "shirt_name": "Fullerton CTA Red Line",
+    "tone": "",
+    "priority": "",
+    "evergreen": null,
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X40Y117D3590155W26670H5334/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/fullerton-cta-mens-premium-t-shirt.jpg"
+  },
+  {
     "name": "Fundamentalist Hippie",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1277PA4267PT17X59Y96D3730469W22860H7406/views/1,width=500,height=500,appearanceId=1277,backgroundColor=ffffff/fundamentalist-hippie-mens-premium-t-shirt.jpg",
     "sub_theme": "",
@@ -2181,7 +2221,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1277PA4267PT17X59Y96D3730469W22860H7406/views/1,width=500,height=500,appearanceId=1277,backgroundColor=ffffff/fundamentalist-hippie-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Garden",
+    "name": "Garden State",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X115Y63D3575726W11683H17052/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/garden-mens-premium-t-shirt.jpg",
     "sub_theme": "State nicknames",
     "tags": [
@@ -2195,14 +2235,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc146bbdbb2e6a46b852",
-    "shirt_name": "Garden",
+    "shirt_name": "Garden State",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X115Y63D3575726W11683H17052/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/garden-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Georgia",
+    "name": "Georgia state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X29Y70D11921452W22807H3801/views/1,width=500,height=500,appearanceId=154,backgroundColor=ffffff/georgia.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -2216,7 +2256,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbf31cbf3a25d594ce08",
-    "shirt_name": "Georgia",
+    "shirt_name": "Georgia state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -2366,7 +2406,7 @@
   },
   {
     "name": "Harrisburg",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X52Y87D1058504642W24120H13887/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/harrisburg-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y87D1058504642W24120H13887/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -2384,7 +2424,7 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X52Y87D1058504642W24120H13887/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/harrisburg-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y87D1058504642W24120H13887/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Hartford",
@@ -2409,7 +2449,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X82Y82D3606633W18097H13985/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/hartford-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Hawaii",
+    "name": "Hawaii state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X28Y68D11921455W23063H3843/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/hawaii.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -2423,7 +2463,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc04b4b8c76e3916f439",
-    "shirt_name": "Hawaii",
+    "shirt_name": "Hawaii state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -2574,7 +2614,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X61Y51D3670576W22307H15771/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/i-cant-feel-my-perineum-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "I Cheet at Skrabble",
+    "name": "I Never Cheet at Skrabble",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1271PA4267PT17X66Y79D10224470W21640H4330/views/1,width=500,height=500,appearanceId=1271,backgroundColor=ffffff/scrabblereverse-mens-premium-t-shirt.jpg",
     "sub_theme": "Scrabble",
     "tags": [
@@ -2587,7 +2627,7 @@
     "source_of_truth": "local",
     "source_match": "api_main_design_id+generated_link",
     "shirt_id": "5d89cc2e1cbf3a25d594f736",
-    "shirt_name": "I Cheet at Skrabble",
+    "shirt_name": "I Never Cheet at Skrabble",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -2774,7 +2814,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X77Y92D12059819W19230H7852/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/im-so-excited-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Idaho",
+    "name": "Gem State",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X109Y74D3575722W12699H15341/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/idaho-mens-premium-t-shirt.jpg",
     "sub_theme": "State nicknames",
     "tags": [
@@ -2788,7 +2828,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc301cbf3a25d594f910",
-    "shirt_name": "Idaho",
+    "shirt_name": "Gem State",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -2815,7 +2855,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A366PA4267PT17X97Y74D10566175W15240H15229/views/1,width=500,height=500,appearanceId=366,backgroundColor=ffffff/idaho-75-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Illinois",
+    "name": "Illinois state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1272PA4267PT17X33Y124D11921458W28072H4678/views/1,width=500,height=500,appearanceId=1272,backgroundColor=ffffff/illinois-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -2829,14 +2869,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc1313615160bf6ec92a",
-    "shirt_name": "Illinois",
+    "shirt_name": "Illinois state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1272PA4267PT17X33Y124D11921458W28072H4678/views/1,width=500,height=500,appearanceId=1272,backgroundColor=ffffff/illinois-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Indiana",
+    "name": "Indiana state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X24Y76D11921459W23796H3968/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/indiana.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -2850,7 +2890,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbe2b4b8c76e3916d891",
-    "shirt_name": "Indiana",
+    "shirt_name": "Indiana state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -2899,7 +2939,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X80Y47D3730330W18568H12312/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/intelligent-design-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Iowa",
+    "name": "Iowa state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X23Y69D11921460W24091H4015/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/iowa.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -2913,7 +2953,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbf2f937647d81ffa071",
-    "shirt_name": "Iowa",
+    "shirt_name": "Iowa state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -3110,7 +3150,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X111Y32D3699537W12367H21348/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/kafka-is-for-closers-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Kansas",
+    "name": "Kansas state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X48Y129D11921461W25000H4166/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/kansas-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -3124,7 +3164,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc206bbdbb2e6a46c37a",
-    "shirt_name": "Kansas",
+    "shirt_name": "Kansas state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -3195,7 +3235,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X38Y67D3697749W26931H10393/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/keepthechange-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Kentucky",
+    "name": "Kentucky state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X23Y65D11922240W24077H4012/views/1,width=500,height=500,appearanceId=154,backgroundColor=ffffff/kentucky.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -3209,7 +3249,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc03b4b8c76e3916f412",
-    "shirt_name": "Kentucky",
+    "shirt_name": "Kentucky state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -3319,7 +3359,7 @@
   },
   {
     "name": "Late Bloomer, Early Wilter",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X22Y51D10566204W24345H5901/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/late-bloomer-early-wilter.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X48Y140D10566204W25000H6060/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/late-bloomer-early-wilter-mens-premium-t-shirt.jpg",
     "sub_theme": "",
     "tags": [
       "funny"
@@ -3463,7 +3503,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X141Y31D10276805W6325H32385/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/lotion-in-the-basket-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Louisiana",
+    "name": "Louisiana state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X22Y73D11922241W24109H4018/views/1,width=500,height=500,appearanceId=154,backgroundColor=ffffff/louisiana.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -3477,7 +3517,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbe213615160bf6ea565",
-    "shirt_name": "Louisiana",
+    "shirt_name": "Louisiana state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -3506,7 +3546,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X86Y85D3606646W17462H13494/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/madison-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Maine",
+    "name": "Maine state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X30Y123D11922242W28536H4756/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/maine-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -3520,7 +3560,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc131cbf3a25d594e7b2",
-    "shirt_name": "Maine",
+    "shirt_name": "Maine state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -3535,7 +3575,7 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/maine\u2013the+other+tennessee?idea=5d89cc1f6bbdbb2e6a46c33c",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/maine–the+other+tennessee?idea=5d89cc1f6bbdbb2e6a46c33c",
     "idea_id": "5d89cc1f6bbdbb2e6a46c33c",
     "source_of_truth": "local",
     "source_match": "product_url",
@@ -3567,7 +3607,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X64Y47D3699845W21710H19524/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/make-mine-a-molotov-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Maryland",
+    "name": "Maryland state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X22Y73D11921446W24130H3963/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/maryland.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -3581,15 +3621,15 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbe2162c5f464e735a5d",
-    "shirt_name": "Maryland",
+    "shirt_name": "Maryland state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X22Y73D11921446W24130H3963/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/maryland.jpg"
   },
   {
-    "name": "Massachusetts",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X22Y73D11922243W24203H4033/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/massachusetts.jpg",
+    "name": "Massachusetts state flag",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T654A22PA4215PT17X47Y67D11922243W15411H2568/views/1,width=500,height=500,appearanceId=22,backgroundColor=ffffff/massachusetts-kids-premium-hoodie.jpg",
     "sub_theme": "State flags",
     "tags": [
       "geography",
@@ -3602,71 +3642,11 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbf21cbf3a25d594cca2",
-    "shirt_name": "Massachusetts",
+    "shirt_name": "Massachusetts state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T654A22PA4215PT17X47Y67D11922243W15411H2568/views/1,width=500,height=500,appearanceId=22,backgroundColor=ffffff/massachusetts-kids-premium-hoodie.jpg"
-  },
-  {
-    "name": "Suck It, Math",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X43Y101D3514837W26000H7219/views/1,width=650,height=650,appearanceId=388,backgroundColor=ffffff.jpg",
-    "sub_theme": "",
-    "tags": [
-      "funny"
-    ],
-    "theme": "funny",
-    "platform": "Spreadshirt",
-    "product_url": "https://thirdstringshirts.myspreadshop.com/suck+it+math?idea=5d89cc146bbdbb2e6a46b850",
-    "idea_id": "5d89cc146bbdbb2e6a46b850",
-    "source_of_truth": "local",
-    "source_match": "product_url",
-    "shirt_id": "5d89cc146bbdbb2e6a46b850",
-    "shirt_name": "Suck It, Math",
-    "tone": "",
-    "priority": "",
-    "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X43Y101D3514837W26000H7219/views/1,width=650,height=650,appearanceId=388,backgroundColor=ffffff.jpg"
-  },
-  {
-    "name": "Blow Me, Math",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X43Y100D3514835W26000H7587/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/blow-me-math-mens-premium-t-shirt.jpg",
-    "sub_theme": "",
-    "tags": [
-      "funny"
-    ],
-    "theme": "funny",
-    "platform": "Spreadshirt",
-    "product_url": "https://thirdstringshirts.myspreadshop.com/blow+me%2C+math?idea=5d89cc051cbf3a25d594dd39",
-    "idea_id": "5d89cc051cbf3a25d594dd39",
-    "source_of_truth": "local",
-    "source_match": "product_url",
-    "shirt_id": "5d89cc051cbf3a25d594dd39",
-    "shirt_name": "Blow Me, Math",
-    "tone": "",
-    "priority": "",
-    "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X43Y100D3514835W26000H7587/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/blow-me-math-mens-premium-t-shirt.jpg"
-  },
-  {
-    "name": "Fuck You, Math",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X43Y50D3514404W26000H17423/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/fuck-you-math-mens-premium-t-shirt.jpg",
-    "sub_theme": "",
-    "tags": [
-      "funny"
-    ],
-    "theme": "funny",
-    "platform": "Spreadshirt",
-    "product_url": "https://thirdstringshirts.myspreadshop.com/fuck+you%2C+math?idea=5d89cc21162c5f464e73913d",
-    "idea_id": "5d89cc21162c5f464e73913d",
-    "source_of_truth": "local",
-    "source_match": "product_url",
-    "shirt_id": "5d89cc21162c5f464e73913d",
-    "shirt_name": "Fuck You, Math",
-    "tone": "",
-    "priority": "",
-    "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A804PA4267PT17X43Y50D3514404W26000H17423/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/fuck-you-math-mens-premium-t-shirt.jpg"
   },
   {
     "name": "Medium Douche Bag",
@@ -3709,7 +3689,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A4PA4927PT17X2Y15D12378195W28205H21794/views/1,width=500,height=500,appearanceId=4,backgroundColor=ffffff/michael-garrett-cullen-jason.jpg"
   },
   {
-    "name": "Minnesota",
+    "name": "Minnesota state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A397PA4267PT17X30Y123D11922244W28670H4778/views/1,width=500,height=500,appearanceId=397,backgroundColor=ffffff/minnesota-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -3723,14 +3703,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc211cbf3a25d594f190",
-    "shirt_name": "Minnesota",
+    "shirt_name": "Minnesota state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A397PA4267PT17X30Y123D11922244W28670H4778/views/1,width=500,height=500,appearanceId=397,backgroundColor=ffffff/minnesota-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Mississippi",
+    "name": "Mississippi state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X43Y134D1058499734W26000H4333/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/mississippi-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -3744,14 +3724,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "69b6a75ab8f8a539b59ea935",
-    "shirt_name": "Mississippi",
+    "shirt_name": "Mississippi state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X43Y134D1058499734W26000H4333/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/mississippi-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Missouri",
+    "name": "Missouri state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X27Y122D11922247W29256H4876/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/missouri-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -3765,7 +3745,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc131cbf3a25d594e7aa",
-    "shirt_name": "Missouri",
+    "shirt_name": "Missouri state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -3982,8 +3962,8 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X24Y55D3606648W29845H23064/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/nashville-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Natural",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X92Y81D3575715W16199H15008/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/natural-mens-premium-t-shirt.jpg",
+    "name": "Natural State",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X92Y81D3575715W16199H15008/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State nicknames",
     "tags": [
       "state-nicknames",
@@ -3996,11 +3976,11 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc1420517626420dcec0",
-    "shirt_name": "Natural",
+    "shirt_name": "Natural State",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X92Y81D3575715W16199H15008/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/natural-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X92Y81D3575715W16199H15008/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
     "name": "NBJA",
@@ -4023,7 +4003,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1270PA4267PT17X97Y52D10345509W15093H11873/views/1,width=500,height=500,appearanceId=1270,backgroundColor=ffffff/nbja-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Nebraska",
+    "name": "Nebraska state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A231PA4927PT17X18Y69D11922250W25110H4185/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/nebraska.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4037,7 +4017,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbe3162c5f464e735a63",
-    "shirt_name": "Nebraska",
+    "shirt_name": "Nebraska state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4072,7 +4052,7 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/nepal\u2013go+for+it?idea=5d89cc2120517626420dd58a",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/nepal–go+for+it?idea=5d89cc2120517626420dd58a",
     "idea_id": "5d89cc2120517626420dd58a",
     "source_of_truth": "local",
     "source_match": "product_url",
@@ -4084,7 +4064,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X70Y77D3582232W20566H14790/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/nepal-go-for-it-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Nevada",
+    "name": "Nevada state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X48Y129D11922251W25000H4169/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/nevada-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4098,14 +4078,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc211cbf3a25d594f18c",
-    "shirt_name": "Nevada",
+    "shirt_name": "Nevada state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X48Y129D11922251W25000H4169/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/nevada-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "New Hampshire",
+    "name": "New Hampshire state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X24Y121D11922252W29731H4955/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/new-hampshire-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4119,14 +4099,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc21b4b8c76e39170895",
-    "shirt_name": "New Hampshire",
+    "shirt_name": "New Hampshire state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X24Y121D11922252W29731H4955/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/new-hampshire-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "New Jersey",
+    "name": "New Jersey state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X19Y66D11922253W24845H4140/views/1,width=500,height=500,appearanceId=36,backgroundColor=ffffff/new-jersey.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4140,14 +4120,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc04f937647d81ffac8e",
-    "shirt_name": "New Jersey",
+    "shirt_name": "New Jersey state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X19Y66D11922253W24845H4140/views/1,width=500,height=500,appearanceId=36,backgroundColor=ffffff/new-jersey.jpg"
   },
   {
-    "name": "New Mexico",
+    "name": "New Mexico state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A4PA4927PT17X20Y72D11921432W24529H4055/views/1,width=500,height=500,appearanceId=4,backgroundColor=ffffff/new-mexico.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4161,14 +4141,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbf3162c5f464e736447",
-    "shirt_name": "New Mexico",
+    "shirt_name": "New Mexico state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A4PA4927PT17X20Y72D11921432W24529H4055/views/1,width=500,height=500,appearanceId=4,backgroundColor=ffffff/new-mexico.jpg"
   },
   {
-    "name": "New York",
+    "name": "New York state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A39PA4267PT17X23Y121D11922254W29977H4996/views/1,width=500,height=500,appearanceId=39,backgroundColor=ffffff/new-york-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4182,7 +4162,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc136bbdbb2e6a46b804",
-    "shirt_name": "New York",
+    "shirt_name": "New York state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4229,7 +4209,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X46Y47D3634331W25400H19629/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/no-yo-in-equipo-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "North Carolina",
+    "name": "North Carolina state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X14Y82D11922255W25729H4288/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/north-carolina.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4243,7 +4223,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbe2b4b8c76e3916d895",
-    "shirt_name": "North Carolina",
+    "shirt_name": "North Carolina state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4272,7 +4252,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X21Y124D3601040W30480H4693/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/north-clybourn-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "North Dakota",
+    "name": "North Dakota state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A231PA4927PT17X13Y82D11922256W25796H4299/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/north-dakota.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4286,14 +4266,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbf220517626420db667",
-    "shirt_name": "North Dakota",
+    "shirt_name": "North Dakota state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A231PA4927PT17X13Y82D11922256W25796H4299/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/north-dakota.jpg"
   },
   {
-    "name": "Not Your Fault",
+    "name": "Not Your Fault - Math",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X59Y56D3612826W22792H18152/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/not-your-fault-math-mens-premium-t-shirt.jpg",
     "sub_theme": "Good Will Hunting",
     "tags": [
@@ -4306,7 +4286,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc2120517626420dd58e",
-    "shirt_name": "Not Your Fault",
+    "shirt_name": "Not Your Fault - Math",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4333,7 +4313,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X62Y76D3520563W22090H14977/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/notyourfaultdna-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Ohio",
+    "name": "Ohio flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X16Y75D11922257W25413H4237/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/ohio.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4347,14 +4327,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbf31cbf3a25d594cdeb",
-    "shirt_name": "Ohio",
+    "shirt_name": "Ohio flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X16Y75D11922257W25413H4237/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/ohio.jpg"
   },
   {
-    "name": "Oklahoma",
+    "name": "Oklahoma state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X14Y71D11922258W25754H4294/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/oklahoma.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4368,7 +4348,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc041cbf3a25d594dcba",
-    "shirt_name": "Oklahoma",
+    "shirt_name": "Oklahoma state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4397,7 +4377,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X68Y68D3606649W20955H16194/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/oklahoma-city-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Old Line",
+    "name": "Old Line State",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X101Y92D3575725W14325H7835/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/old-line-mens-premium-t-shirt.jpg",
     "sub_theme": "State nicknames",
     "tags": [
@@ -4411,7 +4391,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc051cbf3a25d594dd37",
-    "shirt_name": "Old Line",
+    "shirt_name": "Old Line State",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4480,7 +4460,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X46Y47D3612064W25400H19621/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/opening-band-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Operation: Grand Slam",
+    "name": "Operation: Grandslam",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X45Y52D3625568W25527H11853/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/operation-grandslam-mens-premium-t-shirt.jpg",
     "sub_theme": "James Bond",
     "tags": [
@@ -4493,14 +4473,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc0213615160bf6ebcf9",
-    "shirt_name": "Operation: Grand Slam",
+    "shirt_name": "Operation: Grandslam",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X45Y52D3625568W25527H11853/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/operation-grandslam-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Oregon",
+    "name": "Oregon state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1252PA4267PT17X47Y128D3585341W25283H4213/views/1,width=500,height=500,appearanceId=1252,backgroundColor=ffffff/oregon-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4514,7 +4494,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc05162c5f464e7374db",
-    "shirt_name": "Oregon",
+    "shirt_name": "Oregon state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4621,7 +4601,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T691A490PA3867PT17X45Y62D10085148W21750H4971/views/1,width=500,height=500,appearanceId=490,backgroundColor=ffffff/oregondickswhite-unisex-tri-blend-t-shirt.jpg"
   },
   {
-    "name": "Palmetto",
+    "name": "Palmetto State",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A366PA4267PT17X88Y87D3575731W16953H13269/views/1,width=500,height=500,appearanceId=366,backgroundColor=ffffff/palmetto-mens-premium-t-shirt.jpg",
     "sub_theme": "State nicknames",
     "tags": [
@@ -4635,7 +4615,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc30f937647d81ffc558",
-    "shirt_name": "Palmetto",
+    "shirt_name": "Palmetto State",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4662,7 +4642,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1277PA4267PT17X40Y70D3581793W26670H10063/views/1,width=500,height=500,appearanceId=1277,backgroundColor=ffffff/part-of-the-problem-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Pelican",
+    "name": "Pelican State",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X109Y67D3575724W12699H16433/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/pelican-mens-premium-t-shirt.jpg",
     "sub_theme": "State nicknames",
     "tags": [
@@ -4676,14 +4656,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbde6bbdbb2e6a4696bf",
-    "shirt_name": "Pelican",
+    "shirt_name": "Pelican State",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X109Y67D3575724W12699H16433/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/pelican-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Pennsylvania",
+    "name": "Pennsylvania state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A649PA4267PT17X48Y129D3585347W25000H4166/views/1,width=500,height=500,appearanceId=649,backgroundColor=ffffff/pennsylvania-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4697,7 +4677,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc1420517626420dcec2",
-    "shirt_name": "Pennsylvania",
+    "shirt_name": "Pennsylvania state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4912,7 +4892,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X57Y44D3489513W23241H12643/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/res-firma-mitescere-nescit-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Rhode Island",
+    "name": "Rhode Island state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X42Y127D3585348W26243H4373/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/rhode-island-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -4926,7 +4906,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc211cbf3a25d594f194",
-    "shirt_name": "Rhode Island",
+    "shirt_name": "Rhode Island state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -5015,7 +4995,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X70Y17D12436079W20499H15840/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/rightturnclyde-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Rising Star was dead in a week",
+    "name": "Rising Star",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X56Y105D10238872W23329H6527/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/rising-star-was-dead-in-a-week-mens-premium-t-shirt.jpg",
     "sub_theme": "The Electric Horseman",
     "tags": [
@@ -5028,7 +5008,7 @@
     "source_of_truth": "local",
     "source_match": "api_main_design_id+generated_link",
     "shirt_id": "5d89cc12f937647d81ffb601",
-    "shirt_name": "Rising Star was dead in a week",
+    "shirt_name": "Rising Star",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -5036,7 +5016,7 @@
   },
   {
     "name": "Rocks The Potty",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X36Y33D3730433W21367H12051/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/rocks-the-potty.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X38Y61D3730433W26948H15198/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/rocks-the-potty-mens-premium-t-shirt.jpg",
     "sub_theme": "Vietnam",
     "tags": [
       "funny"
@@ -5162,7 +5142,7 @@
   },
   {
     "name": "Santa Fe",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X74Y75D3606664W19685H15212/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/santa-fe-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X89Y61D1058513478W16884H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -5171,16 +5151,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/santa+fe?idea=5d89cc301cbf3a25d594f950",
-    "idea_id": "5d89cc301cbf3a25d594f950",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/santa+fe?idea=69bc922cb8f8a539b5256656",
+    "idea_id": "69bc922cb8f8a539b5256656",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc301cbf3a25d594f950",
+    "shirt_id": "69bc922cb8f8a539b5256656",
     "shirt_name": "Santa Fe",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X74Y75D3606664W19685H15212/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/santa-fe-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X89Y61D1058513478W16884H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Scissors",
@@ -5246,7 +5226,7 @@
   },
   {
     "name": "Shit List",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X70Y35D3727905W14419H11526/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/shit-list.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X48Y44D3727905W25000H19983/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/shit-list-mens-premium-t-shirt.jpg",
     "sub_theme": "Vietnam",
     "tags": [
       "funny"
@@ -5385,7 +5365,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X38Y39D3633087W26987H20855/views/1,width=500,height=500,appearanceId=645,backgroundColor=ffffff/smile-you-sonofabitch-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "South Carolina",
+    "name": "South Carolina state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X23Y76D11921433W24054H3976/views/1,width=500,height=500,appearanceId=154,backgroundColor=ffffff/south-carolina.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -5399,14 +5379,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbf3162c5f464e7364b1",
-    "shirt_name": "South Carolina",
+    "shirt_name": "South Carolina state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A154PA4927PT17X23Y76D11921433W24054H3976/views/1,width=500,height=500,appearanceId=154,backgroundColor=ffffff/south-carolina.jpg"
   },
   {
-    "name": "South Dakota",
+    "name": "South Dakota state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X31Y123D3585350W28483H4747/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/south-dakota-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -5420,7 +5400,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc3020517626420ddaff",
-    "shirt_name": "South Dakota",
+    "shirt_name": "South Dakota state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -5481,11 +5461,11 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/springfield?idea=5d89cbdf13615160bf6ea493",
-    "idea_id": "5d89cbdf13615160bf6ea493",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/springfield?idea=69bc922c8c78661dd806b177",
+    "idea_id": "69bc922c8c78661dd806b177",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cbdf13615160bf6ea493",
+    "shirt_id": "69bc922c8c78661dd806b177",
     "shirt_name": "Springfield",
     "tone": "",
     "priority": "",
@@ -5503,11 +5483,11 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/st+paul?idea=5d89cc02b4b8c76e3916f2d5",
-    "idea_id": "5d89cc02b4b8c76e3916f2d5",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/st+paul?idea=69bc922c3c6a96719239afea",
+    "idea_id": "69bc922c3c6a96719239afea",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc02b4b8c76e3916f2d5",
+    "shirt_id": "69bc922c3c6a96719239afea",
     "shirt_name": "St Paul",
     "tone": "",
     "priority": "",
@@ -5533,6 +5513,26 @@
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A4PA4927PT17X56Y48D12208125W17435H10644/views/1,width=500,height=500,appearanceId=4,backgroundColor=ffffff/st-louis-sucks.jpg"
+  },
+  {
+    "name": "Suck It, Math",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X43Y101D3514837W26000H7219/views/1,width=650,height=650,appearanceId=388,backgroundColor=ffffff.jpg",
+    "sub_theme": "",
+    "tags": [
+      "funny"
+    ],
+    "theme": "funny",
+    "platform": "Spreadshirt",
+    "product_url": "https://thirdstringshirts.myspreadshop.com/suck+it+math?idea=5d89cc146bbdbb2e6a46b850",
+    "idea_id": "5d89cc146bbdbb2e6a46b850",
+    "source_of_truth": "local",
+    "source_match": "product_url",
+    "shirt_id": "5d89cc146bbdbb2e6a46b850",
+    "shirt_name": "Suck It, Math",
+    "tone": "",
+    "priority": "",
+    "evergreen": null,
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X43Y101D3514837W26000H7219/views/1,width=650,height=650,appearanceId=388,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Support the Arts",
@@ -5597,7 +5597,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X74Y75D3608538W19685H15212/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/tallahassee-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Tennessee",
+    "name": "Tennessee state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X22Y76D11921434W24136H4018/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/tennessee.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -5611,14 +5611,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc04162c5f464e737390",
-    "shirt_name": "Tennessee",
+    "shirt_name": "Tennessee state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A1PA4927PT17X22Y76D11921434W24136H4018/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/tennessee.jpg"
   },
   {
-    "name": "Texas",
+    "name": "Texas flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X23Y73D11921435W24035H3942/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/texas.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -5632,7 +5632,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbe220517626420dae4e",
-    "shirt_name": "Texas",
+    "shirt_name": "Texas flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -5842,7 +5842,7 @@
   },
   {
     "name": "Trenton",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X65Y65D3606675W21589H16683/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/trenton-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X117Y49D1058513475W11304H21471/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -5851,16 +5851,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/trenton?idea=5d89cc211cbf3a25d594f1c0",
-    "idea_id": "5d89cc211cbf3a25d594f1c0",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/trenton?idea=69bc922c3c6a96719239afeb",
+    "idea_id": "69bc922c3c6a96719239afeb",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc211cbf3a25d594f1c0",
+    "shirt_id": "69bc922c3c6a96719239afeb",
     "shirt_name": "Trenton",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X65Y65D3606675W21589H16683/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/trenton-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X117Y49D1058513475W11304H21471/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Unemployment Fetish",
@@ -5903,7 +5903,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X40Y58D3620607W26670H17780/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/unregisteredsexoffenders-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Utah",
+    "name": "Utah state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X19Y119D3585352W30718H5119/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/utah-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -5917,7 +5917,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbde20517626420dada3",
-    "shirt_name": "Utah",
+    "shirt_name": "Utah state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -5964,7 +5964,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X40Y42D3628135W26670H20366/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/velour-crochet-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Vermont",
+    "name": "Vermont state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X37Y125D3585356W27202H4533/views/1,width=500,height=500,appearanceId=804,backgroundColor=ffffff/vermont-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -5978,7 +5978,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbeff937647d81ff9db5",
-    "shirt_name": "Vermont",
+    "shirt_name": "Vermont state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -6025,7 +6025,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X86Y103D3514405W17322H6794/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/vince-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Virginia",
+    "name": "Virginia state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A92PA4267PT17X50Y129D3585365W24643H4107/views/1,width=500,height=500,appearanceId=92,backgroundColor=ffffff/virginia-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -6039,7 +6039,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc14b4b8c76e39170347",
-    "shirt_name": "Virginia",
+    "shirt_name": "Virginia state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -6066,7 +6066,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A328PA4267PT17X95Y83D3727678W15502H13893/views/1,width=500,height=500,appearanceId=328,backgroundColor=ffffff/virginity-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Washington",
+    "name": "Washington state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A397PA4267PT17X32Y124D3585372W28158H4693/views/1,width=500,height=500,appearanceId=397,backgroundColor=ffffff/washington-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -6080,14 +6080,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc21162c5f464e73913f",
-    "shirt_name": "Washington",
+    "shirt_name": "Washington state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A397PA4267PT17X32Y124D3585372W28158H4693/views/1,width=500,height=500,appearanceId=397,backgroundColor=ffffff/washington-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Washington DC",
+    "name": "Washington DC flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X13Y117D3585381W32004H5334/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/washington-dc-mens-premium-t-shirt.jpg",
     "sub_theme": "",
     "tags": [
@@ -6100,7 +6100,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc30b4b8c76e39170fb3",
-    "shirt_name": "Washington DC",
+    "shirt_name": "Washington DC flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -6149,7 +6149,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A231PA4927PT17X21Y40D12209558W24365H16684/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/west-canaan-football.jpg"
   },
   {
-    "name": "West Virginia",
+    "name": "West Virginia state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A386PA4267PT17X39Y126D3585392W26883H4480/views/1,width=500,height=500,appearanceId=386,backgroundColor=ffffff/west-virginia-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -6163,7 +6163,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cbde6bbdbb2e6a4696c1",
-    "shirt_name": "West Virginia",
+    "shirt_name": "West Virginia state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -6274,7 +6274,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X78Y79D3730772W19050H14566/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/winnemucca-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Wisconsin",
+    "name": "Wisconsin state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1252PA4267PT17X31Y123D3585403W28483H4747/views/1,width=500,height=500,appearanceId=1252,backgroundColor=ffffff/wisconsin-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -6288,7 +6288,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc0120517626420dbebc",
-    "shirt_name": "Wisconsin",
+    "shirt_name": "Wisconsin state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -6315,7 +6315,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1277PA4267PT17X48Y87D3503211W25000H8389/views/1,width=500,height=500,appearanceId=1277,backgroundColor=ffffff/wonderboy-2-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Wyoming",
+    "name": "Wyoming state flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X35Y125D3585406W27518H4586/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/wyoming-mens-premium-t-shirt.jpg",
     "sub_theme": "State flags",
     "tags": [
@@ -6329,14 +6329,14 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc14f937647d81ffb6fc",
-    "shirt_name": "Wyoming",
+    "shirt_name": "Wyoming state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X35Y125D3585406W27518H4586/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/wyoming-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Yellowhammer",
+    "name": "Yellowhammer State",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A648PA4267PT17X110Y44D12209560W12499H16789/views/1,width=500,height=500,appearanceId=648,backgroundColor=ffffff/yellowhammer-mens-premium-t-shirt.jpg",
     "sub_theme": "State nicknames",
     "tags": [
@@ -6350,7 +6350,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc21b4b8c76e3917089a",
-    "shirt_name": "Yellowhammer",
+    "shirt_name": "Yellowhammer State",
     "tone": "",
     "priority": "",
     "evergreen": null,

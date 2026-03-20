@@ -137,6 +137,7 @@ function toStorefrontUrl(shopUrl, shirtName, ideaId) {
 function reconcileInventory(inventory, maps, shopUrl) {
   let applied = 0;
   const unresolvedLocal = [];
+  const titleMismatches = [];
 
   const localIdeaSet = new Set();
   const apiMatchedSet = new Set();
@@ -182,15 +183,26 @@ function reconcileInventory(inventory, maps, shopUrl) {
 
     const nextIdea = match.ideaId;
     const nextUrl = row.product_url || toProductUrl(shopUrl, shirtName, nextIdea);
+    const apiName = match.name || '';
+    const titleMismatch = apiName && normalize(shirtName) !== normalize(apiName);
 
     localIdeaSet.add(nextIdea);
     apiMatchedSet.add(nextIdea);
 
+    if (titleMismatch) {
+      titleMismatches.push({
+        shirt_name: shirtName,
+        api_name: apiName,
+        current_shirt_id: row.shirt_id || row.idea_id || '',
+        matched_idea_id: nextIdea,
+        current_product_url: row.product_url || '',
+      });
+    }
+
     const changed =
       (row.shirt_id || '') !== nextIdea ||
       (row.idea_id || '') !== nextIdea ||
-      (row.product_url || '') !== nextUrl ||
-      (row.image_url || row.URL || '') !== (row.image_url || row.URL || '');
+      (row.product_url || '') !== nextUrl;
 
     if (changed) {
       applied += 1;
@@ -216,6 +228,7 @@ function reconcileInventory(inventory, maps, shopUrl) {
   return {
     applied,
     unresolvedLocal,
+    titleMismatches,
     apiOnly,
   };
 }
@@ -345,6 +358,7 @@ async function main() {
     apiUniqueIdeas: maps.byIdea.size,
     rowsUpdatedIfApply: result.applied,
     unresolvedLocalCount: storefrontCheck.unresolvedLocal.length,
+    titleMismatchCount: result.titleMismatches.length,
     storefrontVerifiedCount: storefrontCheck.storefrontVerified.length,
     apiOnlyCount: result.apiOnly.length,
     applyMode: args.apply,
@@ -353,6 +367,7 @@ async function main() {
   const report = {
     summary,
     unresolvedLocal: storefrontCheck.unresolvedLocal,
+    titleMismatches: result.titleMismatches,
     storefrontVerified: storefrontCheck.storefrontVerified,
     apiOnly: result.apiOnly,
   };
