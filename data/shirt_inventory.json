@@ -191,7 +191,7 @@
   },
   {
     "name": "Annapolis",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X74Y75D3608521W19685H15212/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/annapolis-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y93D1058504421W24120H12731/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -200,16 +200,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/annapolis? 69b88ebe8c78661dd8521cf6",
-    "idea_id": "5d89cc30f937647d81ffc564",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/annapolis?idea=69b88ebe8c78661dd8521cf6",
+    "idea_id": "69b88ebe8c78661dd8521cf6",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc30f937647d81ffc564",
+    "shirt_id": "69b88ebe8c78661dd8521cf6",
     "shirt_name": "Annapolis",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X74Y75D3608521W19685H15212/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/annapolis-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y93D1058504421W24120H12731/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Arizona state flag",
@@ -319,7 +319,7 @@
   },
   {
     "name": "Augusta",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X78Y78D3606601W19050H14721/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/augusta-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X109Y61D1058504368W12716H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -328,20 +328,20 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/augusta?idea= 69b88ebeb8f8a539b57834fc",
-    "idea_id": "5d89cc30b4b8c76e39170fb5",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/augusta?idea=69b88ebeb8f8a539b57834fc",
+    "idea_id": "69b88ebeb8f8a539b57834fc",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc30b4b8c76e39170fb5",
+    "shirt_id": "69b88ebeb8f8a539b57834fc",
     "shirt_name": "Augusta",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X78Y78D3606601W19050H14721/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/augusta-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X109Y61D1058504368W12716H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Austin",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X82Y82D3606605W18097H13985/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/austin-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y42D1058504367W24120H23008/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -350,16 +350,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/austin?idea=68a60ecc6b1fca39c3c3269a",
-    "idea_id": "68a60ecc6b1fca39c3c3269a",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/austin?idea=69b88ebeb8f8a539b57834ad",
+    "idea_id": "69b88ebeb8f8a539b57834ad",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "68a60ecc6b1fca39c3c3269a",
+    "shirt_id": "69b88ebeb8f8a539b57834ad",
     "shirt_name": "Austin",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X82Y82D3606605W18097H13985/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/austin-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y42D1058504367W24120H23008/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Awesomeness",
@@ -403,7 +403,7 @@
   },
   {
     "name": "Baton Rouge",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X82Y82D3606609W18097H13985/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/baton-rouge-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X65Y60D1058504465W21543H19353/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -412,16 +412,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/baton+rouge?idea= 69b88ebe8c78661dd8521cf3",
-    "idea_id": "5d89cc021cbf3a25d594da70",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/baton+rouge?idea=69b88ebe8c78661dd8521cf3",
+    "idea_id": "69b88ebe8c78661dd8521cf3",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc021cbf3a25d594da70",
+    "shirt_id": "69b88ebe8c78661dd8521cf3",
     "shirt_name": "Baton Rouge",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X82Y82D3606609W18097H13985/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/baton-rouge-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X65Y60D1058504465W21543H19353/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Beehive State",
@@ -816,7 +816,7 @@
   },
   {
     "name": "Boston",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X65Y65D3606615W21589H16683/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/boston-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y83D1058504518W24120H14791/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -825,16 +825,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/boston?idea=5d89cc2113615160bf6ed452",
-    "idea_id": "5d89cc2113615160bf6ed452",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/boston?idea=69b89b308c78661dd8a1a60c",
+    "idea_id": "69b89b308c78661dd8a1a60c",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc2113615160bf6ed452",
+    "shirt_id": "69b89b308c78661dd8a1a60c",
     "shirt_name": "Boston",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X65Y65D3606615W21589H16683/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/boston-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y83D1058504518W24120H14791/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Bourbon Legends",
@@ -961,7 +961,7 @@
   },
   {
     "name": "Carson City",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X74Y75D3608526W19685H15212/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/carson-city-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X109Y61D1058504420W12824H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -970,16 +970,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/carson+city?idea=5d89cc02f937647d81ffaa96",
-    "idea_id": "5d89cc02f937647d81ffaa96",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/carson+city?idea=69b88ebe8c78661dd8521cf2",
+    "idea_id": "69b88ebe8c78661dd8521cf2",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc02f937647d81ffaa96",
+    "shirt_id": "69b88ebe8c78661dd8521cf2",
     "shirt_name": "Carson City",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X74Y75D3608526W19685H15212/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/carson-city-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X109Y61D1058504420W12824H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Caution: Wet Taint",
@@ -1045,7 +1045,7 @@
   },
   {
     "name": "Cheyenne",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A366PA4267PT17X94Y48D3606620W15874H12267/views/1,width=500,height=500,appearanceId=366,backgroundColor=ffffff/cheyenne-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X70Y49D1058504561W20662H15965/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -1054,16 +1054,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/cheyenne?idea=5d89cbdfb4b8c76e3916d6cd",
-    "idea_id": "5d89cbdfb4b8c76e3916d6cd",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/cheyenne?idea=69b89bd83c6a967192aa1dbf",
+    "idea_id": "69b89bd83c6a967192aa1dbf",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cbdfb4b8c76e3916d6cd",
+    "shirt_id": "69b89bd83c6a967192aa1dbf",
     "shirt_name": "Cheyenne",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A366PA4267PT17X94Y48D3606620W15874H12267/views/1,width=500,height=500,appearanceId=366,backgroundColor=ffffff/cheyenne-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X70Y49D1058504561W20662H15965/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Chicago CTA Brown Line",
@@ -1628,7 +1628,7 @@
   },
   {
     "name": "Des Moines",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X74Y75D3608527W19685H15212/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/des-moines-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X61Y62D1058504529W22469H14657/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -1637,16 +1637,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/des+moines?idea=5d89cc14162c5f464e73874f",
-    "idea_id": "5d89cc14162c5f464e73874f",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/des+moines?idea=69b89f423c6a967192c26976",
+    "idea_id": "69b89f423c6a967192c26976",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc14162c5f464e73874f",
+    "shirt_id": "69b89f423c6a967192c26976",
     "shirt_name": "Des Moines",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X74Y75D3608527W19685H15212/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/des-moines-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X61Y62D1058504529W22469H14657/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Dirty Santa-Chez",
@@ -2096,7 +2096,7 @@
   },
   {
     "name": "Frankfort",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X74Y75D3608528W19685H15212/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/frankfort-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y72D1058504641W26700H11542/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -2105,16 +2105,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/frankfort?idea=5d89cc21162c5f464e739149",
-    "idea_id": "5d89cc21162c5f464e739149",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/frankfort?idea=69b8a0d13c6a967192cc8381",
+    "idea_id": "69b8a0d13c6a967192cc8381",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc21162c5f464e739149",
+    "shirt_id": "69b8a0d13c6a967192cc8381",
     "shirt_name": "Frankfort",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X74Y75D3608528W19685H15212/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/frankfort-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y72D1058504641W26700H11542/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Free The Heel",
@@ -2428,7 +2428,7 @@
   },
   {
     "name": "Hartford",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X82Y82D3606633W18097H13985/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/hartford-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X56Y65D1058507655W23400H12847/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -2437,16 +2437,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/hartford?idea=5d89cc01f937647d81ffaa7d",
-    "idea_id": "5d89cc01f937647d81ffaa7d",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/hartford?idea=69b9ee35b8f8a539b5a8ce89",
+    "idea_id": "69b9ee35b8f8a539b5a8ce89",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc01f937647d81ffaa7d",
+    "shirt_id": "69b9ee35b8f8a539b5a8ce89",
     "shirt_name": "Hartford",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X82Y82D3606633W18097H13985/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/hartford-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X56Y65D1058507655W23400H12847/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Hawaii state flag",
@@ -2491,7 +2491,7 @@
   },
   {
     "name": "Helena",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X74Y75D3608529W19685H15212/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/helena-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y57D1058507591W24120H13938/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -2500,16 +2500,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/helena?idea=5d89cc30b4b8c76e39170fb7",
-    "idea_id": "5d89cc30b4b8c76e39170fb7",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/helena?idea=69b9eedc8c78661dd879431c",
+    "idea_id": "69b9eedc8c78661dd879431c",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc30b4b8c76e39170fb7",
+    "shirt_id": "69b9eedc8c78661dd879431c",
     "shirt_name": "Helena",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X74Y75D3608529W19685H15212/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/helena-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y57D1058507591W24120H13938/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Heli+Cool",
@@ -2533,7 +2533,7 @@
   },
   {
     "name": "Honolulu",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X82Y82D3606634W18097H13985/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/honolulu-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y48D1058507592W26700H16316/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -2542,16 +2542,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/honolulu?idea=5d89cc1413615160bf6ec963",
-    "idea_id": "5d89cc1413615160bf6ec963",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/honolulu?idea=69b9ef568c78661dd87cac15",
+    "idea_id": "69b9ef568c78661dd87cac15",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc1413615160bf6ec963",
+    "shirt_id": "69b9ef568c78661dd87cac15",
     "shirt_name": "Honolulu",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X82Y82D3606634W18097H13985/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/honolulu-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y48D1058507592W26700H16316/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Humor in Uniform",
@@ -2898,7 +2898,7 @@
   },
   {
     "name": "Indianapolis",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X82Y82D3606636W18097H13985/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/indianapolis-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X112Y61D1058507630W12225H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -2907,16 +2907,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/indianapolis?idea=5d89cc2120517626420dd58c",
-    "idea_id": "5d89cc2120517626420dd58c",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/indianapolis?idea=69b9efa43c6a967192a127f9",
+    "idea_id": "69b9efa43c6a967192a127f9",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc2120517626420dd58c",
+    "shirt_id": "69b9efa43c6a967192a127f9",
     "shirt_name": "Indianapolis",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X82Y82D3606636W18097H13985/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/indianapolis-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X112Y61D1058507630W12225H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Intelligent Design",
@@ -3047,7 +3047,7 @@
   },
   {
     "name": "Jefferson City",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X74Y75D3608530W19685H15212/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/jefferson-city-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X61Y55D1058507702W22400H19344/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -3056,16 +3056,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/jefferson+city?idea=5d89cbdff937647d81ff969e",
-    "idea_id": "5d89cbdff937647d81ff969e",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/jefferson+city?idea=69b9f02f8c78661dd88225cd",
+    "idea_id": "69b9f02f8c78661dd88225cd",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cbdff937647d81ff969e",
+    "shirt_id": "69b9f02f8c78661dd88225cd",
     "shirt_name": "Jefferson City",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X74Y75D3608530W19685H15212/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/jefferson-city-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X61Y55D1058507702W22400H19344/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Jonah Fark and the 100 Years War",
@@ -3089,7 +3089,7 @@
   },
   {
     "name": "Juneau",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X28Y30D3606641W28892H22327/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/juneau-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X42Y56D1058507670W24120H12820/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -3098,16 +3098,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/juneau?idea=5d89cc14f937647d81ffb700",
-    "idea_id": "5d89cc14f937647d81ffb700",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/juneau?idea=69b9f0ba8c78661dd885c43d",
+    "idea_id": "69b9f0ba8c78661dd885c43d",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc14f937647d81ffb700",
+    "shirt_id": "69b9f0ba8c78661dd885c43d",
     "shirt_name": "Juneau",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X28Y30D3606641W28892H22327/views/1,width=500,height=500,appearanceId=823,backgroundColor=ffffff/juneau-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X42Y56D1058507670W24120H12820/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Jungle Fever",
@@ -3337,7 +3337,7 @@
   },
   {
     "name": "Lansing",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X65Y65D3606643W21589H16683/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/lansing-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X80Y39D1058507676W18592H21764/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -3346,16 +3346,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/lansing?idea=5d89cc21b4b8c76e391708a6",
-    "idea_id": "5d89cc21b4b8c76e391708a6",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/lansing?idea=69b9f15a8c78661dd88a09d5",
+    "idea_id": "69b9f15a8c78661dd88a09d5",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc21b4b8c76e391708a6",
+    "shirt_id": "69b9f15a8c78661dd88a09d5",
     "shirt_name": "Lansing",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X65Y65D3606643W21589H16683/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/lansing-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X80Y39D1058507676W18592H21764/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Late Bloomer, Early Wilter",
@@ -3399,7 +3399,7 @@
   },
   {
     "name": "Lincoln",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X70Y70D3600976W20637H15948/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/lincoln-ne-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y70D1058507712W24120H11082/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -3407,16 +3407,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/lincoln-ne?idea=5d89cbdf1cbf3a25d594c3a9",
-    "idea_id": "5d89cbdf1cbf3a25d594c3a9",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/lincoln?idea=69b9f1ea8c78661dd88d624c",
+    "idea_id": "69b9f1ea8c78661dd88d624c",
     "source_of_truth": "local",
     "source_match": "api_main_design_id+generated_link",
-    "shirt_id": "5d89cbdf1cbf3a25d594c3a9",
+    "shirt_id": "69b9f1ea8c78661dd88d624c",
     "shirt_name": "Lincoln",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A317PA4267PT17X70Y70D3600976W20637H15948/views/1,width=500,height=500,appearanceId=317,backgroundColor=ffffff/lincoln-ne-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y70D1058507712W24120H11082/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Little Rock",
@@ -3525,7 +3525,7 @@
   },
   {
     "name": "Madison",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X86Y85D3606646W17462H13494/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/madison-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X84Y61D1058510565W17801H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -3534,16 +3534,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/madison?idea=5d89cbdf1cbf3a25d594c3af",
-    "idea_id": "5d89cbdf1cbf3a25d594c3af",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/madison?idea=69bb42ed8c78661dd8b92ece",
+    "idea_id": "69bb42ed8c78661dd8b92ece",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cbdf1cbf3a25d594c3af",
+    "shirt_id": "69bb42ed8c78661dd8b92ece",
     "shirt_name": "Madison",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X86Y85D3606646W17462H13494/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/madison-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X84Y61D1058510565W17801H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Maine state flag",
@@ -3795,7 +3795,7 @@
   },
   {
     "name": "Montpelier",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X74Y75D3608531W19685H15212/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/montpelier-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X114Y61D1058510606W11741H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -3804,16 +3804,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/montpelier?idea=5d89cc0213615160bf6ebd0e",
-    "idea_id": "5d89cc0213615160bf6ebd0e",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/montpelier?idea=69bb431ab8f8a539b5df66ec",
+    "idea_id": "69bb431ab8f8a539b5df66ec",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc0213615160bf6ebd0e",
+    "shirt_id": "69bb431ab8f8a539b5df66ec",
     "shirt_name": "Montpelier",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X74Y75D3608531W19685H15212/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/montpelier-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X114Y61D1058510606W11741H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Montrose CTA Blue Line",
@@ -3941,7 +3941,7 @@
   },
   {
     "name": "Nashville",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X24Y55D3606648W29845H23064/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/nashville-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y97D1058510567W26700H6485/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -3950,16 +3950,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/nashville?idea=5d89cc14b4b8c76e3917036c",
-    "idea_id": "5d89cc14b4b8c76e3917036c",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/nashville?idea=69bb431a8c78661dd8ba7c4b",
+    "idea_id": "69bb431a8c78661dd8ba7c4b",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc14b4b8c76e3917036c",
+    "shirt_id": "69bb431a8c78661dd8ba7c4b",
     "shirt_name": "Nashville",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X24Y55D3606648W29845H23064/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/nashville-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y97D1058510567W26700H6485/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Natural State",
@@ -4767,7 +4767,7 @@
   },
   {
     "name": "Pierre",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X74Y75D3608533W19685H15212/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/pierre-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X56Y65D1058510539W23419H14537/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -4776,16 +4776,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/pierre?idea=5d89cc21f937647d81ffbdc1",
-    "idea_id": "5d89cc21f937647d81ffbdc1",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/pierre?idea=69bb431a3c6a967192dc42b9",
+    "idea_id": "69bb431a3c6a967192dc42b9",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc21f937647d81ffbdc1",
+    "shirt_id": "69bb431a3c6a967192dc42b9",
     "shirt_name": "Pierre",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X74Y75D3608533W19685H15212/views/1,width=500,height=500,appearanceId=812,backgroundColor=ffffff/pierre-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X56Y65D1058510539W23419H14537/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Priapism",
@@ -4914,7 +4914,7 @@
   },
   {
     "name": "Richmond",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X68Y68D3606658W20955H16194/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/richmond-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y53D1058510568W26700H11588/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -4923,16 +4923,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/richmond?idea=5d89cc0220517626420dbed4",
-    "idea_id": "5d89cc0220517626420dbed4",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/richmond?idea=69bb431a8c78661dd8ba7c4c",
+    "idea_id": "69bb431a8c78661dd8ba7c4c",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc0220517626420dbed4",
+    "shirt_id": "69bb431a8c78661dd8ba7c4c",
     "shirt_name": "Richmond",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X68Y68D3606658W20955H16194/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/richmond-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y53D1058510568W26700H11588/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Rick O'Shea and the Caroms",
@@ -5076,7 +5076,7 @@
   },
   {
     "name": "Sacramento",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X74Y75D3606659W19685H15212/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/sacramento-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X93Y61D1058513384W16098H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -5085,16 +5085,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/sacramento?idea=5d89cc1420517626420dcecd",
-    "idea_id": "5d89cc1420517626420dcecd",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/sacramento?idea=69bc914e3c6a9671923449d0",
+    "idea_id": "69bc914e3c6a9671923449d0",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc1420517626420dcecd",
+    "shirt_id": "69bc914e3c6a9671923449d0",
     "shirt_name": "Sacramento",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X74Y75D3606659W19685H15212/views/1,width=500,height=500,appearanceId=1,backgroundColor=ffffff/sacramento-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X93Y61D1058513384W16098H19070/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Salem",
@@ -5120,7 +5120,7 @@
   },
   {
     "name": "Salt Lake City",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X74Y75D3608537W19685H15212/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/salt-lake-city-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X97Y61D1058504464W15258H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -5129,16 +5129,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/salt+lake+city?idea=5d89cbdf1cbf3a25d594c3ad",
-    "idea_id": "5d89cbdf1cbf3a25d594c3ad",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/salt+lake+city?idea=69b88e11b8f8a539b573c799",
+    "idea_id": "69b88e11b8f8a539b573c799",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cbdf1cbf3a25d594c3ad",
+    "shirt_id": "69b88e11b8f8a539b573c799",
     "shirt_name": "Salt Lake City",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X74Y75D3608537W19685H15212/views/1,width=500,height=500,appearanceId=1256,backgroundColor=ffffff/salt-lake-city-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X97Y61D1058504464W15258H19070/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Santa Fe",
@@ -5576,7 +5576,7 @@
   },
   {
     "name": "Tallahassee",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X74Y75D3608538W19685H15212/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/tallahassee-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X92Y78D1058504419W16199H15597/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -5585,16 +5585,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/tallahassee?idea=5d89cc02162c5f464e737054",
-    "idea_id": "5d89cc02162c5f464e737054",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/tallahassee?idea=69b88d28b8f8a539b56d1fb9",
+    "idea_id": "69b88d28b8f8a539b56d1fb9",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc02162c5f464e737054",
+    "shirt_id": "69b88d28b8f8a539b56d1fb9",
     "shirt_name": "Tallahassee",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X74Y75D3608538W19685H15212/views/1,width=500,height=500,appearanceId=2,backgroundColor=ffffff/tallahassee-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X92Y78D1058504419W16199H15597/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Tennessee state flag",
@@ -5820,7 +5820,7 @@
   },
   {
     "name": "Topeka",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X63Y64D3606672W21907H16929/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/topeka-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X56Y75D1058513434W23365H12060/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg",
     "sub_theme": "State capitals",
     "tags": [
       "geography",
@@ -5829,16 +5829,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/topeka?idea=5d89cc141cbf3a25d594ebb5",
-    "idea_id": "5d89cc141cbf3a25d594ebb5",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/topeka?idea=69bc922c8c78661dd806b178",
+    "idea_id": "69bc922c8c78661dd806b178",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc141cbf3a25d594ebb5",
+    "shirt_id": "69bc922c8c78661dd806b178",
     "shirt_name": "Topeka",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X63Y64D3606672W21907H16929/views/1,width=500,height=500,appearanceId=231,backgroundColor=ffffff/topeka-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X56Y75D1058513434W23365H12060/views/1,width=650,height=650,appearanceId=812,backgroundColor=ffffff.jpg"
   },
   {
     "name": "Trenton",

@@ -1,18 +1,18 @@
 {
   "summary": {
-    "generatedAt": "2026-03-20T13:48:13.370Z",
+    "generatedAt": "2026-03-20T14:49:30.060Z",
     "inventoryPath": "/Users/markvahrenwald/Repositories/thirdstringshirts/data/shirt_inventory.json",
     "reportPath": "/Users/markvahrenwald/Repositories/thirdstringshirts/tools/api_sync_report.json",
     "inventoryRows": 304,
     "spreadshirtRows": 300,
     "etsyRows": 4,
-    "apiSellables": 2953,
-    "apiUniqueIdeas": 296,
-    "rowsUpdatedIfApply": 42,
+    "apiSellables": 2943,
+    "apiUniqueIdeas": 295,
+    "rowsUpdatedIfApply": 19,
     "unresolvedLocalCount": 0,
     "titleMismatchCount": 0,
     "storefrontVerifiedCount": 4,
-    "apiOnlyCount": 1,
+    "apiOnlyCount": 0,
     "applyMode": false
   },
   "unresolvedLocal": [],
@@ -63,11 +63,5 @@
       "storefront_preview_image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A339PA4267PT17X117Y49D1058513475W11304H21471/views/1,width=500,height=500,appearanceId=339,backgroundColor=ffffff/trenton-mens-premium-t-shirt.jpg"
     }
   ],
-  "apiOnly": [
-    {
-      "idea_id": "69bb431ab8f8a539b5df66ec",
-      "api_name": "Montpelier",
-      "api_design_id": "1058510606"
-    }
-  ]
+  "apiOnly": []
 }
