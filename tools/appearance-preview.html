@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spreadshirt Appearance Preview</title>
+  <style>
+    :root {
+      --bg: #f3f0e8;
+      --panel: #fffdf8;
+      --ink: #1f2c3c;
+      --muted: #607089;
+      --line: #d6d0c3;
+      --accent: #c96a10;
+      --chip: #e7eef7;
+      --shadow: 0 14px 36px rgba(20, 33, 49, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(201, 106, 16, 0.12), transparent 28%),
+        radial-gradient(circle at top right, rgba(31, 44, 60, 0.10), transparent 32%),
+        linear-gradient(180deg, #f8f4ec 0%, #efe8db 100%);
+    }
+
+    main {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 28px 22px 48px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(255, 253, 248, 0.97), rgba(248, 242, 230, 0.96));
+      border: 1px solid rgba(214, 208, 195, 0.8);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 26px 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 3vw, 3.2rem);
+      line-height: 0.95;
+      letter-spacing: 0.02em;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 70ch;
+      color: var(--muted);
+      font-size: 1.02rem;
+      line-height: 1.5;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    label {
+      font-size: 0.86rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    input,
+    select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 14px;
+      font: inherit;
+      color: var(--ink);
+      background: white;
+    }
+
+    .summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .chip {
+      background: var(--chip);
+      border: 1px solid rgba(96, 112, 137, 0.18);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      background: var(--panel);
+      border: 1px solid rgba(214, 208, 195, 0.9);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .preview {
+      aspect-ratio: 1 / 1;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.92), rgba(245, 240, 232, 0.92)),
+        repeating-linear-gradient(
+          45deg,
+          rgba(201, 106, 16, 0.03),
+          rgba(201, 106, 16, 0.03) 12px,
+          rgba(31, 44, 60, 0.03) 12px,
+          rgba(31, 44, 60, 0.03) 24px
+        );
+      display: grid;
+      place-items: center;
+      padding: 14px;
+    }
+
+    .preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 16px;
+      background: white;
+    }
+
+    .body {
+      padding: 16px 18px 18px;
+    }
+
+    .eyebrow {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .eyebrow span {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 5px 9px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      background: #eef3fa;
+      color: #365277;
+    }
+
+    .appearance-name {
+      margin: 0;
+      font-size: 1.45rem;
+      line-height: 1.05;
+    }
+
+    .meta {
+      margin: 10px 0 0;
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.45;
+    }
+
+    .shirt-list {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .shirt-list strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .shirt-list ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .empty {
+      margin-top: 24px;
+      padding: 28px;
+      text-align: center;
+      color: var(--muted);
+      background: rgba(255, 253, 248, 0.85);
+      border: 1px dashed var(--line);
+      border-radius: 22px;
+    }
+
+    @media (max-width: 900px) {
+      .toolbar {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>Spreadshirt Appearance Preview</h1>
+      <p>
+        A visual inventory of the currently used <code>appearanceId</code> values. Each card uses a real
+        inventory thumbnail so we can judge whether a color is too light, too dark, or worth excluding.
+      </p>
+
+      <div class="toolbar">
+        <div class="field">
+          <label for="search">Filter</label>
+          <input id="search" type="search" placeholder="Search by color name, appearanceId, or shirt name">
+        </div>
+
+        <div class="field">
+          <label for="sort">Sort</label>
+          <select id="sort">
+            <option value="count-desc">Most used first</option>
+            <option value="count-asc">Least used first</option>
+            <option value="name-asc">Name A-Z</option>
+            <option value="id-asc">appearanceId ascending</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="resolved">Show</label>
+          <select id="resolved">
+            <option value="all">All appearance IDs</option>
+            <option value="named">Named only</option>
+            <option value="unnamed">Unresolved only</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="summary" class="summary"></div>
+    </section>
+
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <section id="empty" class="empty" hidden>No appearance IDs match the current filters.</section>
+  </main>
+
+  <script>
+    async function loadJson(url) {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Failed to load ${url}: ${response.status}`);
+      }
+      return response.json();
+    }
+
+    function extractAppearanceId(url) {
+      const match = String(url || '').match(/appearanceId=(\d+)/);
+      return match ? match[1] : '';
+    }
+
+    function pickSampleRows(rowsByAppearance) {
+      const result = new Map();
+      for (const [appearanceId, rows] of rowsByAppearance.entries()) {
+        const sorted = [...rows].sort((a, b) => {
+          const aUrl = a.image_url || a.URL || '';
+          const bUrl = b.image_url || b.URL || '';
+          return bUrl.length - aUrl.length;
+        });
+        result.set(appearanceId, sorted[0] || null);
+      }
+      return result;
+    }
+
+    function normalizeName(value) {
+      return String(value || '').trim().replace(/\s+/g, ' ');
+    }
+
+    function createCard(entry) {
+      const card = document.createElement('article');
+      card.className = 'card';
+
+      const preview = document.createElement('div');
+      preview.className = 'preview';
+      const img = document.createElement('img');
+      img.src = entry.imageUrl;
+      img.alt = `${entry.name || 'Unknown color'} preview`;
+      preview.appendChild(img);
+
+      const body = document.createElement('div');
+      body.className = 'body';
+
+      const eyebrow = document.createElement('div');
+      eyebrow.className = 'eyebrow';
+      eyebrow.innerHTML = `
+        <span>appearanceId ${entry.appearanceId}</span>
+        <span>${entry.count} shirts</span>
+      `;
+
+      const heading = document.createElement('h2');
+      heading.className = 'appearance-name';
+      heading.textContent = entry.name || 'Unresolved appearance';
+
+      const meta = document.createElement('div');
+      meta.className = 'meta';
+      meta.innerHTML = `
+        <div><strong>Sample:</strong> ${entry.sampleName}</div>
+        <div><strong>Idea:</strong> ${entry.ideaId || 'n/a'}</div>
+      `;
+
+      const shirtList = document.createElement('div');
+      shirtList.className = 'shirt-list';
+      const examples = entry.examples.map((name) => `<li>${name}</li>`).join('');
+      shirtList.innerHTML = `
+        <strong>Examples</strong>
+        <ul>${examples}</ul>
+      `;
+
+      body.append(eyebrow, heading, meta, shirtList);
+      card.append(preview, body);
+      return card;
+    }
+
+    function render(data) {
+      const grid = document.getElementById('grid');
+      const empty = document.getElementById('empty');
+      const summary = document.getElementById('summary');
+      const searchValue = normalizeName(document.getElementById('search').value).toLowerCase();
+      const sortValue = document.getElementById('sort').value;
+      const resolvedValue = document.getElementById('resolved').value;
+
+      let items = [...data];
+
+      if (resolvedValue === 'named') {
+        items = items.filter((item) => item.name);
+      } else if (resolvedValue === 'unnamed') {
+        items = items.filter((item) => !item.name);
+      }
+
+      if (searchValue) {
+        items = items.filter((item) => {
+          const haystack = [
+            item.appearanceId,
+            item.name,
+            item.sampleName,
+            ...item.examples,
+          ].join(' ').toLowerCase();
+          return haystack.includes(searchValue);
+        });
+      }
+
+      items.sort((a, b) => {
+        if (sortValue === 'count-asc') return a.count - b.count || Number(a.appearanceId) - Number(b.appearanceId);
+        if (sortValue === 'name-asc') return (a.name || 'zzz').localeCompare(b.name || 'zzz') || Number(a.appearanceId) - Number(b.appearanceId);
+        if (sortValue === 'id-asc') return Number(a.appearanceId) - Number(b.appearanceId);
+        return b.count - a.count || Number(a.appearanceId) - Number(b.appearanceId);
+      });
+
+      grid.replaceChildren(...items.map(createCard));
+      empty.hidden = items.length !== 0;
+
+      const resolvedCount = data.filter((item) => item.name).length;
+      const unresolvedCount = data.length - resolvedCount;
+      const totalShirts = data.reduce((sum, item) => sum + item.count, 0);
+      summary.innerHTML = `
+        <span class="chip">${data.length} appearance IDs in inventory</span>
+        <span class="chip">${resolvedCount} named</span>
+        <span class="chip">${unresolvedCount} unresolved</span>
+        <span class="chip">${totalShirts} Spreadshirt rows sampled</span>
+        <span class="chip">${items.length} showing after filters</span>
+      `;
+    }
+
+    async function main() {
+      const [reference, inventory] = await Promise.all([
+        loadJson('./spreadshirt_appearance_reference.json'),
+        loadJson('../data/shirt_inventory.json'),
+      ]);
+
+      const spreadshirtRows = inventory.filter((row) => row.platform === 'Spreadshirt');
+      const rowsByAppearance = new Map();
+      for (const row of spreadshirtRows) {
+        const appearanceId = extractAppearanceId(row.image_url || row.URL || '');
+        if (!appearanceId) continue;
+        if (!rowsByAppearance.has(appearanceId)) rowsByAppearance.set(appearanceId, []);
+        rowsByAppearance.get(appearanceId).push(row);
+      }
+
+      const sampleRows = pickSampleRows(rowsByAppearance);
+      const entries = reference.appearances
+        .map((appearance) => {
+          const rows = rowsByAppearance.get(appearance.appearance_id) || [];
+          const sample = sampleRows.get(appearance.appearance_id) || rows[0];
+          if (!sample) return null;
+          return {
+            appearanceId: appearance.appearance_id,
+            name: appearance.name ? appearance.name.trim() : '',
+            count: appearance.count,
+            sampleName: sample.shirt_name || sample.name || appearance.sample_product || 'Unknown shirt',
+            ideaId: sample.idea_id || sample.shirt_id || '',
+            imageUrl: sample.image_url || sample.URL || '',
+            examples: rows
+              .map((row) => row.shirt_name || row.name || '')
+              .filter(Boolean)
+              .slice(0, 5),
+          };
+        })
+        .filter(Boolean);
+
+      const rerender = () => render(entries);
+      document.getElementById('search').addEventListener('input', rerender);
+      document.getElementById('sort').addEventListener('change', rerender);
+      document.getElementById('resolved').addEventListener('change', rerender);
+      rerender();
+    }
+
+    main().catch((error) => {
+      const grid = document.getElementById('grid');
+      grid.innerHTML = `<div class="empty">Unable to load preview data: ${error.message}</div>`;
+      document.getElementById('empty').hidden = true;
+    });
+  </script>
+</body>
+</html>

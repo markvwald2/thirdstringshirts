@@ -1,0 +1,206 @@
+{
+  "generatedAt": "2026-03-21T00:44:30.799Z",
+  "pagesFetched": 21,
+  "totalUniqueAppearanceIds": 33,
+  "resolvedAppearanceNames": 31,
+  "appearances": [
+    {
+      "appearance_id": "2",
+      "count": 39,
+      "name": "black",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "339",
+      "count": 39,
+      "name": "asphalt gray",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "231",
+      "count": 30,
+      "name": "heather gray",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "823",
+      "count": 27,
+      "name": "deep navy",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "812",
+      "count": 26,
+      "name": "olive green",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "1256",
+      "count": 22,
+      "name": "heather anthracite",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "645",
+      "count": 15,
+      "name": "heather blue",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "4",
+      "count": 12,
+      "name": "navy",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "804",
+      "count": 10,
+      "name": "heather ice blue",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "1252",
+      "count": 9,
+      "name": "mint",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "36",
+      "count": 9,
+      "name": null,
+      "sample_product": null
+    },
+    {
+      "appearance_id": "154",
+      "count": 8,
+      "name": null,
+      "sample_product": null
+    },
+    {
+      "appearance_id": "317",
+      "count": 6,
+      "name": "royal blue",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "366",
+      "count": 6,
+      "name": "red",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "1277",
+      "count": 6,
+      "name": "orange ",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "5",
+      "count": 5,
+      "name": "red",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "648",
+      "count": 3,
+      "name": "charcoal grey",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "649",
+      "count": 3,
+      "name": "steel green",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "92",
+      "count": 3,
+      "name": "kelly green",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "1271",
+      "count": 2,
+      "name": "stone blue ",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "1270",
+      "count": 2,
+      "name": "heather denim ",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "39",
+      "count": 2,
+      "name": "sun yellow",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "386",
+      "count": 2,
+      "name": "pink",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "1272",
+      "count": 2,
+      "name": "green",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "328",
+      "count": 2,
+      "name": "steel blue",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "397",
+      "count": 2,
+      "name": "heather oatmeal",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "490",
+      "count": 2,
+      "name": "heather cranberry",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "743",
+      "count": 1,
+      "name": "heather military green",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "1269",
+      "count": 1,
+      "name": "navy",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "22",
+      "count": 1,
+      "name": "burgundy",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "1251",
+      "count": 1,
+      "name": "mauve",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "506",
+      "count": 1,
+      "name": "purple",
+      "sample_product": "50% of Archery is Aiming"
+    },
+    {
+      "appearance_id": "388",
+      "count": 1,
+      "name": "teal",
+      "sample_product": "50% of Archery is Aiming"
+    }
+  ]
+}

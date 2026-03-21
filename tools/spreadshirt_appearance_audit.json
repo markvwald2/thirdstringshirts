@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2026-03-21T00:44:30.800Z",
+  "inventoryPath": "/Users/markvahrenwald/Repositories/thirdstringshirts/data/shirt_inventory.json",
+  "totalSpreadshirtRows": 300,
+  "mismatchCount": 14,
+  "mismatches": [
+    {
+      "shirt_name": "Arkansas flag",
+      "idea_id": "5d89cc2113615160bf6ed3b4",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y107D11921438W26700H4449/views/1,width=650,height=650,appearanceId=812.jpg"
+    },
+    {
+      "shirt_name": "Capitals",
+      "idea_id": "5d9690ce136151713cc6fda2",
+      "embedded_appearance_id": "231",
+      "trailing_appearance_id": "1252",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X48Y105D1025593468W25000H6505/views/1,width=650,height=650,appearanceId=1252.jpg"
+    },
+    {
+      "shirt_name": "Columbus",
+      "idea_id": "69b89dfd8c78661dd8b3a07b",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X85Y61D1058504526W17606H19070/views/1,width=650,height=650,appearanceId=812.jpg"
+    },
+    {
+      "shirt_name": "Concord",
+      "idea_id": "69b89e208c78661dd8b49143",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X123Y61D1058504574W9945H19070/views/1,width=650,height=650,appearanceId=812.jpg"
+    },
+    {
+      "shirt_name": "Dover",
+      "idea_id": "69b8a0998c78661dd8c4c91b",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X133Y61D1058504640W7924H19070/views/1,width=650,height=650,appearanceId=812.jpg"
+    },
+    {
+      "shirt_name": "Harrisburg",
+      "idea_id": "69b8a11fb8f8a539b5f1723d",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X52Y87D1058504642W24120H13887/views/1,width=650,height=650,appearanceId=812.jpg"
+    },
+    {
+      "shirt_name": "Humor in Uniform",
+      "idea_id": "5d89cc046bbdbb2e6a46adc7",
+      "embedded_appearance_id": "1",
+      "trailing_appearance_id": "1256",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X92Y78D3250893W16255H14718/views/1,width=650,height=650,appearanceId=1256/humor-in-uniform.jpg"
+    },
+    {
+      "shirt_name": "Natural State",
+      "idea_id": "5d89cc1420517626420dcec0",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X92Y81D3575715W16199H15008/views/1,width=650,height=650,appearanceId=812.jpg"
+    },
+    {
+      "shirt_name": "Physics",
+      "idea_id": "68a60ecc6b1fca39c3c34805",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "649",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X41Y92D10566209W26400H7796/views/1,width=650,height=650,appearanceId=649/physics.jpg"
+    },
+    {
+      "shirt_name": "Sacramento",
+      "idea_id": "69bc914e3c6a9671923449d0",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X93Y61D1058513384W16098H19070/views/1,width=650,height=650,appearanceId=812.jpg"
+    },
+    {
+      "shirt_name": "Santa Fe",
+      "idea_id": "69bc922cb8f8a539b5256656",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X89Y61D1058513478W16884H19070/views/1,width=650,height=650,appearanceId=812.jpg"
+    },
+    {
+      "shirt_name": "Suck It, Math",
+      "idea_id": "5d89cc146bbdbb2e6a46b850",
+      "embedded_appearance_id": "804",
+      "trailing_appearance_id": "388",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X43Y101D3514837W26000H7219/views/1,width=650,height=650,appearanceId=388.jpg"
+    },
+    {
+      "shirt_name": "Topeka",
+      "idea_id": "69bc922c8c78661dd806b178",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X56Y75D1058513434W23365H12060/views/1,width=650,height=650,appearanceId=812.jpg"
+    },
+    {
+      "shirt_name": "Trenton",
+      "idea_id": "69bc922c3c6a96719239afeb",
+      "embedded_appearance_id": "339",
+      "trailing_appearance_id": "812",
+      "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X117Y49D1058513475W11304H21471/views/1,width=650,height=650,appearanceId=812.jpg"
+    }
+  ]
+}
