@@ -2754,24 +2754,24 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A812PA4267PT17X70Y117D10512004W20637H5307/views/1,width=500,height=500,appearanceId=812/im-cropdusting-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "I'm Here for the Opening Band",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T813A1256PA4249PT17X34Y40D12205816W21100H16299/views/1,width=500,height=500,appearanceId=1256/im-here-for-the-opening-band-womens-premium-t-shirt.jpg",
+    "name": "Here for the Opening Band",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X43Y61D1058517292W26000H12003/views/1,width=500,height=500,appearanceId=804/here-for-the-opening-band-mens-premium-t-shirt.jpg",
     "sub_theme": "",
     "tags": [
       "music"
     ],
     "theme": "music",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/i'm+here+for+the+opening+band?idea=5d89cbe2f937647d81ff975d",
-    "idea_id": "5d89cbe2f937647d81ff975d",
+    "product_url": "https://thirdstringshirts.myspreadshop.com/here+for+the+opening+band?idea=69be8c003c6a9671922b6193",
+    "idea_id": "69be8c003c6a9671922b6193",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cbe2f937647d81ff975d",
-    "shirt_name": "I'm Here for the Opening Band",
+    "shirt_id": "69be8c003c6a9671922b6193",
+    "shirt_name": "Here for the Opening Band",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T813A1256PA4249PT17X34Y40D12205816W21100H16299/views/1,width=500,height=500,appearanceId=1256/im-here-for-the-opening-band-womens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A804PA4267PT17X43Y61D1058517292W26000H12003/views/1,width=500,height=500,appearanceId=804/here-for-the-opening-band-mens-premium-t-shirt.jpg"
   },
   {
     "name": "I'm Picking Up What You're Putting Down",
