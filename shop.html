@@ -50,6 +50,7 @@
           <a id="shop-back-arrow" class="button alt shop-back-button" href="./all-shirts.html" aria-label="Go back">←</a>
           <button id="shop-share-button" class="button alt shop-share-button" type="button" aria-label="Share this shirt" hidden>Share</button>
         </div>
+        <p id="shop-shell-annotation" class="shop-shell-annotation" hidden></p>
         <div id="sprd-shop">
           <a href="https://shop.spreadshirt.com/thirdstringshirts">thirdstringshirts</a>
         </div>
@@ -59,6 +60,8 @@
       </div>
     </div>
   </main>
+
+  <button id="shop-focus-sink" type="button" aria-hidden="true" tabindex="-1" hidden></button>
 
   <footer class="site-footer">
     <div class="container footer-row">
@@ -84,8 +87,75 @@
   <script>
     (function wireBackArrow() {
       var backArrow = document.getElementById("shop-back-arrow");
+      var shopRoot = document.getElementById("sprd-shop");
       if (!backArrow) return;
+
+      function hashContext(hash) {
+        var value = String(hash || "");
+        if (!value.startsWith("#!/")) {
+          return null;
+        }
+
+        var route = value.slice(3);
+        var parts = route.split("?");
+        var pathname = parts[0] || "";
+        var params = new URLSearchParams(parts[1] || "");
+        var ideaId = params.get("idea") || "";
+
+        return {
+          pathname: pathname,
+          ideaId: ideaId,
+          canonicalHash: pathname && ideaId ? "#!/" + pathname + "?idea=" + encodeURIComponent(ideaId) : ""
+        };
+      }
+
+      function canonicalProductHash() {
+        var context = hashContext(window.location.hash);
+        if (!context) return "";
+        if (!context.canonicalHash) return "";
+        if (context.canonicalHash === window.location.hash) return "";
+        return context.canonicalHash;
+      }
+
+      function detailPageBackHash() {
+        if (shopRoot) {
+          var detailLink = shopRoot.querySelector(".sprd-detail-info__further-details-btn[href]");
+          if (detailLink) {
+            var href = detailLink.getAttribute("href") || "";
+            if (href.indexOf("#!/") === 0) {
+              return href;
+            }
+          }
+        }
+
+        var context = hashContext(window.location.hash);
+        if (!context || !context.pathname) return "";
+
+        var detailMatch = context.pathname.match(/^(.*)-A([a-z0-9]+)$/i);
+        if (!detailMatch) return "";
+
+        var routeName = detailMatch[1];
+        var ideaId = context.ideaId || detailMatch[2];
+        if (!routeName || !ideaId) return "";
+
+        return "#!/" + routeName + "?idea=" + encodeURIComponent(ideaId);
+      }
+
       backArrow.addEventListener("click", function (event) {
+        var detailHash = detailPageBackHash();
+        if (detailHash && detailHash !== window.location.hash) {
+          event.preventDefault();
+          window.location.hash = detailHash;
+          return;
+        }
+
+        var canonicalHash = canonicalProductHash();
+        if (canonicalHash) {
+          event.preventDefault();
+          window.location.hash = canonicalHash;
+          return;
+        }
+
         if (window.history.length > 1) {
           event.preventDefault();
           window.history.back();
@@ -147,9 +217,522 @@
       window.addEventListener("hashchange", syncVisibility);
     })();
 
+    (function annotateProductTitle() {
+      var root = document.getElementById("sprd-shop");
+      var shellAnnotation = document.getElementById("shop-shell-annotation");
+      if (!root) return;
+
+      var annotationClass = "shop-product-annotation";
+      var taglines = null;
+      var taglinesPromise = null;
+      var products = null;
+      var productsPromise = null;
+      var updateTimer = 0;
+      var attemptCount = 0;
+      var maxAttempts = 24;
+
+      function currentHashProduct() {
+        return productFromShopHash(window.location.hash) || null;
+      }
+
+      function loadTaglines() {
+        if (taglines) return Promise.resolve(taglines);
+        if (taglinesPromise) return taglinesPromise;
+
+        taglinesPromise = fetch(TAGLINES_PATH)
+          .then(function (response) {
+            if (!response.ok) {
+              throw new Error("Could not load " + TAGLINES_PATH);
+            }
+            return response.json();
+          })
+          .then(function (data) {
+            taglines = data || {};
+            return taglines;
+          })
+          .catch(function (error) {
+            console.error(error);
+            taglines = {};
+            return taglines;
+          });
+
+        return taglinesPromise;
+      }
+
+      function loadCatalog() {
+        if (products) return Promise.resolve(products);
+        if (productsPromise) return productsPromise;
+
+        productsPromise = loadProducts()
+          .then(function (data) {
+            products = Array.isArray(data) ? data : [];
+            return products;
+          })
+          .catch(function (error) {
+            console.error(error);
+            products = [];
+            return products;
+          });
+
+        return productsPromise;
+      }
+
+      function normalizeText(value) {
+        return String(value || "")
+          .trim()
+          .toLowerCase()
+          .replace(/\s+/g, " ");
+      }
+
+      function isVisibleElement(element) {
+        if (!element) return false;
+        if (element.hidden) return false;
+        if (element.getAttribute("aria-hidden") === "true") return false;
+        return element.getClientRects().length > 0;
+      }
+
+      function currentRouteName() {
+        var product = currentHashProduct();
+        return product && product.name ? normalizeText(product.name.replace(/\+/g, " ")) : "";
+      }
+
+      function titleSelectors() {
+        return [
+          ".sprd-detail-info h1",
+          ".sprd-detail-info__title",
+          ".sprd-detail-info__headline",
+          ".sprd-detail-info [class*='title']",
+          ".sprd-detail-info [class*='name']",
+          ".sprd-detail-page h1",
+          ".sprd-detail-page__title",
+          ".sprd-detail-page__headline",
+          ".sprd-article-info h1",
+          ".sprd-article-info__title",
+          ".sprd-article__title",
+          ".sprd-product-type h1",
+          ".sprd-product-type__title",
+          ".sprd-detail-content h1",
+          ".sprd-detail-content__title",
+          ".sprd-product-navigation__title",
+          ".sprd-listpage__title",
+          "h1",
+          "h2",
+          "h3"
+        ];
+      }
+
+      function textWithoutAnnotation(element) {
+        if (!element) return "";
+
+        var clone = element.cloneNode(true);
+        var annotation = clone.querySelector("." + annotationClass);
+        if (annotation) {
+          annotation.remove();
+        }
+
+        return normalizeText(clone.textContent);
+      }
+
+      function findTitleCandidates() {
+        var selectors = titleSelectors();
+        var candidates = [];
+
+        for (var i = 0; i < selectors.length; i += 1) {
+          var nodes = root.querySelectorAll(selectors[i]);
+          for (var j = 0; j < nodes.length; j += 1) {
+            var candidate = nodes[j];
+            if (!isVisibleElement(candidate)) continue;
+            if (!textWithoutAnnotation(candidate)) continue;
+            if (candidates.indexOf(candidate) === -1) {
+              candidates.push(candidate);
+            }
+          }
+        }
+
+        return candidates;
+      }
+
+      function findTitleElement(productName) {
+        var normalizedName = normalizeText(productName || currentRouteName());
+        var candidates = findTitleCandidates();
+        var startsWithMatch = null;
+
+        for (var i = 0; i < candidates.length; i += 1) {
+          var candidate = candidates[i];
+          var text = textWithoutAnnotation(candidate);
+          if (!text) continue;
+
+          if (normalizedName && text === normalizedName) {
+            return candidate;
+          }
+
+          if (normalizedName && !startsWithMatch && text.indexOf(normalizedName + " ") === 0) {
+            startsWithMatch = candidate;
+          }
+        }
+
+        return startsWithMatch || candidates[0] || null;
+      }
+
+      function resolveProductContext(catalog) {
+        var hashProduct = currentHashProduct();
+        var routeName = currentRouteName();
+        var candidates = findTitleCandidates();
+        var visibleRootText = normalizeText(root.innerText || "");
+
+        if (hashProduct) {
+          for (var i = 0; i < catalog.length; i += 1) {
+            var item = catalog[i];
+            if (hashProduct.ideaId && item.ideaId === hashProduct.ideaId) {
+              return {
+                record: item,
+                title: findTitleElement(item.name)
+              };
+            }
+          }
+        }
+
+        for (var j = 0; j < catalog.length; j += 1) {
+          var candidate = catalog[j];
+          if (normalizeText(candidate.name) === routeName) {
+            return {
+              record: candidate,
+              title: findTitleElement(candidate.name)
+            };
+          }
+        }
+
+        for (var k = 0; k < candidates.length; k += 1) {
+          var titleCandidate = candidates[k];
+          var visibleTitle = textWithoutAnnotation(titleCandidate);
+          for (var m = 0; m < catalog.length; m += 1) {
+            var visibleMatch = catalog[m];
+            var normalizedProductName = normalizeText(visibleMatch.name);
+            if (
+              visibleTitle === normalizedProductName ||
+              visibleTitle.indexOf(normalizedProductName + " ") === 0
+            ) {
+              return {
+                record: visibleMatch,
+                title: titleCandidate
+              };
+            }
+          }
+        }
+
+        var longestVisibleMatch = null;
+        for (var n = 0; n < catalog.length; n += 1) {
+          var pageTextMatch = catalog[n];
+          var normalizedName = normalizeText(pageTextMatch.name);
+          if (!normalizedName) continue;
+          if (visibleRootText.indexOf(normalizedName) === -1) continue;
+          if (!longestVisibleMatch || normalizedName.length > normalizeText(longestVisibleMatch.name).length) {
+            longestVisibleMatch = pageTextMatch;
+          }
+        }
+
+        if (longestVisibleMatch) {
+          return {
+            record: longestVisibleMatch,
+            title: findTitleElement(longestVisibleMatch.name)
+          };
+        }
+
+        return {
+          record: null,
+          title: findTitleElement("")
+        };
+      }
+
+      function findFallbackAnchor() {
+        var selectors = [
+          ".sprd-detail-info",
+          ".sprd-detail-info__body",
+          ".sprd-detail-page [class*='info']",
+          ".sprd-detail-page [class*='buy-box']",
+          ".sprd-article-info",
+          ".sprd-detail-content",
+          ".sprd-detail-page",
+          ".sprd-product-navigation"
+        ];
+
+        for (var i = 0; i < selectors.length; i += 1) {
+          var candidate = root.querySelector(selectors[i]);
+          if (isVisibleElement(candidate)) return candidate;
+        }
+
+        return null;
+      }
+
+      function isLikelyDetailView() {
+        var visibleText = root.innerText || "";
+        if (/add to cart/i.test(visibleText)) return true;
+        if (/plus shipping/i.test(visibleText)) return true;
+        if (/size chart/i.test(visibleText)) return true;
+        if (/regional sizing/i.test(visibleText)) return true;
+        return !!findFallbackAnchor();
+      }
+
+      function syncAnnotation(text, preferredTitle) {
+        var existing = root.querySelector("." + annotationClass);
+        var title = preferredTitle || findTitleElement("");
+        var fallbackAnchor = findFallbackAnchor();
+
+        if (!text) {
+          if (existing) existing.remove();
+          if (shellAnnotation) {
+            shellAnnotation.hidden = true;
+            shellAnnotation.textContent = "";
+          }
+          return;
+        }
+
+        if (!existing) {
+          existing = document.createElement("span");
+          existing.className = annotationClass;
+        }
+
+        existing.textContent = text;
+        if (title) {
+          existing.classList.remove("is-fallback");
+        } else {
+          existing.classList.add("is-fallback");
+        }
+
+        if (title && existing.parentElement !== title) {
+          title.appendChild(existing);
+        } else if (!title && fallbackAnchor && existing.parentElement !== fallbackAnchor) {
+          fallbackAnchor.insertAdjacentElement("afterbegin", existing);
+        } else if (!title && !fallbackAnchor) {
+          existing.remove();
+        }
+
+        if (shellAnnotation) {
+          var embeddedVisible =
+            existing &&
+            isVisibleElement(existing) &&
+            (existing.parentElement === title || existing.parentElement === fallbackAnchor);
+          var allowShellFallback = isLikelyDetailView();
+
+          if (embeddedVisible || !allowShellFallback) {
+            shellAnnotation.hidden = true;
+            shellAnnotation.textContent = "";
+          } else {
+            shellAnnotation.textContent = text;
+            shellAnnotation.hidden = false;
+          }
+        }
+      }
+
+      function updateAnnotation() {
+        Promise.all([loadCatalog(), loadTaglines()]).then(function (results) {
+          var catalog = results[0];
+          var data = results[1];
+          var context = resolveProductContext(catalog);
+          var record = context && context.record ? context.record : null;
+          var text = record && record.ideaId ? data[record.ideaId] || "" : "";
+          var title = context && context.title ? context.title : findTitleElement(record ? record.name : "");
+          var fallbackAnchor = findFallbackAnchor();
+
+          syncAnnotation(text, title);
+
+          var existing = root.querySelector("." + annotationClass);
+          var embeddedVisible =
+            existing &&
+            isVisibleElement(existing) &&
+            (existing.parentElement === title || existing.parentElement === fallbackAnchor);
+          var shellVisible = shellAnnotation && !shellAnnotation.hidden && !!shellAnnotation.textContent;
+          var annotationVisible = !!(embeddedVisible || shellVisible);
+
+          if (!annotationVisible && attemptCount < maxAttempts) {
+            attemptCount += 1;
+            updateTimer = window.setTimeout(updateAnnotation, 250);
+          }
+        });
+      }
+
+      function scheduleAnnotationUpdate() {
+        attemptCount = 0;
+        window.clearTimeout(updateTimer);
+        updateTimer = window.setTimeout(updateAnnotation, 0);
+      }
+
+      scheduleAnnotationUpdate();
+      window.addEventListener("hashchange", function () {
+        scheduleAnnotationUpdate();
+      });
+    })();
+
     (function keepShopAtTopOnLoad() {
+      var root = document.getElementById("sprd-shop");
+      var focusSink = document.getElementById("shop-focus-sink");
+      var preservedScrollTop = 0;
+      var scrollLockTimer = 0;
+      var scrollLockFrame = 0;
+      var scrollLockActive = false;
+      var pointerInteractionActive = false;
+      var sameProductNavigationActive = false;
+      var lastFocusRedirectAt = 0;
+
       function scrollTop() {
         window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+      }
+
+      function restoreScroll(top) {
+        window.scrollTo({ top: top, left: 0, behavior: "auto" });
+      }
+
+      function captureScrollPosition() {
+        preservedScrollTop = window.scrollY;
+      }
+
+      function clearScrollLock() {
+        window.clearTimeout(scrollLockTimer);
+        if (scrollLockFrame) {
+          window.cancelAnimationFrame(scrollLockFrame);
+          scrollLockFrame = 0;
+        }
+        scrollLockActive = false;
+        scrollLockTimer = 0;
+        sameProductNavigationActive = false;
+      }
+
+      function maintainScrollLock() {
+        if (!scrollLockActive) return;
+        if (Math.abs(window.scrollY - preservedScrollTop) > 1) {
+          restoreScroll(preservedScrollTop);
+        }
+        scrollLockFrame = window.requestAnimationFrame(maintainScrollLock);
+      }
+
+      function holdScrollPosition() {
+        clearScrollLock();
+        scrollLockActive = true;
+
+        restoreScroll(preservedScrollTop);
+        scrollLockFrame = window.requestAnimationFrame(maintainScrollLock);
+
+        scrollLockTimer = window.setTimeout(clearScrollLock, 1800);
+      }
+
+      function hashContext(hash) {
+        var value = String(hash || "");
+        if (!value.startsWith("#!/")) {
+          return { pathname: "", ideaId: "" };
+        }
+
+        var route = value.slice(3);
+        var parts = route.split("?");
+        var pathname = parts[0] || "";
+        var params = new URLSearchParams(parts[1] || "");
+
+        return {
+          pathname: pathname,
+          ideaId: params.get("idea") || ""
+        };
+      }
+
+      function shouldResetScroll(previousHash, nextHash) {
+        var previous = hashContext(previousHash);
+        var next = hashContext(nextHash);
+
+        // Keep scroll position when the embed only updates state on the same
+        // product route, like switching shirt colors, sizes, or product type.
+        if (
+          previous.pathname &&
+          previous.pathname === next.pathname
+        ) {
+          return false;
+        }
+
+        return true;
+      }
+
+      var lastHash = window.location.hash;
+
+      if (root) {
+        root.addEventListener(
+          "pointerdown",
+          function (event) {
+            pointerInteractionActive = true;
+            captureScrollPosition();
+            var target = event.target;
+            var clickable =
+              target &&
+              typeof target.closest === "function" &&
+              target.closest("button, a, input, label, [role='button'], [role='option']");
+
+            if (clickable) {
+              holdScrollPosition();
+            }
+          },
+          true
+        );
+
+        root.addEventListener(
+          "click",
+          function (event) {
+            var target = event.target;
+            var clickable =
+              target &&
+              typeof target.closest === "function" &&
+              target.closest("button, a, input, label, [role='button'], [role='option']");
+
+            if (clickable && typeof clickable.blur === "function") {
+              window.setTimeout(function () {
+                clickable.blur();
+              }, 0);
+            }
+
+            window.setTimeout(function () {
+              pointerInteractionActive = false;
+            }, 0);
+          },
+          true
+        );
+
+        root.addEventListener(
+          "focusin",
+          function (event) {
+            if (!pointerInteractionActive && !sameProductNavigationActive) return;
+            var target = event.target;
+            if (!target || typeof target.blur !== "function") return;
+
+            if (target.matches("button, a, input, [role='button'], [role='option']")) {
+              window.setTimeout(function () {
+                target.blur();
+              }, 0);
+            }
+
+            if (
+              focusSink &&
+              target.matches("main.sprd-detail-page, .sprd-detail-page, .sprd-detail-block__detail-info, .sprd-detail-info")
+            ) {
+              window.setTimeout(function () {
+                lastFocusRedirectAt = Date.now();
+                try {
+                  focusSink.focus({ preventScroll: true });
+                } catch (error) {
+                  focusSink.focus();
+                }
+                restoreScroll(preservedScrollTop);
+              }, 0);
+            }
+          },
+          true
+        );
+
+        window.addEventListener(
+          "scroll",
+          function () {
+            if (!sameProductNavigationActive) return;
+            if (Date.now() - lastFocusRedirectAt > 2200) return;
+            if (Math.abs(window.scrollY - preservedScrollTop) > 1) {
+              restoreScroll(preservedScrollTop);
+            }
+          },
+          { passive: true }
+        );
       }
 
       // Run immediately and again after render passes where the embed can steal focus.
@@ -159,7 +742,14 @@
       setTimeout(scrollTop, 400);
 
       window.addEventListener("hashchange", function () {
-        requestAnimationFrame(scrollTop);
+        var nextHash = window.location.hash;
+        if (shouldResetScroll(lastHash, nextHash)) {
+          requestAnimationFrame(scrollTop);
+        } else {
+          sameProductNavigationActive = true;
+          holdScrollPosition();
+        }
+        lastHash = nextHash;
       });
 
       window.addEventListener("pageshow", function () {
