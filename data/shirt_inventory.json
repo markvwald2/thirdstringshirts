@@ -898,7 +898,7 @@
   },
   {
     "name": "California state flag",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X32Y64D11921436W22173H5543/views/1,width=500,height=500,appearanceId=36/california.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X32Y67D1058517859W22173H3695/views/1,width=500,height=500,appearanceId=36/california.jpg",
     "sub_theme": "State flags",
     "tags": [
       "geography",
@@ -906,16 +906,16 @@
     ],
     "theme": "geography",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/california?idea=5d89cbe220517626420dae56",
-    "idea_id": "5d89cbe220517626420dae56",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/california?idea=69bebf933c6a967192669933",
+    "idea_id": "69bebf933c6a967192669933",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cbe220517626420dae56",
+    "shirt_id": "69bebf933c6a967192669933",
     "shirt_name": "California state flag",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X32Y64D11921436W22173H5543/views/1,width=500,height=500,appearanceId=36/california.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A36PA4927PT17X32Y67D1058517859W22173H3695/views/1,width=500,height=500,appearanceId=36/california.jpg"
   },
   {
     "name": "California CTA Blue Line",
@@ -1133,7 +1133,7 @@
   },
   {
     "name": "Clark/Lake CTA Blue Line",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X26Y82D3576761W29337H8801/views/1,width=500,height=500,appearanceId=2/clarklake-blue-line-mens-premium-t-shirt.jpg",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X26Y112D1058517811W29337H5867/views/1,width=500,height=500,appearanceId=2/clarklake-blue-line-mens-premium-t-shirt.jpg",
     "sub_theme": "CTA stops",
     "tags": [
       "transportation",
@@ -1142,16 +1142,16 @@
     ],
     "theme": "transportation",
     "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/clarklake+blue+line?idea=5d89cc30b4b8c76e39170fa0",
-    "idea_id": "5d89cc30b4b8c76e39170fa0",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/clarklake+blue+line?idea=69bebde9b8f8a539b530fc3e",
+    "idea_id": "69bebde9b8f8a539b530fc3e",
     "source_of_truth": "local",
     "source_match": "product_url",
-    "shirt_id": "5d89cc30b4b8c76e39170fa0",
+    "shirt_id": "69bebde9b8f8a539b530fc3e",
     "shirt_name": "Clark/Lake CTA Blue Line",
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X26Y82D3576761W29337H8801/views/1,width=500,height=500,appearanceId=2/clarklake-blue-line-mens-premium-t-shirt.jpg"
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X26Y112D1058517811W29337H5867/views/1,width=500,height=500,appearanceId=2/clarklake-blue-line-mens-premium-t-shirt.jpg"
   },
   {
     "name": "Coalinga, California",
@@ -6069,9 +6069,11 @@
   {
     "name": "Washington DC flag",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X13Y117D3585381W32004H5334/views/1,width=500,height=500,appearanceId=2/washington-dc-mens-premium-t-shirt.jpg",
-    "sub_theme": "",
+    "sub_theme": "City flags",
     "tags": [
-      "geography"
+      "geography",
+      "city-flags",
+      "washington-dc"
     ],
     "theme": "geography",
     "platform": "Spreadshirt",

@@ -62,3 +62,37 @@ node tools/sync-spreadshirt-inventory.js --apply
 - Optional overrides:
   - `--inventory data/shirt_inventory.json`
   - `--report tools/api_sync_report.json`
+
+## 5) Artwork Ratio Report
+
+- File: `report-artwork-ratios.js`
+- Purpose: Fetch Spreadshirt design dimensions and bucket each artwork into a reusable placement template ratio such as `3:1`, `2:1`, `4:3`, or `1:1`.
+- Canonical local inventory:
+  - `../data/shirt_inventory.json`
+- Output:
+  - `tools/artwork_ratio_report.json`
+- Run:
+
+```bash
+node tools/report-artwork-ratios.js
+```
+
+- Optional overrides:
+  - `--inventory data/shirt_inventory.json`
+  - `--output tools/artwork_ratio_report.json`
+  - `--limit 25`
+
+## 6) Flag Catalog Validator
+
+- File: `validate-flag-catalog.js`
+- Purpose: Check that the inventory contains all 50 state flags plus the Washington DC city flag, and confirm their current metadata grouping.
+- Canonical local inventory:
+  - `../data/shirt_inventory.json`
+- Run:
+
+```bash
+node tools/validate-flag-catalog.js
+```
+
+- Optional overrides:
+  - `--inventory data/shirt_inventory.json`
