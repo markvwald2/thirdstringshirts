@@ -828,6 +828,20 @@ body[data-page="home"] .section-head:first-of-type h2 {
   font-size: 0.9rem;
 }
 
+.footer-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
 .empty {
   padding: 2rem;
   text-align: center;

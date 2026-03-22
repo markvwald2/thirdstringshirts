@@ -263,8 +263,10 @@ function buildHtml(product) {
   <footer class="site-footer">
     <div class="container footer-row">
       <p><strong>Third String Shirts</strong> | Bench energy, premium fabric.</p>
-      <p>
-        Follow on <a href="https://x.com/3rdstringshirts" target="_blank" rel="noopener noreferrer">X</a>
+      <p class="footer-links">
+        <a href="../../privacy.html">Privacy Policy</a>
+        <a href="../../data-deletion.html">Data Deletion</a>
+        <a href="https://x.com/3rdstringshirts" target="_blank" rel="noopener noreferrer">X</a>
       </p>
     </div>
   </footer>
