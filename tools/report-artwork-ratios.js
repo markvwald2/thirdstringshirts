@@ -131,101 +131,6 @@ async function mapWithConcurrency(items, limit, mapper) {
   return results;
 }
 
-function buildBucketSummary(rows) {
-  const summary = new Map();
-  for (const row of rows) {
-    if (!summary.has(row.bucket)) {
-      summary.set(row.bucket, {
-        bucket: row.bucket,
-        count: 0,
-        examples: [],
-      });
-    }
-    const entry = summary.get(row.bucket);
-    entry.count += 1;
-    if (entry.examples.length < 5) {
-      entry.examples.push({
-        shirt_name: row.shirt_name,
-        exact_aspect_ratio: row.exact_aspect_ratio,
-        dimensions: `${row.width}x${row.height}`,
-      });
-    }
-  }
-
-  return [...summary.values()].sort((a, b) => {
-    if (b.count !== a.count) return b.count - a.count;
-    return a.bucket.localeCompare(b.bucket);
-  });
-}
-
-function findBucketDefinition(label) {
-  return RATIO_BUCKETS.find((bucket) => bucket.label === label) || null;
-}
-
-function bucketDistance(labelA, labelB) {
-  const a = findBucketDefinition(labelA);
-  const b = findBucketDefinition(labelB);
-  if (!a || !b) return Infinity;
-  return Math.abs(Math.log((a.width / a.height) / (b.width / b.height)));
-}
-
-function buildTemplateRecommendations(rows, bucketSummary) {
-  const recommendedBuckets = bucketSummary.slice(0, 8).map((entry) => entry.bucket);
-  const recommendedSet = new Set(recommendedBuckets);
-  const rollup = new Map();
-
-  for (const bucket of recommendedBuckets) {
-    rollup.set(bucket, {
-      template_bucket: bucket,
-      count: 0,
-      source_buckets: new Set(),
-      examples: [],
-    });
-  }
-
-  for (const row of rows) {
-    const targetBucket = recommendedSet.has(row.bucket)
-      ? row.bucket
-      : recommendedBuckets.reduce((best, candidate) => {
-          const distance = bucketDistance(row.bucket, candidate);
-          if (!best || distance < best.distance) {
-            return { bucket: candidate, distance };
-          }
-          return best;
-        }, null).bucket;
-
-    const entry = rollup.get(targetBucket);
-    entry.count += 1;
-    entry.source_buckets.add(row.bucket);
-    if (entry.examples.length < 6) {
-      entry.examples.push({
-        shirt_name: row.shirt_name,
-        original_bucket: row.bucket,
-        dimensions: `${row.width}x${row.height}`,
-      });
-    }
-  }
-
-  return {
-    recommendedTemplateCount: recommendedBuckets.length,
-    recommendedBuckets,
-    templateRollup: [...rollup.values()].map((entry) => ({
-      template_bucket: entry.template_bucket,
-      count: entry.count,
-      source_buckets: [...entry.source_buckets].sort((a, b) => {
-        const countA = bucketSummary.find((item) => item.bucket === a)?.count || 0;
-        const countB = bucketSummary.find((item) => item.bucket === b)?.count || 0;
-        if (countB !== countA) return countB - countA;
-        return a.localeCompare(b);
-      }),
-      examples: entry.examples,
-    })).sort((a, b) => {
-      if (b.count !== a.count) return b.count - a.count;
-      return a.template_bucket.localeCompare(b.template_bucket);
-    }),
-  };
-}
-
 async function main() {
   const args = parseArgs(process.argv);
   if (args.help) {
@@ -255,15 +160,11 @@ async function main() {
       shirt_name: row.shirt_name,
       idea_id: row.idea_id,
       design_id: row.design_id,
-      api_name: design.name,
-      width: design.width,
-      height: design.height,
-      unit: design.unit,
-      format: design.format,
-      file_extension: design.fileExtension,
+      dimensions: `${design.width}x${design.height}`,
       exact_aspect_ratio: bucketed.exactAspectRatio,
       bucket: bucketed.bucket,
-      percent_off_bucket: bucketed.percentOffBucket,
+      width: design.width,
+      height: design.height,
     };
   });
 
@@ -272,22 +173,17 @@ async function main() {
     inventoryPath,
     totalSpreadshirtRows: spreadshirtRows.length,
     totalReportedRows: enriched.length,
-    bucketSummary: buildBucketSummary(enriched),
-    rows: enriched.sort((a, b) => {
-      if (a.bucket !== b.bucket) return a.bucket.localeCompare(b.bucket);
+    designs: enriched.sort((a, b) => {
       return a.shirt_name.localeCompare(b.shirt_name);
     }),
   };
-
-  report.templateRecommendations = buildTemplateRecommendations(report.rows, report.bucketSummary);
 
   fs.writeFileSync(outputPath, `${JSON.stringify(report, null, 2)}\n`, 'utf8');
 
   console.log(JSON.stringify({
     outputPath,
     totalReportedRows: report.totalReportedRows,
-    bucketSummary: report.bucketSummary,
-    templateRecommendations: report.templateRecommendations,
+    sample: report.designs.slice(0, 8),
   }, null, 2));
 }
 
