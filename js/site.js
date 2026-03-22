@@ -3,11 +3,14 @@ const TAGLINES_PATH = "./data/taglines.json";
 
 const THEME_CONFIG = [
   { id: "all", label: "All" },
-  { id: "funny", label: "Funny" },
+  { id: "funny", label: "funny" },
+  { id: "fake band names", label: "fake band names" },
   { id: "geography", label: "Geography" },
   { id: "cta", label: "CTA" },
-  { id: "design", label: "Design" }
+  { id: "design", label: "design" }
 ];
+
+const THEME_LABELS = new Map(THEME_CONFIG.map((theme) => [theme.id, theme.label]));
 
 function normalize(value) {
   return String(value || "").trim().toLowerCase();
@@ -18,12 +21,56 @@ function determineBucket(item) {
   const subTheme = normalize(item.sub_theme);
   const tags = (item.tags || []).map(normalize);
 
+  if (theme === "fake band names" || tags.includes("fake band names")) return "fake band names";
   if (theme === "geography" || tags.includes("geography")) return "geography";
   if (subTheme.includes("cta")) {
     return "cta";
   }
   if (theme === "design" || tags.includes("design")) return "design";
   return "funny";
+}
+
+function themeLabel(theme, bucket) {
+  const normalizedTheme = normalize(theme);
+  if (THEME_LABELS.has(normalizedTheme)) {
+    return THEME_LABELS.get(normalizedTheme);
+  }
+  if (THEME_LABELS.has(bucket)) {
+    return THEME_LABELS.get(bucket);
+  }
+  return String(theme || "").trim();
+}
+
+function subThemeLabel(subTheme) {
+  const raw = String(subTheme || "").trim();
+  const normalized = normalize(raw);
+  if (
+    normalized === "state flags" ||
+    normalized === "state capitals" ||
+    normalized === "state nicknames"
+  ) {
+    return normalized;
+  }
+  return raw;
+}
+
+function cardPills(product) {
+  const normalizedTheme = normalize(product.theme);
+  const subTheme = subThemeLabel(product.subTheme);
+  const escapedSubTheme = subTheme.replace(/</g, "&lt;");
+
+  if ((normalizedTheme === "geography" || normalizedTheme === "transportation") && subTheme) {
+    return [`<span class="badge badge-subtheme">${escapedSubTheme}</span>`];
+  }
+
+  const escapedTheme = themeLabel(product.theme, product.bucket).replace(/</g, "&lt;");
+  const pills = [`<span class="badge">${escapedTheme}</span>`];
+
+  if (subTheme) {
+    pills.push(`<span class="badge badge-subtheme">${escapedSubTheme}</span>`);
+  }
+
+  return pills;
 }
 
 function cleanProduct(item, tagline = "") {
@@ -45,6 +92,7 @@ function cleanProduct(item, tagline = "") {
     platform,
     isEtsy: platform === "etsy",
     bucket: determineBucket(item),
+    theme: item.theme || "",
     subTheme: item.sub_theme || "",
     tagline: String(tagline || "")
   };
@@ -156,7 +204,7 @@ async function loadProducts() {
 
 function cardMarkup(product) {
   const escapedName = product.name.replace(/</g, "&lt;");
-  const badgeLabel = product.bucket.toUpperCase();
+  const pills = cardPills(product);
   const localHref = productHref(product);
   const targetAttrs = productLinkTargetAttrs(product);
   const linkLabel = productLinkLabel(product);
@@ -168,7 +216,7 @@ function cardMarkup(product) {
       <div class="card-body">
         <h3>${escapedName}</h3>
         <div class="meta">
-          <span class="badge">${badgeLabel}</span>
+          <div class="badge-row">${pills.join("")}</div>
           <a class="product-link" href="${localHref}"${targetAttrs}>${linkLabel}</a>
         </div>
       </div>

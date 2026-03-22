@@ -95,7 +95,7 @@
       <article class="carousel-slide ${sportClass}">
         <img src="${shirt.imageUrl}" alt="${shirt.name.replace(/</g, "&lt;")}" loading="lazy">
         <div class="carousel-info">
-          <span class="badge">${shirt.bucket.toUpperCase()}</span>
+          <div class="badge-row">${cardPills(shirt).join("")}</div>
           <h3>${shirt.name.replace(/</g, "&lt;")}</h3>
           <p>${(shirt.tagline || "A premium tribute to backups, benchwarmers, and the occasional legend.").replace(/</g, "&lt;")}</p>
           <a class="button" href="${href}"${targetAttrs}>${ctaLabel}</a>

@@ -371,9 +371,15 @@ body[data-page="home"] .section-head:first-of-type h2 {
 .meta {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 0.55rem;
   gap: 0.45rem;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
 }
 
 .badge {
@@ -435,6 +441,10 @@ body[data-page="home"] .section-head:first-of-type h2 {
 .carousel-info h3 {
   margin: 0;
   font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+}
+
+.carousel-info .badge-row {
+  margin-bottom: 0.6rem;
 }
 
 .carousel-info p {
