@@ -1,6 +1,6 @@
 [
   {
-    "name": "3D Anchor",
+    "name": "Fleur De Lise",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X107Y72D3257938W13224H15568/views/1,width=500,height=500,appearanceId=1256/fleur-de-lise-mens-premium-t-shirt.jpg",
     "sub_theme": "nautical",
     "tags": [
@@ -11,9 +11,9 @@
     "product_url": "https://www.thirdstringshirts.com/shop.html#!/fleur+de+lise?idea=5d89cc0420517626420dc172",
     "idea_id": "5d89cc0420517626420dc172",
     "source_of_truth": "local",
-    "source_match": "product_url",
+    "source_match": "api_name",
     "shirt_id": "5d89cc0420517626420dc172",
-    "shirt_name": "3D Anchor",
+    "shirt_name": "Fleur De Lise",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -30,10 +30,10 @@
     "theme": "funny",
     "platform": "Spreadshirt",
     "product_url": "https://www.thirdstringshirts.com/shop.html#!/50+of+archery+is+aiming?idea=69bffc738c78661dd870f687",
-    "idea_id": "69bffc738c78661dd870f687",
+    "idea_id": "5d89cc13b4b8c76e3917033d",
     "source_of_truth": "local",
-    "source_match": "product_url",
-    "shirt_id": "69bffc738c78661dd870f687",
+    "source_match": "api_name",
+    "shirt_id": "5d89cc13b4b8c76e3917033d",
     "shirt_name": "50% of Archery is Aiming",
     "tone": "",
     "priority": "",
@@ -1237,7 +1237,7 @@
   },
   {
     "name": "Coloradans Against Craft Beer",
-    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad809cb544d.png",
+    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad82e91ba25.png",
     "theme": "funny",
     "sub_theme": "beer",
     "tags": [
@@ -1257,16 +1257,16 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad809cb544d.png",
+    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad82e91ba25.png",
     "image_urls": [
-      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad809cb544d.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad809680f9a.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad808fd6a66.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad80996c543.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad80922421f.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad809430698.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad808f68968.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad8090b6b20.png"
+      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad82e91ba25.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad82e91bbcb.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad82e91bc75.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad82e91bd10.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad82e91bd99.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad82e91be1f.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad82e91bea4.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad82e91bf2b.png"
     ]
   },
   {
@@ -1305,7 +1305,7 @@
   },
   {
     "name": "Coloradans Against Hiking",
-    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad82e91ba25.png",
+    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad833a66dfe.png",
     "theme": "funny",
     "sub_theme": "outdoors",
     "tags": [
@@ -1325,21 +1325,21 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad82e91ba25.png",
+    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad833a66dfe.png",
     "image_urls": [
-      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad82e91ba25.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad82e91bbcb.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad82e91bc75.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad82e91bd10.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad82e91bd99.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad82e91be1f.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad82e91bea4.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad82e91bf2b.png"
+      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad833a66dfe.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad833a66ffd.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad833a670a2.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad833a671a2.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad833a672a4.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad833a67384.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad833a67419.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad833a674a4.png"
     ]
   },
   {
     "name": "Coloradans Against Triathlons",
-    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad833a66dfe.png",
+    "URL": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad809cb544d.png",
     "theme": "funny",
     "sub_theme": "sports",
     "tags": [
@@ -1359,16 +1359,16 @@
     "tone": "",
     "priority": "",
     "evergreen": null,
-    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad833a66dfe.png",
+    "image_url": "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad809cb544d.png",
     "image_urls": [
-      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad833a66dfe.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad833a66ffd.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad833a670a2.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad833a671a2.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad833a672a4.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad833a67384.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad833a67419.png",
-      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad833a674a4.png"
+      "./assets/etsy/unisex-tri-blend-t-shirt-athletic-grey-triblend-front-69ad809cb544d.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-blue-triblend-front-69ad809680f9a.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-charcoal-black-triblend-front-69ad808fd6a66.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-grey-triblend-front-69ad80996c543.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-navy-triblend-front-69ad80922421f.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-red-triblend-front-69ad809430698.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-solid-black-triblend-front-69ad808f68968.png",
+      "./assets/etsy/unisex-tri-blend-t-shirt-true-royal-triblend-front-69ad8090b6b20.png"
     ]
   },
   {
@@ -3677,7 +3677,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A645PA4267PT17X30Y123D11922242W28536H4756/views/1,width=500,height=500,appearanceId=645/maine-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Maine--The Other Tennessee",
+    "name": "Maine—The Other Tennessee",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X108Y61D10104419W12945H17304/views/1,width=500,height=500,appearanceId=1256/maine-the-other-tennessee-mens-premium-t-shirt.jpg",
     "sub_theme": "geography",
     "tags": [
@@ -3693,7 +3693,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "5d89cc1f6bbdbb2e6a46c33c",
-    "shirt_name": "Maine--The Other Tennessee",
+    "shirt_name": "Maine—The Other Tennessee",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -4084,27 +4084,6 @@
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X39Y97D1058510567W26700H6485/views/1,width=500,height=500,appearanceId=339.jpg"
-  },
-  {
-    "name": "Natural State",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X92Y81D3575715W16199H15008/views/1,width=650,height=650,appearanceId=812.jpg",
-    "sub_theme": "state nicknames",
-    "tags": [
-      "state-nicknames",
-      "geography"
-    ],
-    "theme": "geography",
-    "platform": "Spreadshirt",
-    "product_url": "https://thirdstringshirts.myspreadshop.com/natural?idea=5d89cc1420517626420dcec0",
-    "idea_id": "5d89cc1420517626420dcec0",
-    "source_of_truth": "local",
-    "source_match": "product_url",
-    "shirt_id": "5d89cc1420517626420dcec0",
-    "shirt_name": "Natural State",
-    "tone": "",
-    "priority": "",
-    "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X92Y81D3575715W16199H15008/views/1,width=650,height=650,appearanceId=812.jpg"
   },
   {
     "name": "NBJA",
@@ -4517,27 +4496,6 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A231PA4927PT17X14Y71D11922258W25754H4294/views/1,width=500,height=500,appearanceId=231/oklahoma.jpg"
   },
   {
-    "name": "Old Line State",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X101Y92D3575725W14325H7835/views/1,width=500,height=500,appearanceId=2/old-line-mens-premium-t-shirt.jpg",
-    "sub_theme": "state nicknames",
-    "tags": [
-      "state-nicknames",
-      "geography"
-    ],
-    "theme": "geography",
-    "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/old+line?idea=5d89cc051cbf3a25d594dd37",
-    "idea_id": "5d89cc051cbf3a25d594dd37",
-    "source_of_truth": "local",
-    "source_match": "product_url",
-    "shirt_id": "5d89cc051cbf3a25d594dd37",
-    "shirt_name": "Old Line State",
-    "tone": "",
-    "priority": "",
-    "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X101Y92D3575725W14325H7835/views/1,width=500,height=500,appearanceId=2/old-line-mens-premium-t-shirt.jpg"
-  },
-  {
     "name": "Olympia",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X59Y51D1058510607W22712H14943/views/1,width=650,height=650,appearanceId=339.jpg",
     "sub_theme": "state capitals",
@@ -4734,27 +4692,6 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1277PA4267PT17X47Y128D3585341W25283H4213/views/1,width=500,height=500,appearanceId=1277/oregon-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Palmetto State",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A366PA4267PT17X88Y87D3575731W16953H13269/views/1,width=500,height=500,appearanceId=366/palmetto-mens-premium-t-shirt.jpg",
-    "sub_theme": "state nicknames",
-    "tags": [
-      "state-nicknames",
-      "geography"
-    ],
-    "theme": "geography",
-    "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/palmetto?idea=5d89cc30f937647d81ffc558",
-    "idea_id": "5d89cc30f937647d81ffc558",
-    "source_of_truth": "local",
-    "source_match": "product_url",
-    "shirt_id": "5d89cc30f937647d81ffc558",
-    "shirt_name": "Palmetto State",
-    "tone": "",
-    "priority": "",
-    "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A366PA4267PT17X88Y87D3575731W16953H13269/views/1,width=500,height=500,appearanceId=366/palmetto-mens-premium-t-shirt.jpg"
-  },
-  {
     "name": "Part of the Problem",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1277PA4267PT17X40Y70D3581793W26670H10063/views/1,width=500,height=500,appearanceId=1277/part-of-the-problem-mens-premium-t-shirt.jpg",
     "sub_theme": "politics",
@@ -4773,27 +4710,6 @@
     "priority": "",
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1277PA4267PT17X40Y70D3581793W26670H10063/views/1,width=500,height=500,appearanceId=1277/part-of-the-problem-mens-premium-t-shirt.jpg"
-  },
-  {
-    "name": "Pelican State",
-    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X109Y67D3575724W12699H16433/views/1,width=500,height=500,appearanceId=823/pelican-mens-premium-t-shirt.jpg",
-    "sub_theme": "state nicknames",
-    "tags": [
-      "state-nicknames",
-      "geography"
-    ],
-    "theme": "geography",
-    "platform": "Spreadshirt",
-    "product_url": "https://www.thirdstringshirts.com/shop.html#!/pelican?idea=5d89cbde6bbdbb2e6a4696bf",
-    "idea_id": "5d89cbde6bbdbb2e6a4696bf",
-    "source_of_truth": "local",
-    "source_match": "product_url",
-    "shirt_id": "5d89cbde6bbdbb2e6a4696bf",
-    "shirt_name": "Pelican State",
-    "tone": "",
-    "priority": "",
-    "evergreen": null,
-    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A823PA4267PT17X109Y67D3575724W12699H16433/views/1,width=500,height=500,appearanceId=823/pelican-mens-premium-t-shirt.jpg"
   },
   {
     "name": "Pennsylvania state flag",
@@ -5811,7 +5727,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A2PA4927PT17X23Y73D11921435W24035H3942/views/1,width=500,height=500,appearanceId=2/texas.jpg"
   },
   {
-    "name": "The G.O.P.--More Relevant than Max Headroom",
+    "name": "The G.O.P.—More Relevant than Max Headroom",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A339PA4267PT17X29Y74D1058477057W28789H8887/views/1,width=650,height=650,appearanceId=339.jpg",
     "sub_theme": "politics",
     "tags": [
@@ -5826,7 +5742,7 @@
     "source_of_truth": "local",
     "source_match": "product_url",
     "shirt_id": "69ad73f9b8f8a539b56a4dfd",
-    "shirt_name": "The G.O.P.--More Relevant than Max Headroom",
+    "shirt_name": "The G.O.P.—More Relevant than Max Headroom",
     "tone": "",
     "priority": "",
     "evergreen": null,
@@ -6107,7 +6023,7 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A231PA4267PT17X19Y119D3585352W30718H5119/views/1,width=500,height=500,appearanceId=231/utah-mens-premium-t-shirt.jpg"
   },
   {
-    "name": "Veggie-Boy",
+    "name": "Veggieboy",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A2PA4267PT17X55Y50D3500193W23622H12086/views/1,width=500,height=500,appearanceId=2/veggieboy-mens-premium-t-shirt.jpg",
     "sub_theme": "TV",
     "tags": [
@@ -6120,9 +6036,9 @@
     "product_url": "https://www.thirdstringshirts.com/shop.html#!/veggieboy?idea=5d89cc0413615160bf6ebfcb",
     "idea_id": "5d89cc0413615160bf6ebfcb",
     "source_of_truth": "local",
-    "source_match": "product_url",
+    "source_match": "api_name",
     "shirt_id": "5d89cc0413615160bf6ebfcb",
-    "shirt_name": "Veggie-Boy",
+    "shirt_name": "Veggieboy",
     "tone": "",
     "priority": "",
     "evergreen": null,
