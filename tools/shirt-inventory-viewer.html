@@ -57,32 +57,57 @@
       font-size: 0.95rem;
     }
 
-    .toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 12px;
+    .panel {
       margin-bottom: 16px;
-      padding: 10px 12px;
+      padding: 18px;
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 18px;
       box-shadow: 0 8px 20px rgba(7, 31, 57, 0.06);
     }
 
-    .filter {
+    .panel-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .panel-title {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .panel-copy {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .toolbar-grid,
+    .bulk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    .filter,
+    .bulk-field {
       display: flex;
       flex-direction: column;
       gap: 4px;
       font-size: 0.9rem;
-      min-width: 180px;
     }
 
-    .filter input {
+    .filter input,
+    .bulk-field input {
       width: 100%;
-      padding: 6px 8px;
+      padding: 10px 12px;
       border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 10px;
       font: inherit;
       color: var(--text);
       background: #fff;
@@ -90,17 +115,33 @@
 
     .filter select {
       width: 100%;
-      padding: 6px 8px;
+      padding: 10px 12px;
       border: 1px solid var(--border);
-      border-radius: 8px;
+      border-radius: 10px;
       font: inherit;
       color: var(--text);
       background: #fff;
     }
 
-    .toolbar button {
-      padding: 8px 12px;
-      border-radius: 8px;
+    .toolbar-actions,
+    .bulk-actions,
+    .bulk-selection-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .toolbar-actions {
+      margin-top: 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .toolbar button,
+    .bulk button,
+    .export-panel button {
+      padding: 10px 14px;
+      border-radius: 10px;
       border: 1px solid var(--border);
       background: #fff;
       color: var(--text);
@@ -109,25 +150,98 @@
       font-weight: 600;
     }
 
+    .primary-btn {
+      background: #152238;
+      color: #fff;
+      border-color: #152238;
+    }
+
+    .accent-btn {
+      background: #e97a2b;
+      color: #fff;
+      border-color: #e97a2b;
+    }
+
+    .toolbar button.primary-btn,
+    .bulk button.primary-btn,
+    .export-panel button.primary-btn {
+      background: #152238;
+      color: #fff;
+      border-color: #152238;
+    }
+
+    .toolbar button.accent-btn,
+    .bulk button.accent-btn,
+    .export-panel button.accent-btn {
+      background: #e97a2b;
+      color: #fff;
+      border-color: #e97a2b;
+    }
+
+    .secondary-btn {
+      background: #f4f7fb;
+    }
+
     .toggle-row {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       font-size: 0.9rem;
       color: var(--text);
-      margin-right: 8px;
+      min-height: 42px;
+    }
+
+    .collapsible-toggle {
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 600;
+    }
+
+    .collapsible-body[hidden] {
+      display: none;
+    }
+
+    .filter-meta,
+    .bulk-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
     }
 
     .bulk {
-      margin-bottom: 16px;
-      padding: 10px 12px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(7, 31, 57, 0.06);
+      display: grid;
+      gap: 14px;
+    }
+
+    .bulk-summary {
       display: flex;
       flex-wrap: wrap;
-      align-items: end;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .selection-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef4fb;
+      color: #15304d;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .export-panel {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
       gap: 12px;
     }
 
@@ -290,6 +404,16 @@
       color: var(--text);
     }
 
+    @media (max-width: 720px) {
+      .toolbar-actions,
+      .bulk-summary,
+      .bulk-actions,
+      .bulk-selection-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    }
+
     .error { color: #b91c1c; font-weight: 600; }
   </style>
 </head>
@@ -313,78 +437,100 @@
   <main class="wrap">
     <h1>shirt_inventory.json Viewer</h1>
     <div id="status" class="status">Loading...</div>
-    <div class="toolbar">
-      <label class="filter">
-        <span>Include themes</span>
-        <select id="include-theme">
-          <option value="">Any</option>
-        </select>
-      </label>
-      <label class="filter">
-        <span>Exclude themes</span>
-        <select id="exclude-theme">
-          <option value="">None</option>
-        </select>
-      </label>
-      <label class="filter">
-        <span>Include sub-themes</span>
-        <select id="include-sub-theme">
-          <option value="">Any</option>
-        </select>
-      </label>
-      <label class="filter">
-        <span>Exclude sub-themes</span>
-        <select id="exclude-sub-theme">
-          <option value="">None</option>
-        </select>
-      </label>
-      <label class="filter">
-        <span>Include tags</span>
-        <input id="include-tags" type="text" placeholder="comma-separated exact tags" />
-      </label>
-      <label class="filter">
-        <span>Exclude tags</span>
-        <input id="exclude-tags" type="text" placeholder="comma-separated exact tags" />
-      </label>
-      <label class="toggle-row">
-        <input id="unthemed-only" type="checkbox" />
-        <span>Un-themed only</span>
-      </label>
-      <button id="clear-filters" type="button">Clear Filters</button>
-      <button id="export-json" type="button">Export JSON</button>
-    </div>
-    <div class="bulk">
-      <label class="filter">
-        <span>Bulk theme</span>
-        <input id="bulk-theme" type="text" placeholder="e.g. geography" />
-      </label>
-      <label class="filter">
-        <span>Bulk sub-theme</span>
-        <input id="bulk-sub-theme" type="text" placeholder="e.g. State names" />
-      </label>
-      <label class="filter">
-        <span>Bulk tags (comma-separated)</span>
-        <input id="bulk-tags" type="text" placeholder="e.g. geography, state-names" />
-      </label>
-      <button id="apply-selected" type="button">Apply To Selected</button>
-      <button id="select-visible" type="button">Select Visible</button>
-      <button id="clear-selection" type="button">Clear Selection</button>
-    </div>
+    <section class="panel toolbar">
+      <div class="panel-head">
+        <div>
+          <h2 class="panel-title">Find Designs</h2>
+          <p class="panel-copy">Search by shirt name or theme, then narrow with the exact pickers.</p>
+        </div>
+      </div>
+      <div class="toolbar-grid">
+        <label class="filter">
+          <span>Search</span>
+          <input id="search-query" type="text" placeholder="e.g. Austin, geography, opening band" />
+        </label>
+        <label class="filter">
+          <span>Theme</span>
+          <select id="include-theme">
+            <option value="">Any theme</option>
+          </select>
+        </label>
+        <label class="filter">
+          <span>Sub-theme</span>
+          <select id="include-sub-theme">
+            <option value="">Any sub-theme</option>
+          </select>
+        </label>
+        <label class="toggle-row">
+          <input id="unthemed-only" type="checkbox" />
+          <span>Show only un-themed items</span>
+        </label>
+      </div>
+      <div class="toolbar-actions">
+        <div class="filter-meta">Search matches shirt name and theme.</div>
+        <div class="bulk-actions">
+          <button id="clear-filters" type="button">Clear Filters</button>
+        </div>
+      </div>
+    </section>
+    <section class="panel bulk">
+      <div class="panel-head">
+        <div>
+          <h2 class="panel-title">Bulk Edit</h2>
+          <p class="panel-copy">Select cards, set the fields you want to change, then apply those edits only to the selected items.</p>
+        </div>
+        <button id="toggle-bulk-edit" type="button" class="collapsible-toggle">Show Bulk Edit</button>
+      </div>
+      <div id="bulk-edit-body" class="collapsible-body" hidden>
+        <div class="bulk-summary">
+          <div id="selection-summary" class="selection-pill">0 selected</div>
+          <div class="bulk-selection-actions">
+            <button id="select-visible" type="button">Select Visible</button>
+            <button id="clear-selection" type="button">Clear Selection</button>
+          </div>
+        </div>
+        <div class="bulk-grid">
+          <label class="bulk-field">
+            <span>Set theme</span>
+            <input id="bulk-theme" type="text" placeholder="e.g. geography" />
+          </label>
+          <label class="bulk-field">
+            <span>Set sub-theme</span>
+            <input id="bulk-sub-theme" type="text" placeholder="e.g. State capitals" />
+          </label>
+          <label class="bulk-field">
+            <span>Add tags</span>
+            <input id="bulk-tags" type="text" placeholder="e.g. geography, state-capitals" />
+          </label>
+        </div>
+        <div class="bulk-actions">
+          <button id="apply-selected" type="button" class="primary-btn">Apply To Selected</button>
+        </div>
+        <div class="bulk-meta">Bulk tags are merged into existing tags so you can safely add categories without overwriting them.</div>
+      </div>
+    </section>
+    <section class="panel export-panel">
+      <div>
+        <h2 class="panel-title">Export</h2>
+        <p class="panel-copy">Download the current in-browser inventory JSON after your edits.</p>
+      </div>
+      <button id="export-json" type="button" class="accent-btn">Export JSON</button>
+    </section>
     <section id="grid" class="grid"></section>
   </main>
 
   <script>
     const statusEl = document.getElementById('status');
     const gridEl = document.getElementById('grid');
+    const searchQueryEl = document.getElementById('search-query');
     const includeThemeEl = document.getElementById('include-theme');
-    const excludeThemeEl = document.getElementById('exclude-theme');
     const includeSubThemeEl = document.getElementById('include-sub-theme');
-    const excludeSubThemeEl = document.getElementById('exclude-sub-theme');
-    const includeTagsEl = document.getElementById('include-tags');
-    const excludeTagsEl = document.getElementById('exclude-tags');
     const unthemedOnlyEl = document.getElementById('unthemed-only');
     const clearFiltersEl = document.getElementById('clear-filters');
     const exportJsonEl = document.getElementById('export-json');
+    const selectionSummaryEl = document.getElementById('selection-summary');
+    const toggleBulkEditEl = document.getElementById('toggle-bulk-edit');
+    const bulkEditBodyEl = document.getElementById('bulk-edit-body');
     const bulkThemeEl = document.getElementById('bulk-theme');
     const bulkSubThemeEl = document.getElementById('bulk-sub-theme');
     const bulkTagsEl = document.getElementById('bulk-tags');
@@ -395,6 +541,12 @@
     const dataset = [];
     const MEN_PREMIUM_MANIFEST_PATH = './mens-premium-appearance-manifest.json';
     let mensPremiumManifest = null;
+    let inventorySourcePath = '';
+
+    function renderStatus(visibleCount, selectedCount) {
+      const sourceText = inventorySourcePath ? ` Source: ${inventorySourcePath}` : '';
+      statusEl.textContent = `Loaded ${dataset.length} images. Showing ${visibleCount}. Selected ${selectedCount}.${sourceText}`;
+    }
 
     function makeCard(item) {
       const card = document.createElement('article');
@@ -571,15 +723,32 @@
       return record && Array.isArray(record.appearances) ? record.appearances : [];
     }
 
-    function applyAppearanceToItem(entry, appearance) {
-      if (!appearance || !appearance.preview_url) return;
+    function rewriteAppearanceUrl(url, appearanceId) {
+      const value = String(url || '').trim();
+      const appearance = String(appearanceId || '').trim();
+      if (!value || !appearance) return '';
 
-      entry.item.image_url = appearance.preview_url;
-      entry.item.URL = appearance.preview_url;
-      entry.img.src = appearance.preview_url;
+      return value
+        .replace(/T(\d+)A\d+/i, (match, productType) => `T${productType}A${appearance}`)
+        .replace(/appearanceId=\d+/i, `appearanceId=${appearance}`);
+    }
+
+    function applyAppearanceToItem(entry, appearance) {
+      if (!appearance) return;
+
+      const nextImageUrl =
+        rewriteAppearanceUrl(entry.item.image_url || entry.item.URL, appearance.id) ||
+        appearance.preview_url;
+      if (!nextImageUrl) return;
+
+      entry.item.image_url = nextImageUrl;
+      entry.item.URL = nextImageUrl;
+      entry.img.src = nextImageUrl;
 
       if (entry.applyShareInput.checked) {
-        entry.item.share_image_url = appearance.preview_url;
+        entry.item.share_image_url =
+          rewriteAppearanceUrl(entry.item.share_image_url, appearance.id) ||
+          appearance.preview_url;
       }
 
       renderAppearanceOptions(entry);
@@ -625,6 +794,24 @@
       entry.card.classList.toggle('selected', entry.selectInput.checked);
     }
 
+    function visibleSelectionCount() {
+      return entries.filter((entry) => entry.selectInput.checked && entry.card.style.display !== 'none').length;
+    }
+
+    function totalSelectionCount() {
+      return entries.filter((entry) => entry.selectInput.checked).length;
+    }
+
+    function updateBulkActionState() {
+      const selected = totalSelectionCount();
+      const visibleSelected = visibleSelectionCount();
+      selectionSummaryEl.textContent =
+        visibleSelected === selected
+          ? `${selected} selected`
+          : `${selected} selected (${visibleSelected} visible)`;
+      applySelectedEl.disabled = selected === 0;
+    }
+
     function parseFilterSet(value) {
       return new Set(
         String(value || '')
@@ -655,38 +842,30 @@
     }
 
     function applyFilters() {
+      const searchQuery = lowerValue(searchQueryEl.value);
       const includeTheme = lowerValue(includeThemeEl.value);
-      const excludeTheme = lowerValue(excludeThemeEl.value);
       const includeSubTheme = lowerValue(includeSubThemeEl.value);
-      const excludeSubTheme = lowerValue(excludeSubThemeEl.value);
-      const includeTags = parseFilterSet(includeTagsEl.value);
-      const excludeTags = parseFilterSet(excludeTagsEl.value);
       const unthemedOnly = unthemedOnlyEl.checked;
       let visibleCount = 0;
       let selectedCount = 0;
 
       entries.forEach((entry) => {
+        const nameVal = String(entry.item.shirt_name || entry.item.name || '').toLowerCase();
         const themeVal = String(entry.item.theme || '').toLowerCase();
         const subThemeVal = String(entry.item.sub_theme || '').toLowerCase();
-        const tagsVal = Array.isArray(entry.item.tags) ? entry.item.tags.map((t) => String(t).toLowerCase()) : [];
+        const searchHaystack = [nameVal, themeVal].join(' ');
+        const matchSearch = !searchQuery || searchHaystack.includes(searchQuery);
         const matchIncludeTheme = !includeTheme || includeTheme === themeVal;
-        const matchExcludeTheme = !excludeTheme || excludeTheme !== themeVal;
         const matchIncludeSubTheme = !includeSubTheme || includeSubTheme === subThemeVal;
-        const matchExcludeSubTheme = !excludeSubTheme || excludeSubTheme !== subThemeVal;
-        const matchIncludeTag = includeTags.size === 0 || tagsVal.some((t) => includeTags.has(t));
-        const matchExcludeTag = !tagsVal.some((t) => excludeTags.has(t));
         const matchUnthemed = !unthemedOnly || !entry.item.theme || !entry.item.theme.trim();
-        const show = matchIncludeTheme && matchExcludeTheme && matchIncludeSubTheme && matchExcludeSubTheme && matchIncludeTag && matchExcludeTag && matchUnthemed;
+        const show = matchSearch && matchIncludeTheme && matchIncludeSubTheme && matchUnthemed;
         entry.card.style.display = show ? '' : 'none';
-        if (!show && entry.selectInput.checked) {
-          entry.selectInput.checked = false;
-          updateCardSelectionVisual(entry);
-        }
         if (show) visibleCount += 1;
         if (entry.selectInput.checked) selectedCount += 1;
       });
 
-      statusEl.textContent = `Loaded ${dataset.length} images. Showing ${visibleCount}. Selected ${selectedCount}.`;
+      renderStatus(visibleCount, selectedCount);
+      updateBulkActionState();
     }
 
     function parseTags(value) {
@@ -713,6 +892,7 @@
       const themeVal = bulkThemeEl.value.trim();
       const subThemeVal = bulkSubThemeEl.value.trim();
       const bulkTags = parseTags(bulkTagsEl.value);
+      if (!themeVal && !subThemeVal && !bulkTags.length) return;
       entries.forEach((entry) => {
         if (!entry.selectInput.checked || entry.card.style.display === 'none') return;
         if (themeVal) {
@@ -728,9 +908,10 @@
           entry.item.tags = Array.from(merged);
           entry.tagsInput.value = entry.item.tags.join(', ');
         }
-        entry.selectInput.checked = false;
-        updateCardSelectionVisual(entry);
       });
+      bulkThemeEl.value = '';
+      bulkSubThemeEl.value = '';
+      bulkTagsEl.value = '';
       applyFilters();
     }
 
@@ -795,6 +976,7 @@
       try {
         await loadMensPremiumManifest();
         const { data, sourcePath } = await loadInventory();
+        inventorySourcePath = sourcePath;
 
         const sorted = [...data].sort((a, b) =>
           String(a.shirt_name || a.name || '').localeCompare(String(b.shirt_name || b.name || ''))
@@ -834,6 +1016,7 @@
           gridEl.appendChild(card);
           selectInput.addEventListener('change', () => {
             updateCardSelectionVisual({ card, selectInput });
+            updateBulkActionState();
             applyFilters();
           });
           applyButton.addEventListener('click', () => {
@@ -885,25 +1068,21 @@
         const subThemes = Array.from(
           new Set(dataset.map((item) => String(item.sub_theme || '').trim()).filter(Boolean))
         ).sort((a, b) => a.localeCompare(b));
-        fillSelect(includeThemeEl, themes, 'Any');
-        fillSelect(excludeThemeEl, themes, 'None');
-        fillSelect(includeSubThemeEl, subThemes, 'Any');
-        fillSelect(excludeSubThemeEl, subThemes, 'None');
+        fillSelect(includeThemeEl, themes, 'Any theme');
+        fillSelect(includeSubThemeEl, subThemes, 'Any sub-theme');
 
+        searchQueryEl.addEventListener('input', applyFilters);
         includeThemeEl.addEventListener('change', applyFilters);
-        excludeThemeEl.addEventListener('change', applyFilters);
         includeSubThemeEl.addEventListener('change', applyFilters);
-        excludeSubThemeEl.addEventListener('change', applyFilters);
-        includeTagsEl.addEventListener('input', applyFilters);
-        excludeTagsEl.addEventListener('input', applyFilters);
         unthemedOnlyEl.addEventListener('change', applyFilters);
+        toggleBulkEditEl.addEventListener('click', () => {
+          bulkEditBodyEl.hidden = !bulkEditBodyEl.hidden;
+          toggleBulkEditEl.textContent = bulkEditBodyEl.hidden ? 'Show Bulk Edit' : 'Hide Bulk Edit';
+        });
         clearFiltersEl.addEventListener('click', () => {
+          searchQueryEl.value = '';
           includeThemeEl.value = '';
-          excludeThemeEl.value = '';
           includeSubThemeEl.value = '';
-          excludeSubThemeEl.value = '';
-          includeTagsEl.value = '';
-          excludeTagsEl.value = '';
           unthemedOnlyEl.checked = false;
           applyFilters();
         });
@@ -923,11 +1102,11 @@
             entry.selectInput.checked = false;
             updateCardSelectionVisual(entry);
           });
+          updateBulkActionState();
           applyFilters();
         });
 
         applyFilters();
-        statusEl.textContent = `${statusEl.textContent} Source: ${sourcePath}`;
       } catch (err) {
         statusEl.innerHTML = `<span class="error">Failed to load JSON: ${err.message}</span>`;
       }
