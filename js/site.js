@@ -3,11 +3,11 @@ const TAGLINES_PATH = "./data/taglines.json";
 
 const THEME_CONFIG = [
   { id: "all", label: "All" },
-  { id: "funny", label: "funny" },
-  { id: "fake band names", label: "fake band names" },
+  { id: "funny", label: "Funny" },
+  { id: "fake band names", label: "Fake Band Names" },
   { id: "geography", label: "Geography" },
   { id: "cta", label: "CTA" },
-  { id: "design", label: "design" }
+  { id: "design", label: "Design" }
 ];
 
 const THEME_LABELS = new Map(THEME_CONFIG.map((theme) => [theme.id, theme.label]));

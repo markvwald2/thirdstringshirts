@@ -52,6 +52,17 @@ This updates `data/shirt_inventory.json` for matched Spreadshirt rows:
 - Resolve anything from `tools/api_sync_report.json`
 - Curate metadata fields as needed
 
+## 3.5) Backfill Share Preview Images
+
+```bash
+node tools/backfill-share-preview-images.js --apply
+```
+
+This updates `data/shirt_inventory.json` for Spreadshirt rows with:
+- `share_image_url` from the live storefront product page preview
+
+Run this after inventory sync when you want richer social/link previews to match the storefront render.
+
 ## 4) Commit
 
 Commit both files when applicable:

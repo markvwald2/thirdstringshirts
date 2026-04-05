@@ -48,6 +48,7 @@ function cleanProduct(item, tagline = "") {
   const imageCandidates = Array.isArray(item.image_urls)
     ? item.image_urls.filter((url) => String(url || "").trim())
     : [];
+  const shareImageUrl = item.share_image_url || "";
   const imageUrl =
     (imageCandidates.length
       ? imageCandidates[Math.floor(Math.random() * imageCandidates.length)]
@@ -57,7 +58,7 @@ function cleanProduct(item, tagline = "") {
     id: item.shirt_id || item.idea_id || item.product_url,
     ideaId: item.idea_id || item.shirt_id || "",
     name: item.shirt_name || item.name || "Untitled shirt",
-    imageUrl,
+    imageUrl: shareImageUrl || imageUrl,
     productUrl: item.product_url || "https://thirdstringshirts.myspreadshop.com/",
     tagline: String(tagline || ""),
     subTheme: item.sub_theme || "",
