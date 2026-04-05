@@ -30,7 +30,12 @@
     const q = query.trim().toLowerCase();
     const filtered = products.filter((item) => {
       const themeMatch = activeTheme === "all" || item.bucket === activeTheme;
-      const searchMatch = !q || item.name.toLowerCase().includes(q) || item.subTheme.toLowerCase().includes(q);
+      const tags = Array.isArray(item.tags) ? item.tags.map((tag) => String(tag).toLowerCase()) : [];
+      const searchMatch =
+        !q ||
+        item.name.toLowerCase().includes(q) ||
+        item.subTheme.toLowerCase().includes(q) ||
+        tags.some((tag) => tag.includes(q));
       return themeMatch && searchMatch;
     });
     const displayList = [...filtered].sort((a, b) => {

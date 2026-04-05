@@ -57,50 +57,111 @@
       font-size: 0.95rem;
     }
 
-    .toolbar {
+    .filters-row {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 16px;
-      padding: 10px 12px;
-      background: var(--surface);
+      gap: 0.65rem;
+      margin-bottom: 0.8rem;
+      overflow-x: auto;
+    }
+
+    .filter-pickers {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0.65rem;
+      margin-left: auto;
+      flex: 0 0 auto;
+    }
+
+    .editor-toolbar,
+    .bulk-grid {
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .editor-toolbar {
+      grid-template-columns: minmax(320px, 1fr) auto auto;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .editor-toolbar input[type="search"],
+    .filter-pickers select,
+    .bulk-field input {
+      width: 100%;
+      padding: 0.7rem 0.85rem;
       border: 1px solid var(--border);
       border-radius: 12px;
+      font: inherit;
+      color: var(--text);
+      background: #fff;
+    }
+
+    .filter-pickers select {
+      min-width: 150px;
+      height: auto;
+      padding: 0.47rem 2.2rem 0.47rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.93rem;
+      font-weight: 700;
+      line-height: 1.1;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M3 5.25L7 9.25L11 5.25' stroke='%23152238' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.85rem center;
+      background-size: 14px 14px;
+    }
+
+    .panel {
+      margin-bottom: 16px;
+      padding: 18px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
       box-shadow: 0 8px 20px rgba(7, 31, 57, 0.06);
     }
 
-    .filter {
+    .panel-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .panel-title {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .panel-copy {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .bulk-field {
       display: flex;
       flex-direction: column;
       gap: 4px;
       font-size: 0.9rem;
-      min-width: 180px;
     }
 
-    .filter input {
-      width: 100%;
-      padding: 6px 8px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font: inherit;
-      color: var(--text);
-      background: #fff;
+    .bulk-actions,
+    .bulk-selection-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
-    .filter select {
-      width: 100%;
-      padding: 6px 8px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      font: inherit;
-      color: var(--text);
-      background: #fff;
-    }
-
-    .toolbar button {
-      padding: 8px 12px;
-      border-radius: 8px;
+    .bulk button {
+      padding: 0.65rem 1rem;
+      border-radius: 999px;
       border: 1px solid var(--border);
       background: #fff;
       color: var(--text);
@@ -109,26 +170,77 @@
       font-weight: 600;
     }
 
+    .primary-btn {
+      background: #152238;
+      color: #fff;
+      border-color: #152238;
+    }
+
+    .accent-btn {
+      background: #e97a2b;
+      color: #fff;
+      border-color: #e97a2b;
+    }
+
+    .bulk button.primary-btn {
+      background: #152238;
+      color: #fff;
+      border-color: #152238;
+    }
+
     .toggle-row {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
       font-size: 0.9rem;
       color: var(--text);
-      margin-right: 8px;
+      min-height: 42px;
+    }
+
+    .collapsible-toggle {
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 600;
+    }
+
+    .collapsible-body[hidden] {
+      display: none;
+    }
+
+    .filter-meta,
+    .bulk-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
     }
 
     .bulk {
-      margin-bottom: 16px;
-      padding: 10px 12px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(7, 31, 57, 0.06);
+      display: grid;
+      gap: 14px;
+    }
+
+    .bulk-summary {
       display: flex;
       flex-wrap: wrap;
-      align-items: end;
+      align-items: center;
+      justify-content: space-between;
       gap: 12px;
+    }
+
+    .selection-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef4fb;
+      color: #15304d;
+      font-size: 0.9rem;
+      font-weight: 600;
     }
 
     .grid {
@@ -219,6 +331,93 @@
       font-weight: 600;
     }
 
+    .appearance-tools {
+      border-top: 1px solid var(--border);
+      margin-top: 4px;
+      padding-top: 8px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .appearance-toggle {
+      width: 100%;
+      padding: 7px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 600;
+    }
+
+    .appearance-panel[hidden] {
+      display: none;
+    }
+
+    .appearance-panel {
+      display: grid;
+      gap: 8px;
+    }
+
+    .appearance-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
+      gap: 8px;
+    }
+
+    .appearance-swatch {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 999px;
+      border: 2px solid rgba(21, 34, 56, 0.18);
+      cursor: pointer;
+      background: #fff;
+      padding: 0;
+    }
+
+    .appearance-swatch.is-active {
+      border-color: #0d6fb8;
+      box-shadow: 0 0 0 2px rgba(13, 111, 184, 0.22);
+    }
+
+    .appearance-swatch.is-light::after {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border: 1px solid rgba(21, 34, 56, 0.14);
+      border-radius: 999px;
+      pointer-events: none;
+    }
+
+    .appearance-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .appearance-choice {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    @media (max-width: 720px) {
+      .filters-row,
+      .editor-toolbar,
+      .bulk-summary,
+      .bulk-actions,
+      .bulk-selection-actions {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .filter-pickers {
+        margin-left: 0;
+      }
+    }
+
     .error { color: #b91c1c; font-weight: 600; }
   </style>
 </head>
@@ -242,78 +441,69 @@
   <main class="wrap">
     <h1>shirt_inventory.json Viewer</h1>
     <div id="status" class="status">Loading...</div>
-    <div class="toolbar">
-      <label class="filter">
-        <span>Include themes</span>
-        <select id="include-theme">
-          <option value="">Any</option>
+    <div class="filters-row">
+      <div id="inventory-filters" class="filters" aria-label="Inventory themes"></div>
+      <div class="filter-pickers">
+        <select id="include-sub-theme" aria-label="Filter by sub-theme">
+          <option value="">Any sub-theme</option>
         </select>
-      </label>
-      <label class="filter">
-        <span>Exclude themes</span>
-        <select id="exclude-theme">
-          <option value="">None</option>
-        </select>
-      </label>
-      <label class="filter">
-        <span>Include sub-themes</span>
-        <select id="include-sub-theme">
-          <option value="">Any</option>
-        </select>
-      </label>
-      <label class="filter">
-        <span>Exclude sub-themes</span>
-        <select id="exclude-sub-theme">
-          <option value="">None</option>
-        </select>
-      </label>
-      <label class="filter">
-        <span>Include tags</span>
-        <input id="include-tags" type="text" placeholder="comma-separated exact tags" />
-      </label>
-      <label class="filter">
-        <span>Exclude tags</span>
-        <input id="exclude-tags" type="text" placeholder="comma-separated exact tags" />
-      </label>
-      <label class="toggle-row">
-        <input id="unthemed-only" type="checkbox" />
-        <span>Un-themed only</span>
-      </label>
-      <button id="clear-filters" type="button">Clear Filters</button>
-      <button id="export-json" type="button">Export JSON</button>
+      </div>
     </div>
-    <div class="bulk">
-      <label class="filter">
-        <span>Bulk theme</span>
-        <input id="bulk-theme" type="text" placeholder="e.g. geography" />
-      </label>
-      <label class="filter">
-        <span>Bulk sub-theme</span>
-        <input id="bulk-sub-theme" type="text" placeholder="e.g. State names" />
-      </label>
-      <label class="filter">
-        <span>Bulk tags (comma-separated)</span>
-        <input id="bulk-tags" type="text" placeholder="e.g. geography, state-names" />
-      </label>
-      <button id="apply-selected" type="button">Apply To Selected</button>
-      <button id="select-visible" type="button">Select Visible</button>
-      <button id="clear-selection" type="button">Clear Selection</button>
+    <div class="editor-toolbar">
+      <input id="search-query" type="search" placeholder="Search by shirt title, ID, theme, or tags..." aria-label="Search inventory">
+      <button id="clear-filters" type="button" class="button alt">Reset Filters</button>
+      <button id="export-json" type="button" class="button">Download shirt_inventory.json</button>
     </div>
+    <section class="panel bulk">
+      <div class="panel-head">
+        <div>
+          <h2 class="panel-title">Bulk Edit</h2>
+          <p class="panel-copy">Select cards, set the fields you want to change, then apply those edits only to the selected items.</p>
+        </div>
+        <button id="toggle-bulk-edit" type="button" class="collapsible-toggle">Show Bulk Edit</button>
+      </div>
+      <div id="bulk-edit-body" class="collapsible-body" hidden>
+        <div class="bulk-summary">
+          <div id="selection-summary" class="selection-pill">0 selected</div>
+          <div class="bulk-selection-actions">
+            <button id="select-visible" type="button">Select Visible</button>
+            <button id="clear-selection" type="button">Clear Selection</button>
+          </div>
+        </div>
+        <div class="bulk-grid">
+          <label class="bulk-field">
+            <span>Set theme</span>
+            <input id="bulk-theme" type="text" placeholder="e.g. geography" />
+          </label>
+          <label class="bulk-field">
+            <span>Set sub-theme</span>
+            <input id="bulk-sub-theme" type="text" placeholder="e.g. State capitals" />
+          </label>
+          <label class="bulk-field">
+            <span>Add tags</span>
+            <input id="bulk-tags" type="text" placeholder="e.g. geography, state-capitals" />
+          </label>
+        </div>
+        <div class="bulk-actions">
+          <button id="apply-selected" type="button" class="primary-btn">Apply To Selected</button>
+        </div>
+        <div class="bulk-meta">Bulk tags are merged into existing tags so you can safely add categories without overwriting them.</div>
+      </div>
+    </section>
     <section id="grid" class="grid"></section>
   </main>
 
   <script>
     const statusEl = document.getElementById('status');
     const gridEl = document.getElementById('grid');
-    const includeThemeEl = document.getElementById('include-theme');
-    const excludeThemeEl = document.getElementById('exclude-theme');
+    const filtersEl = document.getElementById('inventory-filters');
+    const searchQueryEl = document.getElementById('search-query');
     const includeSubThemeEl = document.getElementById('include-sub-theme');
-    const excludeSubThemeEl = document.getElementById('exclude-sub-theme');
-    const includeTagsEl = document.getElementById('include-tags');
-    const excludeTagsEl = document.getElementById('exclude-tags');
-    const unthemedOnlyEl = document.getElementById('unthemed-only');
     const clearFiltersEl = document.getElementById('clear-filters');
     const exportJsonEl = document.getElementById('export-json');
+    const selectionSummaryEl = document.getElementById('selection-summary');
+    const toggleBulkEditEl = document.getElementById('toggle-bulk-edit');
+    const bulkEditBodyEl = document.getElementById('bulk-edit-body');
     const bulkThemeEl = document.getElementById('bulk-theme');
     const bulkSubThemeEl = document.getElementById('bulk-sub-theme');
     const bulkTagsEl = document.getElementById('bulk-tags');
@@ -322,6 +512,49 @@
     const clearSelectionEl = document.getElementById('clear-selection');
     const entries = [];
     const dataset = [];
+    const MEN_PREMIUM_MANIFEST_PATH = './mens-premium-appearance-manifest.json';
+    let mensPremiumManifest = null;
+    let inventorySourcePath = '';
+    let activeThemeFilter = 'all';
+
+    function renderStatus(visibleCount, selectedCount) {
+      const sourceText = inventorySourcePath ? ` Source: ${inventorySourcePath}` : '';
+      statusEl.textContent = `Loaded ${dataset.length} images. Showing ${visibleCount}. Selected ${selectedCount}.${sourceText}`;
+    }
+
+    function themeKey(value) {
+      return String(value || '').trim().toLowerCase() || 'unthemed';
+    }
+
+    function themeLabel(value) {
+      const normalized = String(value || '').trim();
+      if (!normalized) return 'Un-themed';
+      return normalized
+        .split(/\s+/)
+        .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+        .join(' ');
+    }
+
+    function renderThemeFilters(values) {
+      const chips = [{ key: 'all', label: 'All' }].concat(
+        values.map((value) => ({
+          key: themeKey(value),
+          label: themeLabel(value),
+        }))
+      );
+
+      filtersEl.innerHTML = chips.map((chip) =>
+        `<button type="button" class="filter-chip" data-theme="${escapeHtml(chip.key)}" aria-pressed="${chip.key === activeThemeFilter ? 'true' : 'false'}">${escapeHtml(chip.label)}</button>`
+      ).join('');
+
+      filtersEl.querySelectorAll('.filter-chip').forEach((button) => {
+        button.addEventListener('click', () => {
+          activeThemeFilter = button.dataset.theme || 'all';
+          renderThemeFilters(values);
+          applyFilters();
+        });
+      });
+    }
 
     function makeCard(item) {
       const card = document.createElement('article');
@@ -392,22 +625,199 @@
       applyButton.className = 'apply-btn';
       applyButton.textContent = 'Apply';
 
+      const appearanceTools = document.createElement('div');
+      appearanceTools.className = 'appearance-tools';
+
+      const appearanceToggle = document.createElement('button');
+      appearanceToggle.type = 'button';
+      appearanceToggle.className = 'appearance-toggle';
+      appearanceToggle.textContent = "Men's Premium Colors";
+
+      const appearancePanel = document.createElement('div');
+      appearancePanel.className = 'appearance-panel';
+      appearancePanel.hidden = true;
+
+      const applyShareWrap = document.createElement('label');
+      applyShareWrap.className = 'toggle-row';
+      const applyShareInput = document.createElement('input');
+      applyShareInput.type = 'checkbox';
+      applyShareInput.checked = true;
+      applyShareWrap.appendChild(applyShareInput);
+      applyShareWrap.appendChild(document.createTextNode('Also update share image'));
+
+      const appearanceMeta = document.createElement('div');
+      appearanceMeta.className = 'appearance-meta';
+      appearanceMeta.textContent = 'No Men\'s Premium colors loaded for this design yet.';
+
+      const appearanceOptions = document.createElement('div');
+      appearanceOptions.className = 'appearance-options';
+
+      appearancePanel.appendChild(applyShareWrap);
+      appearancePanel.appendChild(appearanceMeta);
+      appearancePanel.appendChild(appearanceOptions);
+      appearanceTools.appendChild(appearanceToggle);
+      appearanceTools.appendChild(appearancePanel);
+
       editor.appendChild(shirtNameField);
       editor.appendChild(themeField);
       editor.appendChild(subThemeField);
       editor.appendChild(tagsField);
       editor.appendChild(productUrlField);
       editor.appendChild(applyButton);
+      editor.appendChild(appearanceTools);
 
       card.appendChild(selectWrap);
       card.appendChild(img);
       card.appendChild(name);
       card.appendChild(editor);
-      return { card, name, img, shirtNameInput, themeInput, subThemeInput, tagsInput, productUrlInput, applyButton, selectInput };
+      return {
+        card,
+        name,
+        img,
+        shirtNameInput,
+        themeInput,
+        subThemeInput,
+        tagsInput,
+        productUrlInput,
+        applyButton,
+        selectInput,
+        appearanceToggle,
+        appearancePanel,
+        appearanceMeta,
+        appearanceOptions,
+        applyShareInput,
+      };
+    }
+
+    function extractAppearanceId(url) {
+      const value = String(url || '');
+      const queryMatch = value.match(/appearanceId=(\d+)/i);
+      if (queryMatch) return queryMatch[1];
+      const pathMatch = value.match(/T\d+A(\d+)/i);
+      return pathMatch ? pathMatch[1] : '';
+    }
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function loadMensPremiumManifest() {
+      if (mensPremiumManifest) return Promise.resolve(mensPremiumManifest);
+
+      return fetch(MEN_PREMIUM_MANIFEST_PATH, { cache: 'no-store' })
+        .then((response) => {
+          if (!response.ok) throw new Error(`Could not load ${MEN_PREMIUM_MANIFEST_PATH}`);
+          return response.json();
+        })
+        .then((data) => {
+          mensPremiumManifest = data && data.manifest ? data.manifest : {};
+          return mensPremiumManifest;
+        })
+        .catch(() => {
+          mensPremiumManifest = {};
+          return mensPremiumManifest;
+        });
+    }
+
+    function mensPremiumOptionsForItem(item) {
+      if (!mensPremiumManifest) return [];
+      const ideaId = String(item.idea_id || item.shirt_id || '').trim();
+      const record = ideaId ? mensPremiumManifest[ideaId] : null;
+      return record && Array.isArray(record.appearances) ? record.appearances : [];
+    }
+
+    function rewriteAppearanceUrl(url, appearanceId) {
+      const value = String(url || '').trim();
+      const appearance = String(appearanceId || '').trim();
+      if (!value || !appearance) return '';
+
+      return value
+        .replace(/T(\d+)A\d+/i, (match, productType) => `T${productType}A${appearance}`)
+        .replace(/appearanceId=\d+/i, `appearanceId=${appearance}`);
+    }
+
+    function applyAppearanceToItem(entry, appearance) {
+      if (!appearance) return;
+
+      const nextImageUrl =
+        rewriteAppearanceUrl(entry.item.image_url || entry.item.URL, appearance.id) ||
+        appearance.preview_url;
+      if (!nextImageUrl) return;
+
+      entry.item.image_url = nextImageUrl;
+      entry.item.URL = nextImageUrl;
+      entry.img.src = nextImageUrl;
+
+      if (entry.applyShareInput.checked) {
+        entry.item.share_image_url =
+          rewriteAppearanceUrl(entry.item.share_image_url, appearance.id) ||
+          appearance.preview_url;
+      }
+
+      renderAppearanceOptions(entry);
+    }
+
+    function renderAppearanceOptions(entry) {
+      const options = mensPremiumOptionsForItem(entry.item);
+      const activeAppearanceId =
+        extractAppearanceId(entry.item.share_image_url) ||
+        extractAppearanceId(entry.item.image_url);
+
+      entry.appearanceOptions.innerHTML = '';
+
+      if (!options.length) {
+        entry.appearanceMeta.textContent = 'No Men\'s Premium colors found for this design in the local manifest.';
+        return;
+      }
+
+      const active = options.find((option) => option.id === activeAppearanceId) || null;
+      entry.appearanceMeta.innerHTML = active
+        ? `<span class="appearance-choice">${escapeHtml(active.name || active.id)}</span> · ${escapeHtml(active.color_hex || '')}`
+        : 'Choose a Men\'s Premium shirt color to update this image.';
+
+      options.forEach((appearance) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'appearance-swatch';
+        if (appearance.id === activeAppearanceId) {
+          button.classList.add('is-active');
+        }
+        if (appearance.bright_color) {
+          button.classList.add('is-light');
+        }
+        button.style.backgroundColor = appearance.color_hex || '#ffffff';
+        button.title = `${appearance.name || appearance.id}${appearance.color_hex ? ` (${appearance.color_hex})` : ''}`;
+        button.setAttribute('aria-label', button.title);
+        button.addEventListener('click', () => applyAppearanceToItem(entry, appearance));
+        entry.appearanceOptions.appendChild(button);
+      });
     }
 
     function updateCardSelectionVisual(entry) {
       entry.card.classList.toggle('selected', entry.selectInput.checked);
+    }
+
+    function visibleSelectionCount() {
+      return entries.filter((entry) => entry.selectInput.checked && entry.card.style.display !== 'none').length;
+    }
+
+    function totalSelectionCount() {
+      return entries.filter((entry) => entry.selectInput.checked).length;
+    }
+
+    function updateBulkActionState() {
+      const selected = totalSelectionCount();
+      const visibleSelected = visibleSelectionCount();
+      selectionSummaryEl.textContent =
+        visibleSelected === selected
+          ? `${selected} selected`
+          : `${selected} selected (${visibleSelected} visible)`;
+      applySelectedEl.disabled = selected === 0;
     }
 
     function parseFilterSet(value) {
@@ -440,38 +850,29 @@
     }
 
     function applyFilters() {
-      const includeTheme = lowerValue(includeThemeEl.value);
-      const excludeTheme = lowerValue(excludeThemeEl.value);
+      const searchQuery = lowerValue(searchQueryEl.value);
       const includeSubTheme = lowerValue(includeSubThemeEl.value);
-      const excludeSubTheme = lowerValue(excludeSubThemeEl.value);
-      const includeTags = parseFilterSet(includeTagsEl.value);
-      const excludeTags = parseFilterSet(excludeTagsEl.value);
-      const unthemedOnly = unthemedOnlyEl.checked;
       let visibleCount = 0;
       let selectedCount = 0;
 
       entries.forEach((entry) => {
+        const nameVal = String(entry.item.shirt_name || entry.item.name || '').toLowerCase();
+        const ideaIdVal = String(entry.item.idea_id || entry.item.shirt_id || '').toLowerCase();
         const themeVal = String(entry.item.theme || '').toLowerCase();
         const subThemeVal = String(entry.item.sub_theme || '').toLowerCase();
-        const tagsVal = Array.isArray(entry.item.tags) ? entry.item.tags.map((t) => String(t).toLowerCase()) : [];
-        const matchIncludeTheme = !includeTheme || includeTheme === themeVal;
-        const matchExcludeTheme = !excludeTheme || excludeTheme !== themeVal;
+        const tagsVal = Array.isArray(entry.item.tags) ? entry.item.tags.map((tag) => String(tag).toLowerCase()) : [];
+        const searchHaystack = [nameVal, ideaIdVal, themeVal, ...tagsVal].join(' ');
+        const matchSearch = !searchQuery || searchHaystack.includes(searchQuery);
+        const matchTheme = activeThemeFilter === 'all' || themeKey(themeVal) === activeThemeFilter;
         const matchIncludeSubTheme = !includeSubTheme || includeSubTheme === subThemeVal;
-        const matchExcludeSubTheme = !excludeSubTheme || excludeSubTheme !== subThemeVal;
-        const matchIncludeTag = includeTags.size === 0 || tagsVal.some((t) => includeTags.has(t));
-        const matchExcludeTag = !tagsVal.some((t) => excludeTags.has(t));
-        const matchUnthemed = !unthemedOnly || !entry.item.theme || !entry.item.theme.trim();
-        const show = matchIncludeTheme && matchExcludeTheme && matchIncludeSubTheme && matchExcludeSubTheme && matchIncludeTag && matchExcludeTag && matchUnthemed;
+        const show = matchSearch && matchTheme && matchIncludeSubTheme;
         entry.card.style.display = show ? '' : 'none';
-        if (!show && entry.selectInput.checked) {
-          entry.selectInput.checked = false;
-          updateCardSelectionVisual(entry);
-        }
         if (show) visibleCount += 1;
         if (entry.selectInput.checked) selectedCount += 1;
       });
 
-      statusEl.textContent = `Loaded ${dataset.length} images. Showing ${visibleCount}. Selected ${selectedCount}.`;
+      renderStatus(visibleCount, selectedCount);
+      updateBulkActionState();
     }
 
     function parseTags(value) {
@@ -498,6 +899,7 @@
       const themeVal = bulkThemeEl.value.trim();
       const subThemeVal = bulkSubThemeEl.value.trim();
       const bulkTags = parseTags(bulkTagsEl.value);
+      if (!themeVal && !subThemeVal && !bulkTags.length) return;
       entries.forEach((entry) => {
         if (!entry.selectInput.checked || entry.card.style.display === 'none') return;
         if (themeVal) {
@@ -513,9 +915,10 @@
           entry.item.tags = Array.from(merged);
           entry.tagsInput.value = entry.item.tags.join(', ');
         }
-        entry.selectInput.checked = false;
-        updateCardSelectionVisual(entry);
       });
+      bulkThemeEl.value = '';
+      bulkSubThemeEl.value = '';
+      bulkTagsEl.value = '';
       applyFilters();
     }
 
@@ -578,7 +981,9 @@
 
     async function init() {
       try {
+        await loadMensPremiumManifest();
         const { data, sourcePath } = await loadInventory();
+        inventorySourcePath = sourcePath;
 
         const sorted = [...data].sort((a, b) =>
           String(a.shirt_name || a.name || '').localeCompare(String(b.shirt_name || b.name || ''))
@@ -598,10 +1003,27 @@
           item.URL = item.image_url;
 
           dataset.push(item);
-          const { card, name, img, shirtNameInput, themeInput, subThemeInput, tagsInput, productUrlInput, applyButton, selectInput } = makeCard(item);
+          const {
+            card,
+            name,
+            img,
+            shirtNameInput,
+            themeInput,
+            subThemeInput,
+            tagsInput,
+            productUrlInput,
+            applyButton,
+            selectInput,
+            appearanceToggle,
+            appearancePanel,
+            appearanceMeta,
+            appearanceOptions,
+            applyShareInput,
+          } = makeCard(item);
           gridEl.appendChild(card);
           selectInput.addEventListener('change', () => {
             updateCardSelectionVisual({ card, selectInput });
+            updateBulkActionState();
             applyFilters();
           });
           applyButton.addEventListener('click', () => {
@@ -617,9 +1039,34 @@
             applyFilters();
           });
 
-          const entry = { card, item, name, img, shirtNameInput, themeInput, subThemeInput, tagsInput, productUrlInput, applyButton, selectInput };
+          const entry = {
+            card,
+            item,
+            name,
+            img,
+            shirtNameInput,
+            themeInput,
+            subThemeInput,
+            tagsInput,
+            productUrlInput,
+            applyButton,
+            selectInput,
+            appearanceToggle,
+            appearancePanel,
+            appearanceMeta,
+            appearanceOptions,
+            applyShareInput,
+          };
           entries.push(entry);
           updateCardSelectionVisual(entry);
+          renderAppearanceOptions(entry);
+
+          appearanceToggle.addEventListener('click', () => {
+            appearancePanel.hidden = !appearancePanel.hidden;
+            if (!appearancePanel.hidden) {
+              renderAppearanceOptions(entry);
+            }
+          });
         });
 
         const themes = Array.from(
@@ -628,26 +1075,20 @@
         const subThemes = Array.from(
           new Set(dataset.map((item) => String(item.sub_theme || '').trim()).filter(Boolean))
         ).sort((a, b) => a.localeCompare(b));
-        fillSelect(includeThemeEl, themes, 'Any');
-        fillSelect(excludeThemeEl, themes, 'None');
-        fillSelect(includeSubThemeEl, subThemes, 'Any');
-        fillSelect(excludeSubThemeEl, subThemes, 'None');
+        fillSelect(includeSubThemeEl, subThemes, 'Any sub-theme');
+        renderThemeFilters(themes);
 
-        includeThemeEl.addEventListener('change', applyFilters);
-        excludeThemeEl.addEventListener('change', applyFilters);
+        searchQueryEl.addEventListener('input', applyFilters);
         includeSubThemeEl.addEventListener('change', applyFilters);
-        excludeSubThemeEl.addEventListener('change', applyFilters);
-        includeTagsEl.addEventListener('input', applyFilters);
-        excludeTagsEl.addEventListener('input', applyFilters);
-        unthemedOnlyEl.addEventListener('change', applyFilters);
+        toggleBulkEditEl.addEventListener('click', () => {
+          bulkEditBodyEl.hidden = !bulkEditBodyEl.hidden;
+          toggleBulkEditEl.textContent = bulkEditBodyEl.hidden ? 'Show Bulk Edit' : 'Hide Bulk Edit';
+        });
         clearFiltersEl.addEventListener('click', () => {
-          includeThemeEl.value = '';
-          excludeThemeEl.value = '';
+          searchQueryEl.value = '';
           includeSubThemeEl.value = '';
-          excludeSubThemeEl.value = '';
-          includeTagsEl.value = '';
-          excludeTagsEl.value = '';
-          unthemedOnlyEl.checked = false;
+          activeThemeFilter = 'all';
+          renderThemeFilters(themes);
           applyFilters();
         });
         exportJsonEl.addEventListener('click', exportJson);
@@ -666,11 +1107,11 @@
             entry.selectInput.checked = false;
             updateCardSelectionVisual(entry);
           });
+          updateBulkActionState();
           applyFilters();
         });
 
         applyFilters();
-        statusEl.textContent = `${statusEl.textContent} Source: ${sourcePath}`;
       } catch (err) {
         statusEl.innerHTML = `<span class="error">Failed to load JSON: ${err.message}</span>`;
       }

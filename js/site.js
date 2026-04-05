@@ -3,11 +3,11 @@ const TAGLINES_PATH = "./data/taglines.json";
 
 const THEME_CONFIG = [
   { id: "all", label: "All" },
-  { id: "funny", label: "funny" },
-  { id: "fake band names", label: "fake band names" },
+  { id: "funny", label: "Funny" },
+  { id: "fake band names", label: "Fake Band Names" },
   { id: "geography", label: "Geography" },
   { id: "cta", label: "CTA" },
-  { id: "design", label: "design" }
+  { id: "design", label: "Design" }
 ];
 
 const THEME_LABELS = new Map(THEME_CONFIG.map((theme) => [theme.id, theme.label]));
@@ -92,6 +92,7 @@ function cleanProduct(item, tagline = "") {
     platform,
     isEtsy: platform === "etsy",
     bucket: determineBucket(item),
+    tags: Array.isArray(item.tags) ? item.tags : [],
     theme: item.theme || "",
     subTheme: item.sub_theme || "",
     tagline: String(tagline || "")
@@ -99,13 +100,25 @@ function cleanProduct(item, tagline = "") {
 }
 
 function routeFromProductUrl(productUrl, fallbackName) {
+  function decodeRouteValue(value) {
+    const raw = String(value || "");
+    try {
+      return decodeURIComponent(raw);
+    } catch (error) {
+      return raw;
+    }
+  }
+
   try {
     const parsed = new URL(productUrl);
     const hash = parsed.hash || "";
     if (hash.startsWith("#!/")) {
-      return hash.slice(3);
+      const route = hash.slice(3);
+      const [pathname = "", search = ""] = route.split("?");
+      const decodedPathname = decodeRouteValue(pathname);
+      return search ? `${decodedPathname}?${search}` : decodedPathname;
     }
-    const pathname = parsed.pathname.replace(/^\/+/, "");
+    const pathname = decodeRouteValue(parsed.pathname.replace(/^\/+/, ""));
     const search = parsed.search || "";
     if (pathname) return `${pathname}${search}`;
   } catch (error) {
@@ -133,6 +146,15 @@ function sharePagePath(product) {
 }
 
 function productFromShopHash(hash) {
+  function decodeRouteValue(value) {
+    const raw = String(value || "").replace(/\+/g, " ");
+    try {
+      return decodeURIComponent(raw);
+    } catch (error) {
+      return raw;
+    }
+  }
+
   const value = String(hash || "").trim();
   if (!value.startsWith("#!/")) return null;
 
@@ -141,12 +163,14 @@ function productFromShopHash(hash) {
   if (!pathname) return null;
 
   const params = new URLSearchParams(search);
-  const ideaId = params.get("idea") || "";
+  const detailMatch = pathname.match(/^(.*)-A([a-z0-9]+)$/i);
+  const routeName = detailMatch ? detailMatch[1] : pathname;
+  const ideaId = params.get("idea") || (detailMatch ? detailMatch[2] : "");
 
   return {
-    id: ideaId || pathname,
+    id: ideaId || routeName,
     ideaId,
-    name: pathname.replace(/\+/g, " "),
+    name: decodeRouteValue(routeName),
     productUrl: `https://www.thirdstringshirts.com/shop.html#!/${route}`
   };
 }
