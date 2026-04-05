@@ -92,6 +92,7 @@ function cleanProduct(item, tagline = "") {
     platform,
     isEtsy: platform === "etsy",
     bucket: determineBucket(item),
+    tags: Array.isArray(item.tags) ? item.tags : [],
     theme: item.theme || "",
     subTheme: item.sub_theme || "",
     tagline: String(tagline || "")

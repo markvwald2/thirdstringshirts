@@ -6747,6 +6747,7 @@
       const THEME_CONFIG = [
         { id: "all", label: "All" },
         { id: "funny", label: "Funny" },
+        { id: "fake band names", label: "Fake Band Names" },
         { id: "geography", label: "Geography" },
         { id: "cta", label: "CTA" },
         { id: "design", label: "Design" }
@@ -6769,6 +6770,7 @@
         const subTheme = normalize(item.sub_theme);
         const tags = Array.isArray(item.tags) ? item.tags.map(normalize) : [];
         if (theme === "geography" || tags.includes("geography")) return "geography";
+        if (theme === "fake band names" || tags.includes("fake band names")) return "fake band names";
         if (subTheme.includes("cta")) return "cta";
         if (theme === "design" || tags.includes("design")) return "design";
         return "funny";
@@ -6932,8 +6934,20 @@
       try {
         let inventory = null;
         let taglines = null;
-    
-        if (
+
+        if (window.location.protocol !== "file:") {
+          const [inventoryResponse, taglinesResponse] = await Promise.all([
+            fetch(DATA_PATH),
+            fetch(TAGLINES_PATH).catch(() => null)
+          ]);
+
+          if (!inventoryResponse.ok) {
+            throw new Error(`Could not load ${DATA_PATH}`);
+          }
+
+          inventory = await inventoryResponse.json();
+          taglines = taglinesResponse && taglinesResponse.ok ? await taglinesResponse.json() : {};
+        } else if (
           bundledEditorData &&
           Array.isArray(bundledEditorData.inventory) &&
           bundledEditorData.taglines &&
@@ -6942,17 +6956,7 @@
           inventory = bundledEditorData.inventory;
           taglines = bundledEditorData.taglines;
         } else {
-          const [inventoryResponse, taglinesResponse] = await Promise.all([
-            fetch(DATA_PATH),
-            fetch(TAGLINES_PATH).catch(() => null)
-          ]);
-    
-          if (!inventoryResponse.ok) {
-            throw new Error(`Could not load ${DATA_PATH}`);
-          }
-    
-          inventory = await inventoryResponse.json();
-          taglines = taglinesResponse && taglinesResponse.ok ? await taglinesResponse.json() : {};
+          throw new Error("Bundled editor data unavailable");
         }
     
         shirts = dedupeAndSort(inventory);
