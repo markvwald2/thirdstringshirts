@@ -219,6 +219,77 @@
       font-weight: 600;
     }
 
+    .appearance-tools {
+      border-top: 1px solid var(--border);
+      margin-top: 4px;
+      padding-top: 8px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .appearance-toggle {
+      width: 100%;
+      padding: 7px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 600;
+    }
+
+    .appearance-panel[hidden] {
+      display: none;
+    }
+
+    .appearance-panel {
+      display: grid;
+      gap: 8px;
+    }
+
+    .appearance-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
+      gap: 8px;
+    }
+
+    .appearance-swatch {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 999px;
+      border: 2px solid rgba(21, 34, 56, 0.18);
+      cursor: pointer;
+      background: #fff;
+      padding: 0;
+    }
+
+    .appearance-swatch.is-active {
+      border-color: #0d6fb8;
+      box-shadow: 0 0 0 2px rgba(13, 111, 184, 0.22);
+    }
+
+    .appearance-swatch.is-light::after {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border: 1px solid rgba(21, 34, 56, 0.14);
+      border-radius: 999px;
+      pointer-events: none;
+    }
+
+    .appearance-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .appearance-choice {
+      font-weight: 600;
+      color: var(--text);
+    }
+
     .error { color: #b91c1c; font-weight: 600; }
   </style>
 </head>
@@ -322,6 +393,8 @@
     const clearSelectionEl = document.getElementById('clear-selection');
     const entries = [];
     const dataset = [];
+    const MEN_PREMIUM_MANIFEST_PATH = './mens-premium-appearance-manifest.json';
+    let mensPremiumManifest = null;
 
     function makeCard(item) {
       const card = document.createElement('article');
@@ -392,18 +465,160 @@
       applyButton.className = 'apply-btn';
       applyButton.textContent = 'Apply';
 
+      const appearanceTools = document.createElement('div');
+      appearanceTools.className = 'appearance-tools';
+
+      const appearanceToggle = document.createElement('button');
+      appearanceToggle.type = 'button';
+      appearanceToggle.className = 'appearance-toggle';
+      appearanceToggle.textContent = "Men's Premium Colors";
+
+      const appearancePanel = document.createElement('div');
+      appearancePanel.className = 'appearance-panel';
+      appearancePanel.hidden = true;
+
+      const applyShareWrap = document.createElement('label');
+      applyShareWrap.className = 'toggle-row';
+      const applyShareInput = document.createElement('input');
+      applyShareInput.type = 'checkbox';
+      applyShareInput.checked = true;
+      applyShareWrap.appendChild(applyShareInput);
+      applyShareWrap.appendChild(document.createTextNode('Also update share image'));
+
+      const appearanceMeta = document.createElement('div');
+      appearanceMeta.className = 'appearance-meta';
+      appearanceMeta.textContent = 'No Men\'s Premium colors loaded for this design yet.';
+
+      const appearanceOptions = document.createElement('div');
+      appearanceOptions.className = 'appearance-options';
+
+      appearancePanel.appendChild(applyShareWrap);
+      appearancePanel.appendChild(appearanceMeta);
+      appearancePanel.appendChild(appearanceOptions);
+      appearanceTools.appendChild(appearanceToggle);
+      appearanceTools.appendChild(appearancePanel);
+
       editor.appendChild(shirtNameField);
       editor.appendChild(themeField);
       editor.appendChild(subThemeField);
       editor.appendChild(tagsField);
       editor.appendChild(productUrlField);
       editor.appendChild(applyButton);
+      editor.appendChild(appearanceTools);
 
       card.appendChild(selectWrap);
       card.appendChild(img);
       card.appendChild(name);
       card.appendChild(editor);
-      return { card, name, img, shirtNameInput, themeInput, subThemeInput, tagsInput, productUrlInput, applyButton, selectInput };
+      return {
+        card,
+        name,
+        img,
+        shirtNameInput,
+        themeInput,
+        subThemeInput,
+        tagsInput,
+        productUrlInput,
+        applyButton,
+        selectInput,
+        appearanceToggle,
+        appearancePanel,
+        appearanceMeta,
+        appearanceOptions,
+        applyShareInput,
+      };
+    }
+
+    function extractAppearanceId(url) {
+      const value = String(url || '');
+      const queryMatch = value.match(/appearanceId=(\d+)/i);
+      if (queryMatch) return queryMatch[1];
+      const pathMatch = value.match(/T\d+A(\d+)/i);
+      return pathMatch ? pathMatch[1] : '';
+    }
+
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function loadMensPremiumManifest() {
+      if (mensPremiumManifest) return Promise.resolve(mensPremiumManifest);
+
+      return fetch(MEN_PREMIUM_MANIFEST_PATH, { cache: 'no-store' })
+        .then((response) => {
+          if (!response.ok) throw new Error(`Could not load ${MEN_PREMIUM_MANIFEST_PATH}`);
+          return response.json();
+        })
+        .then((data) => {
+          mensPremiumManifest = data && data.manifest ? data.manifest : {};
+          return mensPremiumManifest;
+        })
+        .catch(() => {
+          mensPremiumManifest = {};
+          return mensPremiumManifest;
+        });
+    }
+
+    function mensPremiumOptionsForItem(item) {
+      if (!mensPremiumManifest) return [];
+      const ideaId = String(item.idea_id || item.shirt_id || '').trim();
+      const record = ideaId ? mensPremiumManifest[ideaId] : null;
+      return record && Array.isArray(record.appearances) ? record.appearances : [];
+    }
+
+    function applyAppearanceToItem(entry, appearance) {
+      if (!appearance || !appearance.preview_url) return;
+
+      entry.item.image_url = appearance.preview_url;
+      entry.item.URL = appearance.preview_url;
+      entry.img.src = appearance.preview_url;
+
+      if (entry.applyShareInput.checked) {
+        entry.item.share_image_url = appearance.preview_url;
+      }
+
+      renderAppearanceOptions(entry);
+    }
+
+    function renderAppearanceOptions(entry) {
+      const options = mensPremiumOptionsForItem(entry.item);
+      const activeAppearanceId =
+        extractAppearanceId(entry.item.share_image_url) ||
+        extractAppearanceId(entry.item.image_url);
+
+      entry.appearanceOptions.innerHTML = '';
+
+      if (!options.length) {
+        entry.appearanceMeta.textContent = 'No Men\'s Premium colors found for this design in the local manifest.';
+        return;
+      }
+
+      const active = options.find((option) => option.id === activeAppearanceId) || null;
+      entry.appearanceMeta.innerHTML = active
+        ? `<span class="appearance-choice">${escapeHtml(active.name || active.id)}</span> · ${escapeHtml(active.color_hex || '')}`
+        : 'Choose a Men\'s Premium shirt color to update this image.';
+
+      options.forEach((appearance) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'appearance-swatch';
+        if (appearance.id === activeAppearanceId) {
+          button.classList.add('is-active');
+        }
+        if (appearance.bright_color) {
+          button.classList.add('is-light');
+        }
+        button.style.backgroundColor = appearance.color_hex || '#ffffff';
+        button.title = `${appearance.name || appearance.id}${appearance.color_hex ? ` (${appearance.color_hex})` : ''}`;
+        button.setAttribute('aria-label', button.title);
+        button.addEventListener('click', () => applyAppearanceToItem(entry, appearance));
+        entry.appearanceOptions.appendChild(button);
+      });
     }
 
     function updateCardSelectionVisual(entry) {
@@ -578,6 +793,7 @@
 
     async function init() {
       try {
+        await loadMensPremiumManifest();
         const { data, sourcePath } = await loadInventory();
 
         const sorted = [...data].sort((a, b) =>
@@ -598,7 +814,23 @@
           item.URL = item.image_url;
 
           dataset.push(item);
-          const { card, name, img, shirtNameInput, themeInput, subThemeInput, tagsInput, productUrlInput, applyButton, selectInput } = makeCard(item);
+          const {
+            card,
+            name,
+            img,
+            shirtNameInput,
+            themeInput,
+            subThemeInput,
+            tagsInput,
+            productUrlInput,
+            applyButton,
+            selectInput,
+            appearanceToggle,
+            appearancePanel,
+            appearanceMeta,
+            appearanceOptions,
+            applyShareInput,
+          } = makeCard(item);
           gridEl.appendChild(card);
           selectInput.addEventListener('change', () => {
             updateCardSelectionVisual({ card, selectInput });
@@ -617,9 +849,34 @@
             applyFilters();
           });
 
-          const entry = { card, item, name, img, shirtNameInput, themeInput, subThemeInput, tagsInput, productUrlInput, applyButton, selectInput };
+          const entry = {
+            card,
+            item,
+            name,
+            img,
+            shirtNameInput,
+            themeInput,
+            subThemeInput,
+            tagsInput,
+            productUrlInput,
+            applyButton,
+            selectInput,
+            appearanceToggle,
+            appearancePanel,
+            appearanceMeta,
+            appearanceOptions,
+            applyShareInput,
+          };
           entries.push(entry);
           updateCardSelectionVisual(entry);
+          renderAppearanceOptions(entry);
+
+          appearanceToggle.addEventListener('click', () => {
+            appearancePanel.hidden = !appearancePanel.hidden;
+            if (!appearancePanel.hidden) {
+              renderAppearanceOptions(entry);
+            }
+          });
         });
 
         const themes = Array.from(

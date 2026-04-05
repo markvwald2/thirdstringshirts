@@ -141,12 +141,14 @@ function productFromShopHash(hash) {
   if (!pathname) return null;
 
   const params = new URLSearchParams(search);
-  const ideaId = params.get("idea") || "";
+  const detailMatch = pathname.match(/^(.*)-A([a-z0-9]+)$/i);
+  const routeName = detailMatch ? detailMatch[1] : pathname;
+  const ideaId = params.get("idea") || (detailMatch ? detailMatch[2] : "");
 
   return {
-    id: ideaId || pathname,
+    id: ideaId || routeName,
     ideaId,
-    name: pathname.replace(/\+/g, " "),
+    name: routeName.replace(/\+/g, " "),
     productUrl: `https://www.thirdstringshirts.com/shop.html#!/${route}`
   };
 }

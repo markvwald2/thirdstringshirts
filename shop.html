@@ -100,12 +100,15 @@
         var parts = route.split("?");
         var pathname = parts[0] || "";
         var params = new URLSearchParams(parts[1] || "");
-        var ideaId = params.get("idea") || "";
+        var detailMatch = pathname.match(/^(.*)-A([a-z0-9]+)$/i);
+        var routeName = detailMatch ? detailMatch[1] : pathname;
+        var ideaId = params.get("idea") || (detailMatch ? detailMatch[2] : "");
 
         return {
           pathname: pathname,
+          routeName: routeName,
           ideaId: ideaId,
-          canonicalHash: pathname && ideaId ? "#!/" + pathname + "?idea=" + encodeURIComponent(ideaId) : ""
+          canonicalHash: routeName && ideaId ? "#!/" + routeName + "?idea=" + encodeURIComponent(ideaId) : ""
         };
       }
 

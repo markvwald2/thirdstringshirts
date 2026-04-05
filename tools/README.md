@@ -14,6 +14,8 @@ This folder contains utility pages for managing and previewing storefront data/s
 
 - File: `shirt-inventory-viewer.html`
 - Purpose: Browse/edit inventory metadata (`shirt_name`, `theme`, `sub_theme`, `tags`, `product_url`) and export updated JSON.
+- Men’s Premium swatches:
+  - Generate `mens-premium-appearance-manifest.json` first if you want clickable Men’s Premium shirt color swatches in the viewer.
 - Data source order:
   1. `../data/shirt_inventory.json` (canonical project file)
   2. `./shirt_inventory.json` (local fallback, if present)
@@ -28,6 +30,18 @@ python3 -m http.server 8000
 ```
 
 Open: `http://localhost:8000/shirt-inventory-viewer.html`
+
+## 2.5) Men’s Premium Appearance Manifest
+
+- File: `build-mens-premium-appearance-manifest.js`
+- Purpose: Fetch each Spreadshirt design page and extract Men’s Premium T-shirt (`productType 812`) appearance/color options into `mens-premium-appearance-manifest.json` for the Inventory Viewer.
+- Output:
+  - `tools/mens-premium-appearance-manifest.json`
+- Run:
+
+```bash
+node tools/build-mens-premium-appearance-manifest.js
+```
 
 ## 3) Carousel Background Preview
 
