@@ -99,13 +99,25 @@ function cleanProduct(item, tagline = "") {
 }
 
 function routeFromProductUrl(productUrl, fallbackName) {
+  function decodeRouteValue(value) {
+    const raw = String(value || "");
+    try {
+      return decodeURIComponent(raw);
+    } catch (error) {
+      return raw;
+    }
+  }
+
   try {
     const parsed = new URL(productUrl);
     const hash = parsed.hash || "";
     if (hash.startsWith("#!/")) {
-      return hash.slice(3);
+      const route = hash.slice(3);
+      const [pathname = "", search = ""] = route.split("?");
+      const decodedPathname = decodeRouteValue(pathname);
+      return search ? `${decodedPathname}?${search}` : decodedPathname;
     }
-    const pathname = parsed.pathname.replace(/^\/+/, "");
+    const pathname = decodeRouteValue(parsed.pathname.replace(/^\/+/, ""));
     const search = parsed.search || "";
     if (pathname) return `${pathname}${search}`;
   } catch (error) {
@@ -133,6 +145,15 @@ function sharePagePath(product) {
 }
 
 function productFromShopHash(hash) {
+  function decodeRouteValue(value) {
+    const raw = String(value || "").replace(/\+/g, " ");
+    try {
+      return decodeURIComponent(raw);
+    } catch (error) {
+      return raw;
+    }
+  }
+
   const value = String(hash || "").trim();
   if (!value.startsWith("#!/")) return null;
 
@@ -148,7 +169,7 @@ function productFromShopHash(hash) {
   return {
     id: ideaId || routeName,
     ideaId,
-    name: routeName.replace(/\+/g, " "),
+    name: decodeRouteValue(routeName),
     productUrl: `https://www.thirdstringshirts.com/shop.html#!/${route}`
   };
 }

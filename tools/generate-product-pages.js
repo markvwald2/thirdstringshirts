@@ -25,14 +25,26 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
+function decodeRouteValue(value) {
+  const raw = String(value || "");
+  try {
+    return decodeURIComponent(raw);
+  } catch (error) {
+    return raw;
+  }
+}
+
 function routeFromProductUrl(productUrl, fallbackName) {
   try {
     const parsed = new URL(productUrl);
     const hash = parsed.hash || "";
     if (hash.startsWith("#!/")) {
-      return hash.slice(3);
+      const route = hash.slice(3);
+      const [pathname = "", search = ""] = route.split("?");
+      const decodedPathname = decodeRouteValue(pathname);
+      return search ? `${decodedPathname}?${search}` : decodedPathname;
     }
-    const pathname = parsed.pathname.replace(/^\/+/, "");
+    const pathname = decodeRouteValue(parsed.pathname.replace(/^\/+/, ""));
     const search = parsed.search || "";
     if (pathname) return `${pathname}${search}`;
   } catch (error) {
