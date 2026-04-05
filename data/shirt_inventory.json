@@ -2707,6 +2707,28 @@
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1PA4267PT17X92Y78D3250893W16255H14718/views/1,width=650,height=650,appearanceId=1256/humor-in-uniform.jpg"
   },
   {
+    "name": "I Don't Give a Shit about Men's Sports",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X40Y64D1058559327W26423H9600/views/1,width=650,height=650,appearanceId=1256,backgroundColor=ffffff.jpg",
+    "sub_theme": "sports",
+    "tags": [
+      "sports",
+      "women's sports",
+      "design"
+    ],
+    "theme": "funny",
+    "platform": "Spreadshirt",
+    "product_url": "https://thirdstringshirts.myspreadshop.com/i+dont+give+a+shit+about+mens+sports-A69d1a3fb8c78661dd8f611bb?productType=812&sellable=BvVBNLYGyefMpjr1RGov-812-7&appearance=1256",
+    "idea_id": "69d1a3fb8c78661dd8f611bb",
+    "source_of_truth": "local",
+    "source_match": "seeded_storefront",
+    "shirt_id": "69d1a3fb8c78661dd8f611bb",
+    "shirt_name": "I Don't Give a Shit about Men's Sports",
+    "tone": "",
+    "priority": "",
+    "evergreen": null,
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A1256PA4267PT17X40Y64D1058559327W26423H9600/views/1,width=650,height=650,appearanceId=1256,backgroundColor=ffffff.jpg"
+  },
+  {
     "name": "I Call Shotgun",
     "URL": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T175A231PA4927PT17X61Y49D12347325W16267H16267/views/1,width=500,height=500,appearanceId=231/i-call-shotgun.jpg",
     "sub_theme": "music",
