@@ -88,6 +88,7 @@
     (function wireBackArrow() {
       var backArrow = document.getElementById("shop-back-arrow");
       var shopRoot = document.getElementById("sprd-shop");
+      var catalogPromise = null;
       if (!backArrow) return;
 
       function hashContext(hash) {
@@ -118,6 +119,45 @@
         if (!context.canonicalHash) return "";
         if (context.canonicalHash === window.location.hash) return "";
         return context.canonicalHash;
+      }
+
+      function loadCatalog() {
+        if (catalogPromise) return catalogPromise;
+        catalogPromise = loadProducts()
+          .then(function (data) {
+            return Array.isArray(data) ? data : [];
+          })
+          .catch(function () {
+            return [];
+          });
+        return catalogPromise;
+      }
+
+      function canonicalHashFromCatalog(context) {
+        if (!context || !context.ideaId) return Promise.resolve("");
+
+        return loadCatalog().then(function (catalog) {
+          for (var i = 0; i < catalog.length; i += 1) {
+            var item = catalog[i];
+            if (item.ideaId !== context.ideaId) continue;
+            var route = routeFromProductUrl(item.productUrl, item.name);
+            return route ? "#!/" + route : "";
+          }
+          return "";
+        });
+      }
+
+      function normalizeProductHash() {
+        var context = hashContext(window.location.hash);
+        var canonicalHash = canonicalProductHash();
+        if (!canonicalHash && (!context || !context.ideaId)) return Promise.resolve(false);
+
+        return canonicalHashFromCatalog(context).then(function (catalogHash) {
+          var nextHash = catalogHash || canonicalHash;
+          if (!nextHash || nextHash === window.location.hash) return false;
+          window.location.replace(nextHash);
+          return true;
+        });
       }
 
       function detailPageBackHash() {
@@ -163,6 +203,12 @@
           event.preventDefault();
           window.history.back();
         }
+      });
+
+      normalizeProductHash();
+
+      window.addEventListener("hashchange", function () {
+        normalizeProductHash();
       });
     })();
 
