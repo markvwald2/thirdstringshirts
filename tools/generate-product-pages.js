@@ -2,19 +2,16 @@
 
 const fs = require("fs");
 const path = require("path");
+const {
+  cleanProduct,
+  routeFromProductUrl,
+  slugSegment
+} = require("../js/product-utils");
 
 const repoRoot = path.resolve(__dirname, "..");
 const inventoryPath = path.join(repoRoot, "data", "shirt_inventory.json");
 const taglinePath = path.join(repoRoot, "data", "taglines.json");
 const outputRoot = path.join(repoRoot, "shirt");
-
-function slugSegment(value, fallback = "shirt") {
-  const slug = String(value || "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-  return slug || fallback;
-}
 
 function escapeHtml(value) {
   return String(value || "")
@@ -23,59 +20,6 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
-}
-
-function decodeRouteValue(value) {
-  const raw = String(value || "");
-  try {
-    return decodeURIComponent(raw);
-  } catch (error) {
-    return raw;
-  }
-}
-
-function routeFromProductUrl(productUrl, fallbackName) {
-  try {
-    const parsed = new URL(productUrl);
-    const hash = parsed.hash || "";
-    if (hash.startsWith("#!/")) {
-      const route = hash.slice(3);
-      const [pathname = "", search = ""] = route.split("?");
-      const decodedPathname = decodeRouteValue(pathname);
-      return search ? `${decodedPathname}?${search}` : decodedPathname;
-    }
-    const pathname = decodeRouteValue(parsed.pathname.replace(/^\/+/, ""));
-    const search = parsed.search || "";
-    if (pathname) return `${pathname}${search}`;
-  } catch (error) {
-    // Ignore parse errors and use fallback.
-  }
-  return String(fallbackName || "shirt")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "+")
-    .replace(/^\+|\+$/g, "");
-}
-
-function cleanProduct(item, tagline = "") {
-  const imageCandidates = Array.isArray(item.image_urls)
-    ? item.image_urls.filter((url) => String(url || "").trim())
-    : [];
-  const imageUrl =
-    (imageCandidates.length
-      ? imageCandidates[Math.floor(Math.random() * imageCandidates.length)]
-      : "") || item.image_url || item.URL || "";
-
-  return {
-    id: item.shirt_id || item.idea_id || item.product_url,
-    ideaId: item.idea_id || item.shirt_id || "",
-    name: item.shirt_name || item.name || "Untitled shirt",
-    imageUrl,
-    productUrl: item.product_url || "https://thirdstringshirts.myspreadshop.com/",
-    tagline: String(tagline || ""),
-    subTheme: item.sub_theme || "",
-    theme: item.theme || "",
-    platform: String(item.platform || "").trim().toLowerCase()
-  };
 }
 
 function shareDirName(product) {
@@ -296,7 +240,7 @@ function main() {
   const products = inventory
     .map((item) => {
       const id = item.idea_id || item.shirt_id || "";
-      return cleanProduct(item, taglines[id]);
+      return cleanProduct(item, taglines[id], { imageStrategy: "first" });
     })
     .filter((product) => product.imageUrl && product.productUrl && product.platform !== "etsy");
 

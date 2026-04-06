@@ -68,3 +68,9 @@ Run this after inventory sync when you want richer social/link previews to match
 Commit both files when applicable:
 - `data/shirt_inventory.json`
 - `tools/api_sync_report.json`
+
+Before committing storefront data changes, run:
+
+```bash
+node tools/validate-repo-data.js
+```

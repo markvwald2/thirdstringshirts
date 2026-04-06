@@ -1,5 +1,14 @@
 const DATA_PATH = "./data/shirt_inventory.json";
 const TAGLINES_PATH = "./data/taglines.json";
+const {
+  cleanProduct,
+  normalize,
+  productFromShopHash,
+  productHref,
+  productLinkLabel,
+  productLinkTargetAttrs,
+  sharePagePath
+} = window.ProductUtils;
 
 const THEME_CONFIG = [
   { id: "all", label: "All" },
@@ -11,24 +20,6 @@ const THEME_CONFIG = [
 ];
 
 const THEME_LABELS = new Map(THEME_CONFIG.map((theme) => [theme.id, theme.label]));
-
-function normalize(value) {
-  return String(value || "").trim().toLowerCase();
-}
-
-function determineBucket(item) {
-  const theme = normalize(item.theme);
-  const subTheme = normalize(item.sub_theme);
-  const tags = (item.tags || []).map(normalize);
-
-  if (theme === "fake band names" || tags.includes("fake band names")) return "fake band names";
-  if (theme === "geography" || tags.includes("geography")) return "geography";
-  if (subTheme.includes("cta")) {
-    return "cta";
-  }
-  if (theme === "design" || tags.includes("design")) return "design";
-  return "funny";
-}
 
 function themeLabel(theme, bucket) {
   const normalizedTheme = normalize(theme);
@@ -73,132 +64,11 @@ function cardPills(product) {
   return pills;
 }
 
-function cleanProduct(item, tagline = "") {
-  const imageCandidates = Array.isArray(item.image_urls)
-    ? item.image_urls.filter((url) => String(url || "").trim())
-    : [];
-  const imageUrl =
-    (imageCandidates.length
-      ? imageCandidates[Math.floor(Math.random() * imageCandidates.length)]
-      : "") || item.image_url || item.URL || "";
-  const platform = normalize(item.platform);
-  return {
-    id: item.shirt_id || item.idea_id || item.product_url,
-    ideaId: item.idea_id || item.shirt_id || "",
-    name: item.shirt_name || item.name || "Untitled shirt",
-    imageUrl,
-    imageUrls: imageCandidates,
-    productUrl: item.product_url || "https://thirdstringshirts.myspreadshop.com/",
-    platform,
-    isEtsy: platform === "etsy",
-    bucket: determineBucket(item),
-    tags: Array.isArray(item.tags) ? item.tags : [],
-    theme: item.theme || "",
-    subTheme: item.sub_theme || "",
-    tagline: String(tagline || "")
-  };
-}
-
-function routeFromProductUrl(productUrl, fallbackName) {
-  function decodeRouteValue(value) {
-    const raw = String(value || "");
-    try {
-      return decodeURIComponent(raw);
-    } catch (error) {
-      return raw;
-    }
-  }
-
-  try {
-    const parsed = new URL(productUrl);
-    const hash = parsed.hash || "";
-    if (hash.startsWith("#!/")) {
-      const route = hash.slice(3);
-      const [pathname = "", search = ""] = route.split("?");
-      const decodedPathname = decodeRouteValue(pathname);
-      return search ? `${decodedPathname}?${search}` : decodedPathname;
-    }
-    const pathname = decodeRouteValue(parsed.pathname.replace(/^\/+/, ""));
-    const search = parsed.search || "";
-    if (pathname) return `${pathname}${search}`;
-  } catch (error) {
-    // Ignore URL parse errors and use fallback.
-  }
-  return String(fallbackName || "shirt")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "+")
-    .replace(/^\+|\+$/g, "");
-}
-
-function slugSegment(value, fallback = "shirt") {
-  const slug = String(value || "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-  return slug || fallback;
-}
-
-function sharePagePath(product) {
-  const base = routeFromProductUrl(product.productUrl, product.name).split("?")[0];
-  const routeSlug = slugSegment(base.replace(/\+/g, "-"), slugSegment(product.name, "shirt"));
-  const ideaSlug = slugSegment(product.ideaId || product.id, "product");
-  return `./shirt/${routeSlug}-${ideaSlug}/`;
-}
-
-function productFromShopHash(hash) {
-  function decodeRouteValue(value) {
-    const raw = String(value || "").replace(/\+/g, " ");
-    try {
-      return decodeURIComponent(raw);
-    } catch (error) {
-      return raw;
-    }
-  }
-
-  const value = String(hash || "").trim();
-  if (!value.startsWith("#!/")) return null;
-
-  const route = value.slice(3);
-  const [pathname, search = ""] = route.split("?");
-  if (!pathname) return null;
-
-  const params = new URLSearchParams(search);
-  const detailMatch = pathname.match(/^(.*)-A([a-z0-9]+)$/i);
-  const routeName = detailMatch ? detailMatch[1] : pathname;
-  const ideaId = params.get("idea") || (detailMatch ? detailMatch[2] : "");
-
-  return {
-    id: ideaId || routeName,
-    ideaId,
-    name: decodeRouteValue(routeName),
-    productUrl: `https://www.thirdstringshirts.com/shop.html#!/${route}`
-  };
-}
-
 function sharePageUrlFromHash(hash, origin) {
   const product = productFromShopHash(hash);
   if (!product || !product.ideaId) return "";
   const relativePath = sharePagePath(product).replace(/^\.\//, "/");
   return new URL(relativePath, origin || window.location.origin).toString();
-}
-
-function embeddedShopHref(product) {
-  const route = routeFromProductUrl(product.productUrl, product.name);
-  return `./shop.html#!/${route}`;
-}
-
-function productHref(product) {
-  if (product.isEtsy && product.productUrl) return product.productUrl;
-  return embeddedShopHref(product);
-}
-
-function productLinkLabel(product) {
-  return product.isEtsy ? "Shop On Etsy" : "Shop This";
-}
-
-function productLinkTargetAttrs(product) {
-  if (!product.isEtsy) return "";
-  return ' target="_blank" rel="noopener noreferrer"';
 }
 
 async function loadProducts() {
