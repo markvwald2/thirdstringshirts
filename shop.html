@@ -48,7 +48,10 @@
       <div class="panel spreadshop-shell">
         <div class="shop-shell-actions">
           <a id="shop-back-arrow" class="button alt shop-back-button" href="./all-shirts.html" aria-label="Go back">←</a>
-          <button id="shop-share-button" class="button alt shop-share-button" type="button" aria-label="Share this shirt" hidden>Share</button>
+          <div class="shop-shell-tools">
+            <button id="shop-cart-button" class="shop-cart-button" type="button" aria-label="Open cart" hidden></button>
+            <button id="shop-share-button" class="button alt shop-share-button" type="button" aria-label="Share this shirt" hidden>Share</button>
+          </div>
         </div>
         <p id="shop-shell-annotation" class="shop-shell-annotation" hidden></p>
         <div id="sprd-shop">
@@ -186,17 +189,17 @@
       }
 
       backArrow.addEventListener("click", function (event) {
+        var context = hashContext(window.location.hash);
         var detailHash = detailPageBackHash();
-        if (detailHash && detailHash !== window.location.hash) {
+        if (context && /-A[a-z0-9]+$/i.test(context.pathname) && detailHash && detailHash !== window.location.hash) {
           event.preventDefault();
           window.location.hash = detailHash;
           return;
         }
 
-        var canonicalHash = canonicalProductHash();
-        if (canonicalHash) {
+        if (context && context.ideaId) {
           event.preventDefault();
-          window.location.hash = canonicalHash;
+          window.location.href = "./all-shirts.html";
           return;
         }
 
@@ -265,6 +268,40 @@
 
       syncVisibility();
       window.addEventListener("hashchange", syncVisibility);
+    })();
+
+    (function wireCartButton() {
+      var cartButton = document.getElementById("shop-cart-button");
+      var root = document.getElementById("sprd-shop");
+      if (!cartButton || !root) return;
+
+      function sync() {
+        var indicator = root.querySelector(".sprd-basket-indicator");
+        if (!indicator) {
+          cartButton.hidden = true;
+          cartButton.innerHTML = "";
+          cartButton.className = "shop-cart-button";
+          cartButton.setAttribute("aria-label", "Open cart");
+          return;
+        }
+
+        cartButton.hidden = false;
+        cartButton.className = "shop-cart-button sprd-basket-indicator";
+        cartButton.innerHTML = indicator.innerHTML;
+
+        var text = String(indicator.textContent || "").trim();
+        var countMatch = text.match(/\d+/);
+        cartButton.setAttribute("aria-label", countMatch ? "Open cart (" + countMatch[0] + " items)" : "Open cart");
+      }
+
+      cartButton.addEventListener("click", function () {
+        window.location.hash = "#!/basket";
+      });
+
+      sync();
+      var observer = new MutationObserver(sync);
+      observer.observe(root, { childList: true, subtree: true, characterData: true });
+      window.addEventListener("hashchange", sync);
     })();
 
     (function annotateProductTitle() {
@@ -807,23 +844,6 @@
       });
     })();
 
-    (function alignCartWithListTitle() {
-      var root = document.getElementById("sprd-shop");
-      if (!root) return;
-
-      function sync() {
-        var titleRow = root.querySelector(".sprd-listpage__header");
-        var cartActions = root.querySelector(".sprd-header__actions");
-        if (!titleRow || !cartActions) return;
-        if (cartActions.parentElement !== titleRow) {
-          titleRow.appendChild(cartActions);
-        }
-      }
-
-      sync();
-      var observer = new MutationObserver(sync);
-      observer.observe(root, { childList: true, subtree: true });
-    })();
   </script>
 </body>
 </html>
