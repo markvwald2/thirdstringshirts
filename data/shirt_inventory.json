@@ -6789,5 +6789,27 @@
     "evergreen": null,
     "image_url": "https://image.spreadshirtmedia.com/image-server/v1/compositions/T812A648PA4267PT17X110Y61D1058520252W12499H19070/views/1,width=500,height=500,appearanceId=648/yellowhammer-state.png",
     "share_image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A566PA4267PT17X105Y46D1058520252W13574H21072/views/1,width=500,height=500,appearanceId=566,backgroundColor=ffffff/yellowhammer-state-mens-premium-t-shirt.jpg"
+  },
+  {
+    "name": "Caffeinate Hydrate Inebriate Replicate",
+    "URL": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A649PA4267PT17X86Y39D1058562035W17528H20711/views/1,width=500,height=500,appearanceId=649,backgroundColor=ffffff/caffeinate-hydrate-inebriate-replicate-mens-premium-t-shirt.jpg",
+    "sub_theme": "food",
+    "tags": [
+      "funny",
+      "science"
+    ],
+    "theme": "funny",
+    "platform": "Spreadshirt",
+    "product_url": "https://www.thirdstringshirts.com/shop.html#!/caffeinate+hydrate+inebriate+replicate?idea=69d31a538c78661dd8b37baf",
+    "idea_id": "69d31a538c78661dd8b37baf",
+    "source_of_truth": "local",
+    "source_match": "storefront",
+    "shirt_id": "69d31a538c78661dd8b37baf",
+    "shirt_name": "Caffeinate Hydrate Inebriate Replicate",
+    "tone": "",
+    "priority": "",
+    "evergreen": null,
+    "image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A649PA4267PT17X86Y39D1058562035W17528H20711/views/1,width=500,height=500,appearanceId=649,backgroundColor=ffffff/caffeinate-hydrate-inebriate-replicate-mens-premium-t-shirt.jpg",
+    "share_image_url": "https://image.spreadshirtmedia.com/image-server/v1/products/T812A649PA4267PT17X86Y39D1058562035W17528H20711/views/1,width=500,height=500,appearanceId=649,backgroundColor=ffffff/caffeinate-hydrate-inebriate-replicate-mens-premium-t-shirt.jpg"
   }
 ]
