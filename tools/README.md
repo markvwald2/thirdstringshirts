@@ -110,3 +110,13 @@ node tools/validate-flag-catalog.js
 
 - Optional overrides:
   - `--inventory data/shirt_inventory.json`
+
+## 7) Repo Data Validator
+
+- File: `validate-repo-data.js`
+- Purpose: Check inventory ID uniqueness, tagline parity, required product fields, and generated `/shirt/` page coverage for non-Etsy items.
+- Run:
+
+```bash
+node tools/validate-repo-data.js
+```

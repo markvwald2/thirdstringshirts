@@ -41,6 +41,12 @@ When inventory or taglines change, regenerate those static product pages with:
 node tools/generate-product-pages.js
 ```
 
+Validate the inventory, taglines, and generated share-page parity with:
+
+```bash
+node tools/validate-repo-data.js
+```
+
 ## Notes
 
 - Checkout is fulfilled through Spreadshirt.
